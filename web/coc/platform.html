@@ -1,0 +1,111 @@
+<html>
+<head>
+    <title>戰亂之聲2</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="css/screen.css">
+    <script src="../js/jquery-2.2.3.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+<div class="wrap">
+<nav class="container-fluid">
+   <div class="container">
+   <div class="visible-xs">
+   <a href="index.html"><div class="logo pull-left" title="回首頁"></div></a>
+   </div>
+    <ul class="hidden-xs">
+        <li><a href="index.html"><div class="logo" title="回首頁"></div></a></li>
+    </ul>
+    </div>
+</nav>
+<div class="container">
+
+<div class="main_bg">
+    <!---- 中間區塊 begin ---->
+    
+        <div class="m_container">
+            <!----會員登入區塊 begin---->
+            <div class="login_board">
+                <div class="tb_login">
+                    
+                    <div class="tb_login_m">
+                       
+                        <div class="sidebar_r">
+                            <!-------->
+                            <div class="tb_login_container">
+                                <div class="tb_login_title_1">登入您的帳號</div>
+                                <div class="tb_login_content">
+                                    <!-------->
+                                    <div class="log_input_1_container">
+                                        <div class="area_l">帳號：</div>
+                                        <div class="area_r">
+                                            <input type="email" name="input_account" value="" tabindex="1" id="input_account" class="input_account" placeholder="請輸入「會員帳號/電子信箱」" size="35" autocomplete="on" required="required" autofocus="autofocus" style="text-transform:lowercase;"  /> 
+                                        </div><br class="clearfloat" />
+                                    </div>
+                                    <div class="log_input_1_container">
+                                        <div class="area_l">密碼：</div>
+                                        <div class="area_r">
+                                            <input type="password" name="input_password" value="" tabindex="2" id="input_password" class="input_password" placeholder="請輸入「密碼」英數混合8碼~16碼" size="35" maxlength="16" autocomplete="off" required="required" pattern="^[a-zA-Z0-9]{8,16}$"  />
+                                        </div><br class="clearfloat" />
+                                    </div>
+                                    <div class="log_input_1_container">
+                                        <div class="area_l">驗證碼：</div>
+                                        <div class="area_r">
+                                            <input type="text" name="input_captcha" value="" tabindex="4" id="input_captcha" class="input_captcha" placeholder="請輸入「驗證碼」" size="8" maxlength="4" autocomplete="off" required="required" pattern="\d{4}"  />
+                                            <div class="error_info_style_1" style='display:none;'>驗證碼輸入錯誤。</div>
+                                            <div class="area_verifyimg"><img src="images/autcode.png" id='captcha_img'/></div>
+                                            <div class="area_verifyimg_change" style='padding-left: 20px;'><a id='captcha_reload'><img src="images/reloading.png"></a></div> 
+                                            <br class="clearfloat" />
+                                        </div>
+                                        <br class="clearfloat" />
+                                    </div>
+                                    <!-------->
+                                    <div class="btn_login">
+                                        <input type="submit" name="button_login" value="登入" tabindex="10" id="button_login" class="button_login"  />
+                                    </div>
+                                    <div class="s_link_container">
+                                        <span class="s_link"><a href="#">忘記密碼</a> ｜ <a href="#">重發驗證</a> |   <a href="#">快速註冊</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-------->
+                        </div>
+                        <br class="clearfloat" />
+                    </div>
+                    
+                </div>
+            </div>    
+            <!----會員登入區塊 end---->
+        </div>  
+    
+    <!---- 中間區塊 end ---->
+</div>
+
+</div>
+</div>
+<footer class="container-fluid">
+   <div class="row container center-block">
+   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-10">
+   <div class="icon-cclogo pull-left hidden-xs"></div>
+   <div class="icon-malogo pull-left hidden-xs"></div>
+   <span>
+    ©Call of Chaos 2 All Right Reserved.<br>
+    ©Masang soft  All Right Reserved.
+    </span>
+   </div>
+   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-2">
+   <div class="icon-class12 pull-left"></div>
+   <span class="hidden-xs">
+   注意使用時間，避免沉迷於遊戲<br>
+若有以購買遊戲點數（卡）、虛擬遊戲幣或虛擬寶物作為付費方式者，應標示其付費內容及金額、遊戲部分內容或服務需另行支付其他費用，或其他類似警語
+   </span>
+   </div>
+   </div>
+</footer>
+</body>
+</html>

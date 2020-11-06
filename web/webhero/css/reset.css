@@ -1,0 +1,116 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+html, body, address, blockquote, div, dl, form, h1, h2, h3, h4, h5, h6, ol, p, pre, table, ul,
+dd, dt, li, tbody, td, tfoot, th, thead, tr, button, del, ins, map, object,
+a, abbr, acronym, b, bdo, big, br, cite, code, dfn, em, i, kbd, q, samp, small, span,
+strong, sub, sup, tt, var, legend, fieldset {
+	padding: 0;
+	margin: 0;
+}
+
+ fieldset {
+	border: 0;
+	
+}
+ul{ list-style:none;}
+/* set image max width to 100% */
+
+
+/* set html5 elements to block */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, table{
+	display: block;
+	
+}
+
+
+a {	text-decoration: none; outline: none; /* for Firefox */}
+input{outline: none;}
+
+.clear {  clear : both;}
+
+img{
+	vertical-align: middle;
+	border: 0;
+	text-align: center;
+	outline: none;
+}
+li{outline: none;}
+.ToCenter{
+	margin-right: auto;
+	margin-left: auto;
+	}
+
+
+.left{
+	float: left;
+	
+}
+.right{ float:right}
+
+#top ul li a:link{color:#FFF;}
+#top ul li a:visited{color:#FFF;}
+#top ul li a:active{color:#FFF;}
+#top ul li a:hover{color:#F03;}
+
+.block{ display:block; overflow:hidden;}
+.word {
+	font-size: 12px;
+	font-family: "微軟正黑體","Heiti TC";
+}
+
+.wordcenter20{
+	line-height: 20px;
+}
+
+
+ .bold{	font-weight: bold;}
+.word22{font-size:22px;font-family: "微軟正黑體", "Heiti TC";}
+.word18{font-size:18px;font-family: "微軟正黑體", "Heiti TC";}
+.word16{font-size:16px;font-family: "微軟正黑體", "Heiti TC";}
+.word14{font-size:14px;font-family: "微軟正黑體", "Heiti TC";}
+.word12{font-size:12px;font-family: "微軟正黑體", "Heiti TC";}
+.white{color:#FFF;}
+.yellow{color:#ffe752;}
+.blue{
+	color: #33F;
+}
+.orange{color:#FC0;}
+.red{ color:red;}
+.green{color:#356;}
+.purple{ color:##66F;}
+.gray{color:#999;}
+.black{ color:#000;}
+.wordover{
+	white-space:nowrap;
+text-overflow:ellipsis;
+-o-text-overflow:ellipsis;
+overflow: hidden;
+	}
+
+.line{
+	border: 1px dotted #333;
+}
+.wordleft{
+	text-align: left;
+}
+.wordcenter{
+	text-align: center;
+	}
+.wordline30{line-height: 30px;}
+
+
+.radius{	
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
+
+label {
+cursor: default;
+}
+ .limit {
+	width: 1250px;
+	position:relative;
+	margin:0 auto;
+}

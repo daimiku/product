@@ -1,0 +1,73 @@
+@charset "utf-8";
+/* CSS Document */
+
+.tab_img{
+	background-repeat: no-repeat;
+	height:32px;
+	}
+
+
+ul, li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	.abgne_tab {
+		clear: left;
+		width:610px;
+		height:255px;
+		margin: 10px 0;
+		background-color:rgba(0, 0, 0, 0.7);
+		border: 2px solid #666;
+	}
+	ul.tabs {
+		width: 100%;
+		height: 32px;
+		/*border-bottom: 1px solid #999;*/
+		border-left: 1px solid #999;
+	}
+	/*預設靜止時*/
+	ul.tabs li {
+		float: left;
+		height: 31px;
+		line-height: 31px;
+		overflow: hidden;
+		position: relative;
+		margin-bottom: -1px;	/* 讓 li 往下移來遮住 ul 的部份 border-bottom */
+		border: 1px solid #999;
+		border-left: none;
+		background: #000;
+	}
+	ul.tabs li a {
+		display: block;
+		padding: 0 20px;
+		color:#FFF;
+		
+		text-decoration: none;
+	}
+	/*滑鼠滑過去時*/
+	ul.tabs li a:hover {
+		background:#402453;
+	}
+	/*已選擇時*/
+	ul.tabs li.active  {
+		background:#333;
+		border-bottom: 1px solid #fff;
+	}
+	/*已選擇後滑過去時*/
+	ul.tabs li.active a:hover {
+		background:#666;
+	}
+	div.tab_container {
+		clear: left;
+		width: 100%;
+		border-top: none;
+		background-color:rgba(0, 0, 0, 0.1);
+	}
+	div.tab_container .tab_content {
+		padding: 20px;
+	}
+	div.tab_container .tab_content h2 {
+		margin: 0 0 20px;
+	}
+

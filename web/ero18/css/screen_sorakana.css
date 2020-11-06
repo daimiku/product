@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+.preregister {
+  background-image: url("../images/sorakana/bg.jpg");
+}
+.preregister .prereg-button .pr-btn {
+  background-image: url("../images/sorakana/btn.png");
+}
+.preregister .masthead .logo {
+  background-image: url("../images/sorakana/logo.png");
+}
+.preregister .rewards .title {
+  background-image: url("../images/sorakana/rewards-title.png");
+}
+.preregister .rewards .character-left {
+  background-image: url("../images/sorakana/rewards-girl-left.png");
+}
+.preregister .rewards .character-right {
+  background-image: url("../images/sorakana/rewards-girl-right.png");
+}
+.preregister .rewards .characters .character-1 {
+  background-image: url("../images/sorakana/rewards-item-1.png");
+}
+.preregister .rewards .characters .character-2 {
+  background-image: url("../images/sorakana/rewards-item-2.png");
+}
+.preregister .rewards .characters .character-3 {
+  background-image: url("../images/sorakana/rewards-item-3.png");
+}
+.preregister .rewards .characters .character-4 {
+  background-image: url("../images/sorakana/rewards-item-4.png");
+}
+.preregister .rewards .characters .character-5 {
+  background-image: url("../images/sorakana/rewards-item-5.png");
+}
+.preregister .rewards .characters .character-6 {
+  background-image: url("../images/sorakana/rewards-item-6.png");
+}
+.preregister .rewards .text {
+  background-image: url("../images/sorakana/rewards-text.png");
+}
+.preregister .gameplay .character-left {
+  background-image: url("../images/sorakana/cute.png");
+}
+.preregister .gameplay .character-right {
+  background-image: url("../images/sorakana/girl_03.png");
+}
+.preregister .gameplay .title {
+  background-image: url("../images/sorakana/gameplay_title.png");
+}
+.preregister .gameplay .text {
+  background-image: url("../images/sorakana/gameplay_text.png");
+}
+.preregister .availabilty .trailer .poster {
+  background-image: url("../images/sorakana/poster.png");
+}
+.preregister .availabilty .title {
+  background-image: url("../images/sorakana/availability-title.png");
+}
+.preregister .availabilty .text {
+  background-image: url("../images/sorakana/availabilty-text.png");
+}
+.preregister .ehscenes .character-left {
+  background-image: url("../images/sorakana/girl-05.png");
+}
+.preregister .ehscenes .character-right {
+  background-image: url("../images/sorakana/girl-06.png");
+}
+.preregister .ehscenes .title {
+  background-image: url("../images/sorakana/hscenes-title.png");
+}
+.preregister .ehscenes .text {
+  background-image: url("../images/sorakana/hscenes_text.png");
+}
+.preregister .last-sec .lamp {
+  background-image: url("../images/sorakana/lamp.png");
+}
+.preregister .last-sec .girls {
+  background-image: url("../images/sorakana/girls.png");
+}
+
+@media (max-width: 720px) {
+  .preregister {
+    background-image: url("../images/sorakana/bg-640.jpg");
+  }
+  .preregister .prereg-button .btn {
+    background-image: url("../images/sorakana/btn-640.png");
+  }
+  .preregister .masthead .logo {
+    background-image: url("../images/sorakana/logo-640.png");
+  }
+  .preregister .rewards .character-left {
+    background-image: url("../images/sorakana/girl-02-m.png");
+  }
+  .preregister .rewards .character-right {
+    background-image: url("../images/sorakana/girl-01-m.png");
+  }
+  .preregister .rewards .title {
+    background-image: url("../images/sorakana/rewards-title-640.png");
+  }
+  .preregister .rewards .text {
+    background-image: url("../images/sorakana/rewards-text-640.png");
+  }
+  .preregister .rewards .characters .character-1 {
+    background-image: url("../images/sorakana/rewards-item-1-m.png");
+  }
+  .preregister .rewards .characters .character-2 {
+    background-image: url("../images/sorakana/rewards-item-2-m.png");
+  }
+  .preregister .rewards .characters .character-3 {
+    background-image: url("../images/sorakana/rewards-item-3-m.png");
+  }
+  .preregister .rewards .characters .character-4 {
+    background-image: url("../images/sorakana/rewards-item-4-m.png");
+  }
+  .preregister .rewards .characters .character-5 {
+    background-image: url("../images/sorakana/rewards-item-5-m.png");
+  }
+  .preregister .rewards .characters .character-6 {
+    background-image: url("../images/sorakana/rewards-item-6-m.png");
+  }
+  .preregister .gameplay .character-left {
+    background-image: url("../images/sorakana/cute-m.png");
+  }
+  .preregister .gameplay .character-right {
+    background-image: url("../images/sorakana/girl-03-m.png");
+  }
+  .preregister .gameplay .title {
+    background-image: url("../images/sorakana/gameplay-title-640.png");
+  }
+  .preregister .gameplay .text {
+    background-image: url("../images/sorakana/gameplay-text-640.png");
+  }
+  .preregister .availabilty .trailer .poster {
+    background-image: url("../images/sorakana/poster-640.png");
+  }
+  .preregister .availabilty .title {
+    background-image: url("../images/sorakana/availability-title-640.png");
+  }
+  .preregister .availabilty .text {
+    background-image: url("../images/sorakana/availability_text-640.png");
+  }
+  .preregister .ehscenes .character-left {
+    background-image: url("../images/sorakana/girl_05-640.png");
+  }
+  .preregister .ehscenes .character-right {
+    background-image: url("../images/sorakana/girl_06-640.png");
+  }
+  .preregister .ehscenes .text {
+    background-image: url("../images/sorakana/hscenes-text-640.png");
+  }
+  .preregister .last-sec .lamp {
+    background-image: url("../images/sorakana/lamp-640.png");
+  }
+  .preregister .last-sec .girls {
+    background-image: url("../images/sorakana/girls-640.png");
+  }
+}

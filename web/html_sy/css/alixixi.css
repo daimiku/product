@@ -1,0 +1,124 @@
+body,h1,h2,h3,p,quote,small,form,input,ul,li,ol,label{margin:0px;padding:0px;}
+
+
+nav_menu{
+	background-color:rgba(0, 0, 0, 0.7);
+	border: 2px solid #666;
+	width: 226px;
+	height: auto;
+	}
+.dropdown li.active a{
+	color:#FF3;
+	font-size:16px;
+	font-weight:bold;
+	}
+
+ul.container{
+	width:226px;
+	margin:0 auto;
+
+	}
+li{
+	
+	text-align:center;
+	}
+li.menu{
+	padding:5px 0;
+	width:100%;
+	}
+li.button a{
+	display:block;
+	font-size:21px;
+	height:34px;
+	overflow:hidden;
+	padding:10px 21px 2px;
+	position:relative;
+	width:180px;
+	}
+li.button a:hover{
+	text-decoration:none;
+	}
+li.button a span{
+	height:44px;
+	position:absolute;
+	right:0;
+	top:0;
+	width:4px;
+	display:block;
+	
+	}
+li.button a.blue{
+	background:url(../images/nav_menu/info.png) repeat-x top left;
+	color:#FFF;
+	}
+li.button a.blue span{
+	background:url(../images/nav_menu/info.png) repeat-x top right;
+	}
+li.button a.green{
+	background:url(../images/nav_menu/info.png) repeat-x top left; 
+	color:#FFF;
+	}
+li.button a.green span{
+	background:url(../images/nav_menu/info.png) repeat-x top right;
+	}
+li.button a.orange{
+	background:url(../images/nav_menu/info.png) repeat-x top left; 
+	color:##FFF;
+	}
+li.button a.orange span{
+	background:url(../images/nav_menu/info.png) repeat-x top right;
+	}
+li.button a.red{
+	background:url(../images/nav_menu/info.png) repeat-x top left; 
+	color:##FFF;
+	}
+li.button a.red span{
+	background:url(../images/nav_menu/info.png) repeat-x top right;
+	}
+li.button a:hover{
+	background-position:bottom left;
+	}
+li.button a:hover span{
+	background-position:bottom right;
+	}
+.dropdown{
+	display:none;padding-top:5px;width:100%;
+	}
+.dropdown li{
+	background:url(../images/nav_menu/info_bg.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	color:#CCCCCC;
+	margin:5px 0;
+	padding:6px 18px;
+	}
+h1{
+	font-family:"Myriad Pro",Arial,Helvetica,sans-serif;
+	font-size:36px;
+	font-weight:normal;
+	margin-bottom:15px;
+	}
+h2{
+	font-family:"Myriad Pro",Arial,Helvetica,sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	padding-right:140px;
+	right:0;
+	text-align:right;
+	text-transform:uppercase;
+	top:15px;
+	}
+.clear{
+	clear:both;
+	}
+#main{
+	margin:15px auto;
+	text-align:center;
+	width:920px;
+	position:relative;
+	}
+a, a:visited{
+	color:#FFF;
+	text-decoration:none;
+	outline:none;
+	}

@@ -1,0 +1,268 @@
+<!doctype html>
+<html>
+<head>
+<title>Wanyi | Affiliate</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-acale=1.0">
+
+<link rel="stylesheet" href="css/WanyiAffDefault.css">
+<script src="../js/jquery-2.2.3.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<!--[if lte IE 8]>
+  <script type="text/javascript" src="libs/excanvas.js"></script>
+  <script type="text/javascript" src="js/process_ie78.js"></script>
+<![endif]-->
+<script src="js/WanyiAffScript.js"></script>
+<script type="text/javascript">
+$(function () {
+    $(".progress-bar-warning").animate({
+        width:"40%"
+    },{
+       duration: 100,
+    });
+});
+</script>
+</head>
+<body>
+
+<div class="PopDelete modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="AlertContent">
+      <div class="AlertTitle">
+          <h1>溫馨提示</h1>
+      </div>
+      <div class="AlertBody">
+        確定刪除？
+      </div>
+      <div class="AlertFooter">
+        <a href="#"><button type="button" class="btn btn-gray" data-dismiss="modal">取消</button></a>
+        <a href="#"><button type="button" class="btn btn-danger">刪除</button></a>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div>
+
+<div class="modal fade PopChannel" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+   
+    <div class="LoginContent">
+      <div class="loginHeader">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="glyphicon glyphicon-remove"></span></button>
+      </div>
+      
+      <div class="VerifyTitle">
+          <div class="text-center">
+              <h2>新增渠道</h2>
+          </div>
+      </div>
+  
+  <div class="LoginContain">
+    <div class="LoginInput">
+       <div class="form-horizontal">
+      <div class="form-group">
+        <label class="col-lg-2 col-md-2 control-label">渠道名稱</label>
+        <div class="col-lg-10 col-md-10">
+        <input type="text" class="form-control" placeholder="請輸入渠道名稱">
+      </div>
+      </div>
+      <div class="form-group">
+        <label class="col-lg-2 col-md-2 control-label">渠道網址</label>
+        <div class="col-lg-10 col-md-10">
+        <input type="text" class="form-control" placeholder="請輸入渠道網址">
+      </div>
+      </div>
+      
+    </div>
+        <div class="alert alert-danger" role="alert">
+            <span class="glyphicon glyphicon-remove"></span>必填
+        </div>
+        <div class="LoginBtn">
+            <button type="button" class="btn btn-danger btn-lg Submit">提交</button>
+        </div>
+    </div>
+</div>
+    </div>
+    
+  </div>
+</div>
+
+<div class="Wrap"> 
+                
+<!--start of Top Nav-->
+<header>
+    <div class="container">
+       <div class="row">
+          <div class="col-lg-2 col-md-2 dropdown SideNav"><a class="dropdown-toggle" data-toggle="dropdown" href="#">繁體中文 <span class="
+glyphicon glyphicon-triangle-bottom"></span></a>
+                <ul class="dropdown-menu SideSubnav" role="menu">
+                    <li><a href="#">繁體中文</a>
+                    <li><a href="#">簡體中文</a>
+                    <li><a href="#">English</a>
+                </ul>
+            </div>
+           <div class="col-lg-4 col-md-4 col-lg-offset-2 col-md-offset-1 Logo">WANYI CASINO</div>
+            <div class="col-lg-2 col-md-2 col-lg-offset-1 col-md-offset-1 dropdown SideNav"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span> XXXXXX</a>
+            <ul class="dropdown-menu SideSubnav" role="menu">
+                    <li><a href="UserSecurity.html"><span class="glyphicon glyphicon-cog"></span> 帳號設置<span class="badge">42</span></a>
+                    <li><a href="UserMessage.html"><span class="glyphicon glyphicon-comment"></span> 消息中心<span class="badge">42</span></a>
+                    <li><a href="IndexAlert.html"><span class="glyphicon glyphicon-lock"></span> 登出</a>
+                </ul>
+            </div>
+            <div class="col-lg-1 col-md-2 SideBtn"><a href="#"><span class="glyphicon glyphicon-comment"></span> 線上客服</a></div>
+        </div>
+    </div>
+</header>
+<!--end of Top Nav--> 
+                
+<!--start of Main Nav-->
+<nav class="hidden-sm hidden-xs">
+    <div class="container">
+           <ul class="row">
+               <li class="col-lg-1-5 col-md-1-5"><a href="Index.html">首頁</a>
+               <li class="col-lg-1-5 col-md-1-5"><a href="ReportMember.html">報表</a>
+               <li class="col-lg-1-5 col-md-1-5"><a href="UserSecurity.html">帳戶設定</a>
+               <li class="col-lg-1-5 col-md-1-5"><a href="#">常見問題</a>
+               <li class="col-lg-1-5 col-md-1-5"><a href="Contact.html">聯繫我們</a>
+           </ul>
+    </div>
+</nav>
+<!--end of Main Nav--> 
+        
+<div class="MainPage">
+    <div class="container">
+       <div class="PageHeader row">
+           <div class="PageTitle col-lg-6 col-md-5">
+               <h1>XXXXXX先生，您好！</h1>
+               <h3>安全指數：<span class="Num">40</span>%</h3>
+               <small>完成實名認證增加60%安全指數</small>
+               <div class="progress">
+                      <div class="progress-bar progress-bar-warning" role="progressbar">
+                      </div>
+               </div>
+           </div>
+           <div class="col-lg-6 col-md-7">
+               <div class="UserProfile row">
+               <ul class="col-lg-6 col-md-6">
+                   <li><span class="
+glyphicon glyphicon-user"></span> 真實姓名：張三</li>
+                   <li><span class="
+glyphicon glyphicon-phone"></span> 手機號碼：+86 123456****</li>
+                   <li><span class="
+glyphicon glyphicon-lock"></span> 上次登錄：1周前 北京市朝陽區</li>
+                   <li><span class="
+glyphicon glyphicon-link"></span> 代理鏈結：<a href="http://www.abc.com" target="_blank">http://www.abc.com/123456789.html</a></li>
+               </ul>
+               <ul class="col-lg-6 col-md-6">
+                   <li><span class="
+glyphicon glyphicon-piggy-bank"></span> 帳戶餘額：<span class="Num Plus">999999999</span>
+                  </li>
+                  <li><span class="
+glyphicon glyphicon-user"></span> 活躍人數：<span class="Num Plus">40</span>
+                  </li>
+                  <li><span class="
+glyphicon glyphicon-usd"></span> 客戶輸贏：<span class="Num Minus">-15782</span>
+                  </li>
+               </ul>
+               </div>
+           </div>
+       </div>
+       <div class="PageInfo row">
+           <div class="PageCont col-lg-9 col-md-9">
+              <h2>渠道設定</h2>
+              <button type="button" class="btn btn-main" data-toggle="modal" data-target=".PopChannel"><span class="
+glyphicon glyphicon-plus"></span> 新增</button>
+                <button type="button" class="btn btn-main" data-toggle="modal" data-target=".PopDelete"><span class="
+glyphicon glyphicon-remove"></span> 刪除</button>
+              <div class="ChannelPanel panel panel-success">
+  <div class="panel-heading">
+    <h3 class="panel-title">
+    <input type="checkbox" value="c1" id="c1"><label for="c1">下線1</label></h3>
+    <a href="#" class="ReplyBtn">前往<span class="
+glyphicon glyphicon-new-window"></span></a>
+  </div>
+  <div class="panel-body">
+    <textarea class="form-control" rows="2" readonly>
+http://www.bet16.com/ClickPage.aspx?typeID=3&AdvertID=2&Affiliate_Login_ID=kathy01081</textarea>
+  </div>
+</div>
+ <div class="ChannelPanel panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title">
+    <input type="checkbox" value="c2" id="c2"><label for="c2">下線2</label></h3>
+    <a href="#" class="ReplyBtn">前往<span class="
+glyphicon glyphicon-new-window"></span></a>
+  </div>
+  <div class="panel-body">
+    <textarea class="form-control" rows="2" readonly>
+http://www.bet16.com/ClickPage.aspx?typeID=3&AdvertID=2&Affiliate_Login_ID=kathy01081</textarea>
+  </div>
+</div>
+ <div class="ChannelPanel panel panel-warning">
+  <div class="panel-heading">
+    <h3 class="panel-title">
+    <input type="checkbox" value="c3" id="c3"><label for="c3">下線3</label></h3>
+    <a href="#" class="ReplyBtn">前往<span class="
+glyphicon glyphicon-new-window"></span></a>
+  </div>
+  <div class="panel-body">
+    <textarea class="form-control" rows="2" readonly>
+http://www.bet16.com/ClickPage.aspx?typeID=3&AdvertID=2&Affiliate_Login_ID=kathy01081</textarea>
+  </div>
+</div>
+ <div class="ChannelPanel panel panel-danger">
+  <div class="panel-heading">
+    <h3 class="panel-title">
+    <input type="checkbox" value="c4" id="c4"><label for="c4">下線4</label></h3>
+    <a href="#" class="ReplyBtn">前往<span class="
+glyphicon glyphicon-new-window"></span></a>
+  </div>
+  <div class="panel-body">
+    <textarea class="form-control" rows="2" readonly>
+http://www.bet16.com/ClickPage.aspx?typeID=3&AdvertID=2&Affiliate_Login_ID=kathy01081</textarea>
+  </div>
+</div>
+           </div>
+           <div class="PageList col-lg-3 col-md-3">
+               <ul>
+                   <a href="UserMessage.html"><li><span class="
+glyphicon glyphicon-comment"></span> 消息中心<span class="badge">42</span></li></a>
+                   <a href="UserSecurity.html"><li><span class="
+glyphicon glyphicon-lock"></span> 安全設置</li></a>
+                   <a href="UserPersonal.html"><li><span class="
+glyphicon glyphicon-user"></span> 個人介紹</li></a>
+                   <li class="Active"><span class="
+glyphicon glyphicon-link"></span> 渠道設定</li>
+               </ul>
+           </div>
+       </div>
+    </div>
+</div>
+</div>
+        
+<!--start of bottom-->
+<footer>
+    <div class="container">
+        <div class="FooIcon text-center hidden-xs">
+            <div class="icon-playtech"></div>
+            <div class="icon-AG"></div>
+            <div class="icon-EV"></div>
+            <div class="icon-EA"></div>
+            <div class="icon-BBIN"></div>
+            <div class="icon-union"></div>
+            <div class="icon-visa"></div>
+            <div class="icon-master"></div>
+            <div class="icon-net"></div>
+            <div class="icon-Cagayan"></div>
+            <div class="icon-gwcam"></div>
+            <div class="icon-18"></div>
+            <div class="icon-no"></div>
+        </div>
+        <div class="FooAbout">
+        VWIN.COM屬於VW GROUP ASIA 有限公司Morgan Building, PO Box 958,Pasea Estate,Road Town,Tortola British Virgin Islands
+        <br>於2013年3月25日獲得菲律賓第一卡格楊(FCLRC)頒發的牌照(牌照號碼074)並受其監督版權所有©2014VWIN.COM
+        </div>
+    </div>
+</footer>
+<!--end of bottom-->
+</body>
+</html>

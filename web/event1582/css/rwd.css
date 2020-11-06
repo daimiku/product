@@ -1,0 +1,107 @@
+@media screen and (min-width: 1200px) {
+.contents {
+  height: 900px;
+}
+body{
+    min-width: 1024px;
+}
+.header {
+  width: 194px;
+  height: 137px;
+  margin: 0 0 0 685px;
+}
+.hd {
+  width: 704px;
+  height: 187px;
+  margin: 18px 0 0 0px;
+}
+.say{
+    margin: 691px 0 0 -493px;
+}
+.contents nav{
+    margin-top: 592px;
+}
+article section{
+    width: 80%;
+}
+iframe{
+    width: 945px;
+}
+.footer{
+    width: 990px;
+}
+}
+
+@media screen and (max-width: 1200px) and (min-width: 900px) {
+.contents {
+  height: 900px;
+}
+body{
+    min-width: 900px;
+}
+.header {
+  width: 194px;
+  height: 137px;
+  margin: 0 0 0 685px;
+}
+.hd {
+  width: 704px;
+  height: 187px;
+  margin: 18px 0 0 0px;
+}
+.say{
+    margin: 691px 0 0 -493px;
+}
+.contents nav{
+    margin-top: 592px;
+}
+article section{
+    width: 90%;
+}
+iframe{
+    width: 900px;
+}
+.footer{
+    width: 900px;
+}
+.level{
+    display: none;
+}
+}
+
+@media screen and (max-width: 899px){
+.contents {
+  height: 800px;
+}
+.header {
+  width: 150px;
+  height: 137px;
+  margin: 75px 0 0 615px;
+}
+.hd {
+  width: 604px;
+  height: 187px;
+  margin: 148px 0 0 70px;
+}
+.say{
+    margin: 391px 0 0 -293px;
+}
+.pic{
+    margin: -9999px;
+}
+.contents nav{
+    margin: 492px 0 0 -35%;
+}
+article section {
+    margin-bottom: 0px;
+}
+#fbShare{
+    display: none;
+}
+#logo{
+    margin-left: 35%;
+}
+.footer, .footerBar{
+    display: none;
+}
+}

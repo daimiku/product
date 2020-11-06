@@ -1,0 +1,597 @@
+@charset "UTF-8";
+/* line 1, ../sass/_reset.sass */
+html, body, address, blockquote, div, dl, form, h1, h2, h3, h4, h5, h6, ol, p, pre, table, ul,
+dd, dt, li, tbody, td, tfoot, th, thead, tr, button, del, ins, map, object,
+a, abbr, acronym, b, bdo, big, br, cite, code, dfn, em, i, kbd, q, samp, small, span,
+strong, sub, sup, tt, var, legend, fieldset {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 8, ../sass/_reset.sass */
+fieldset {
+  border: 0;
+}
+
+/* line 11, ../sass/_reset.sass */
+ul {
+  list-style: none;
+}
+
+/* set image max width to 100% */
+/* set html5 elements to block */
+/* line 17, ../sass/_reset.sass */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, table {
+  display: block;
+}
+
+/* line 20, ../sass/_reset.sass */
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+/* line 23, ../sass/_reset.sass */
+input {
+  outline: none;
+}
+
+/* line 26, ../sass/_reset.sass */
+.clear {
+  clear: both;
+}
+
+/* line 29, ../sass/_reset.sass */
+img {
+  vertical-align: middle;
+  border: 0;
+  text-align: center;
+  outline: none;
+}
+
+/* line 35, ../sass/_reset.sass */
+li {
+  outline: none;
+}
+
+/* line 37, ../sass/_reset.sass */
+.ToCenter {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* line 42, ../sass/_reset.sass */
+.left {
+  float: left;
+}
+
+/* line 45, ../sass/_reset.sass */
+.right {
+  float: right;
+}
+
+/* line 49, ../sass/_reset.sass */
+#top ul li a:link, #top ul li a:visited, #top ul li a:active {
+  color: #FFF;
+}
+/* line 51, ../sass/_reset.sass */
+#top ul li a:hover {
+  color: #F03;
+}
+
+/* line 54, ../sass/_reset.sass */
+.block {
+  display: block;
+  overflow: hidden;
+}
+
+/* line 57, ../sass/_reset.sass */
+.word {
+  font-size: 12px;
+  font-family: "Microsoft YaHei", "Heiti TC";
+}
+
+/* line 62, ../sass/_reset.sass */
+.wordcenter20 {
+  line-height: 20px;
+}
+
+/* line 65, ../sass/_reset.sass */
+.bold {
+  font-weight: bold;
+}
+
+/* line 67, ../sass/_reset.sass */
+.word22 {
+  font-size: 22px;
+  font-family: "Microsoft YaHei", "Heiti TC";
+}
+
+/* line 71, ../sass/_reset.sass */
+.word18 {
+  font-size: 18px;
+  font-family: "Microsoft YaHei", "Heiti TC";
+}
+
+/* line 75, ../sass/_reset.sass */
+.word16 {
+  font-size: 16px;
+  font-family: "Microsoft YaHei", "Heiti TC";
+}
+
+/* line 79, ../sass/_reset.sass */
+.word14 {
+  font-size: 14px;
+  font-family: "Microsoft YaHei", "Heiti TC";
+}
+
+/* line 83, ../sass/_reset.sass */
+.word12 {
+  font-size: 12px;
+  font-family: "Microsoft YaHei", "Heiti TC";
+}
+
+/* line 87, ../sass/_reset.sass */
+.white {
+  color: #FFF;
+}
+
+/* line 89, ../sass/_reset.sass */
+.yellow {
+  color: #ffe752;
+}
+
+/* line 91, ../sass/_reset.sass */
+.blue {
+  color: #33F;
+}
+
+/* line 93, ../sass/_reset.sass */
+.orange {
+  color: #FC0;
+}
+
+/* line 95, ../sass/_reset.sass */
+.red {
+  color: red;
+}
+
+/* line 97, ../sass/_reset.sass */
+.green {
+  color: #356;
+}
+
+/* line 99, ../sass/_reset.sass */
+.purple {
+  color: #66F;
+}
+
+/* line 101, ../sass/_reset.sass */
+.gray {
+  color: #999;
+}
+
+/* line 103, ../sass/_reset.sass */
+.black {
+  color: #000;
+}
+
+/* line 105, ../sass/_reset.sass */
+.wordover {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/* line 111, ../sass/_reset.sass */
+.line {
+  border: 1px dotted #333;
+}
+
+/* line 113, ../sass/_reset.sass */
+.wordleft {
+  text-align: left;
+}
+
+/* line 115, ../sass/_reset.sass */
+.wordcenter {
+  text-align: center;
+}
+
+/* line 117, ../sass/_reset.sass */
+.wordline30 {
+  line-height: 30px;
+}
+
+/* line 121, ../sass/_reset.sass */
+.radius {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 126, ../sass/_reset.sass */
+label {
+  cursor: default;
+}
+
+/* line 129, ../sass/_reset.sass */
+.limit {
+  width: 1250px;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* CSS Document */
+/* line 7, ../sass/_screen.sass */
+body {
+  background-color: #151e23;
+  font-family: "Microsoft YaHei", "Heiti TC";
+}
+
+/* line 10, ../sass/_screen.sass */
+.wrap {
+  height: auto;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+/*TOP */
+/* line 18, ../sass/_screen.sass */
+.main {
+  height: 675px;
+  width: 100%;
+  position: relative;
+}
+
+/* line 23, ../sass/_screen.sass */
+.logo {
+  background-image: url(../images/logo.png);
+  width: 605px;
+  height: 226px;
+  position: absolute;
+  left: 50%;
+  top: 110px;
+  margin-left: 54px;
+  display: block;
+}
+/* line 32, ../sass/_screen.sass */
+.logo img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 36, ../sass/_screen.sass */
+.gamestart {
+  background-image: url(../images/start.gif);
+  width: 258px;
+  height: 176px;
+  position: absolute;
+  left: 92px;
+  top: 501px;
+  z-index: 100;
+}
+/* line 44, ../sass/_screen.sass */
+.gamestart:hover {
+  background-image: url(../images/start-1.gif);
+}
+
+/* line 47, ../sass/_screen.sass */
+.menu {
+  height: 40px;
+  width: 828px;
+  position: absolute;
+  left: 335px;
+  top: 594px;
+  padding-top: 22px;
+  padding-bottom: 24px;
+}
+
+/* line 56, ../sass/_screen.sass */
+.menubtn {
+  display: block;
+  height: 40px;
+  width: 205px;
+  overflow: hidden;
+  float: left;
+}
+/* line 62, ../sass/_screen.sass */
+.menubtn:not(:last-of-type) {
+  border-right: 1px solid #666;
+}
+/* line 64, ../sass/_screen.sass */
+.menubtn img {
+  transition: all 800ms ease;
+}
+/* line 66, ../sass/_screen.sass */
+.menubtn img:hover {
+  -moz-transform: translateY(-40px);
+  -ms-transform: translateY(-40px);
+  -webkit-transform: translateY(-40px);
+  transform: translateY(-40px);
+  transition: all 250ms ease;
+}
+
+/* line 70, ../sass/_screen.sass */
+.setup {
+  background-image: url(../images/mix1.jpg);
+  width: 235px;
+  height: 131px;
+}
+/* line 74, ../sass/_screen.sass */
+.setup:hover {
+  background-image: url(../images/mix1-1.jpg);
+}
+
+/* line 76, ../sass/_screen.sass */
+.gift {
+  background-image: url(../images/mix2.jpg);
+  width: 235px;
+  height: 131px;
+}
+/* line 80, ../sass/_screen.sass */
+.gift:hover {
+  background-image: url(../images/mix2-1.jpg);
+}
+
+/*中間 */
+/* line 84, ../sass/_screen.sass */
+.content {
+  min-height: 400px;
+  width: 1065px;
+  background: #111;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+/* line 92, ../sass/_screen.sass */
+.mix {
+  width: 235px;
+  background-color: #333;
+  background-image: url(../images/mix.jpg);
+  background-position: bottom;
+  float: left;
+  height: 392px;
+  margin-top: 0px;
+  margin-right: 5px;
+  margin-bottom: 2px;
+  margin-left: 5px;
+}
+
+/* line 106, ../sass/_screen.sass */
+.footer {
+  height: 222px;
+  width: 100%;
+  background-image: url(../images/footer.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+/* line 114, ../sass/_screen.sass */
+.news {
+  float: left;
+  height: 390px;
+  width: 550px;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+/* line 122, ../sass/_screen.sass */
+.fb {
+  background-color: #333;
+  float: left;
+  height: 225px;
+  width: 280px;
+  margin-top: 5px;
+  margin-left: 8px;
+}
+
+/* line 130, ../sass/_screen.sass */
+.vip {
+  width: 280px;
+  height: 160px;
+  margin-bottom: 5px;
+  float: left;
+  background-image: url(../images/vip1.jpg);
+  margin-left: 10px;
+  margin-top: 5px;
+}
+/* line 139, ../sass/_screen.sass */
+.vip:hover {
+  background-image: url(../images/vip1-1.jpg);
+}
+
+/* line 142, ../sass/_screen.sass */
+.news {
+  background-image: url(../images/news.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+  width: 520px;
+}
+
+/* line 149, ../sass/_screen.sass */
+.more {
+  height: 46px;
+  width: 149px;
+  position: absolute;
+  left: 365px;
+}
+
+/* line 155, ../sass/_screen.sass */
+.newsINS {
+  background-color: #666;
+  height: 330px;
+  width: 510px;
+  margin-top: 55px;
+  margin-left: 5px;
+}
+
+/* line 164, ../sass/_screen.sass */
+.Newstitle a {
+  color: white;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 390px;
+  display: block;
+  line-height: 30px;
+  height: 30px;
+}
+/* line 174, ../sass/_screen.sass */
+.Newstitle a:hover {
+  color: #FC6;
+}
+
+/* line 3, ../sass/news.sass */
+.wrap {
+  background-image: url(../images/bg.jpg);
+}
+
+/* line 7, ../sass/news.sass */
+.setup {
+  margin-left: 5px;
+}
+
+/* line 10, ../sass/news.sass */
+.gift {
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+/* line 15, ../sass/news.sass */
+.newsbtn, .infobtn {
+  width: 235px;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  background-image: url(../images/infoMenu.jpg);
+  height: 260px;
+  padding-top: 60px;
+}
+
+/* line 25, ../sass/news.sass */
+.menu1 {
+  font-size: 22px;
+  line-height: 50px;
+  color: #FFF;
+  height: 50px;
+  width: 180px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10px;
+  border: thin solid #999;
+  text-align: center;
+  transition: all 500ms ease;
+}
+/* line 38, ../sass/news.sass */
+.menu1:hover {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #66F;
+  transition: all 500ms ease;
+}
+
+/* line 46, ../sass/news.sass */
+.newsmenu {
+  padding-top: 10px;
+  width: 243px;
+  position: relative;
+  height: 610px;
+  float: left;
+  margin-right: 10px;
+}
+
+/* line 54, ../sass/news.sass */
+.newsArea {
+  background-color: #999;
+  min-height: 610px;
+  width: 800px;
+  float: left;
+  margin-top: 10px;
+}
+/* line 60, ../sass/news.sass */
+.newsArea .title {
+  height: 45px;
+  width: 760px;
+  background-image: url(../images/title.jpg);
+  font-size: 22px;
+  line-height: 45px;
+  color: #FFF;
+  padding-left: 40px;
+  border-bottom-width: thin;
+  border-bottom-style: solid;
+  border-bottom-color: #ccc;
+}
+
+/* line 73, ../sass/news.sass */
+.newslist {
+  height: 45px;
+  border-bottom-width: thin;
+  border-bottom-style: dotted;
+  border-bottom-color: #FFF;
+  width: 750px;
+  margin: 0 auto;
+  color: #000;
+}
+
+/* line 83, ../sass/news.sass */
+.newsname {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 45px;
+  color: #000;
+  height: 45px;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  clip: rect(auto, 10px, auto, 10px);
+}
+/* line 95, ../sass/news.sass */
+.newsname a {
+  color: #000;
+}
+/* line 97, ../sass/news.sass */
+.newsname a:hover {
+  color: #FC0;
+}
+
+/* line 100, ../sass/news.sass */
+.page {
+  width: 750px;
+  text-align: center;
+  position: relative;
+  bottom: 0px;
+  margin: 5px auto;
+  color: #60F;
+}
+/* line 107, ../sass/news.sass */
+.page a {
+  color: #fff;
+  margin: 0 5px;
+}
+/* line 110, ../sass/news.sass */
+.page a:hover {
+  color: #f00;
+}
+
+/* line 112, ../sass/news.sass */
+.newspage {
+  width: 750px;
+  min-height: 610px;
+  margin: 10px auto;
+}
+
+/* line 119, ../sass/news.sass */
+.title span a {
+  color: #FC0;
+}
+/* line 121, ../sass/news.sass */
+.title span a:hover {
+  color: red;
+}

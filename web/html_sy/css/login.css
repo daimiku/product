@@ -1,0 +1,479 @@
+@charset "utf-8";
+/* CSS Document */
+.area1 {
+	min-height: 275px;
+	width: 226px;
+	margin-left: 10px;
+}
+
+/****會員資訊*****/
+.login{
+	height: auto;
+	width: auto;
+	padding-bottom: 6px;
+	background-color:rgba(0, 0, 0, 0.7);
+	border: 2px solid #666;
+	width: 226px;
+	height: auto;
+	padding-top: 20px;
+	background-repeat: no-repeat;
+	margin-bottom: 10px;
+}
+.tb_login .tb_login_m .tb_login_container .tb_login_content .log_input_2_container{
+	height: auto;
+	width: auto;
+	padding-bottom: 6px;
+	display: block;
+}
+
+.login .area_l{
+	float: left;
+	width: 50px;
+	height: 30px;
+	font-size: 14px;
+	color: #e8c787;
+	font-family: "微軟正黑體", "Century Gothic", "Heiti TC";
+	line-height: 30px;
+	margin-left:3px;
+}
+.log_input_1_container .area_r{
+	float: left;
+	width: 160px;
+	height: auto;
+	margin-left:5px;
+}
+.log_input_1_container .area_r2{
+	float: left;
+	width: auto;
+	height: auto;
+	display: block;
+}
+.log_input_1_container .area_r3{
+	float: left;
+	width: auto;
+	height: auto;
+	display: block;
+}
+
+.log_input_1_container .area_verifyimg_change{	float: left;
+	width: auto;
+	height: auto;
+	display: block;
+	padding-left: 4px;
+}
+.btn_login{
+	display: block;
+	padding-left: 5px;
+	width: 215px;
+	margin-bottom: 5px;
+	padding-right: 5px;
+}
+.btn_login a, #button_login{
+	display: block;
+	background-image: url(../images/member/login/btn_login.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 46px;
+	width: 215px;
+        border : 0px;
+		margin-top:10px;
+
+-webkit-transition: all 0.5s ease-out;
+   -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+     -o-transition: all 0.5s ease-out;
+        transition: all 0.5s ease-out;
+}
+.btn_login a:hover, #button_login:hover{
+	display: block;
+	background-image: url(../images/member/login/btn_login.png);
+	background-repeat: no-repeat;
+	background-position: left -46px;
+	height: 46px;
+	width: 215px;
+	margin-top:10px;
+		
+-webkit-transition: all 0.5s ease-out;
+   -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+     -o-transition: all 0.5s ease-out;
+        transition: all 0.5s ease-out;
+}
+.btn_regist{display: block;}
+.btn_regist a{
+	display: block;
+	background-image: url(../images/member/login/btn_regist.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 42px;
+	width: 340px;
+		
+-webkit-transition: all 0.5s ease-out;
+   -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+     -o-transition: all 0.5s ease-out;
+        transition: all 0.5s ease-out;
+}
+.btn_regist a:hover{
+	display: block;
+	background-image: url(../images/member/login/btn_regist.png);
+	background-repeat: no-repeat;
+	background-position: left -42px;
+	height: 42px;
+	width: 340px;
+		
+-webkit-transition: all 0.5s ease-out;
+   -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+     -o-transition: all 0.5s ease-out;
+        transition: all 0.5s ease-out;
+}
+
+.s_link_container{
+	height: auto;
+	width: 216px;
+	padding-top: 10px;
+	display: block;
+	padding-bottom: 10px;
+	text-align: center;
+	padding-left: 10px;
+}
+.s_link_container .s_link{
+	width: 202px;
+	border-radius: 12px;
+	background-color: #402453;
+	font-size: 12px;
+	height: auto;
+	line-height: 24px;
+	display: block;
+}
+ .s_link a{ color:#FFF}
+ .s_link a:hover{ color:#FF0}
+/******/
+
+.other_login_container{
+	width: 210px;
+	background-image: url(../images/member/login/line_1.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	padding-bottom: 4px;
+	display: block;
+	height: auto;
+}
+.other_login_txt{
+	width: 226px;
+	display: block;
+	height: 24px;
+	font-size: 14px;
+	line-height: 24px;
+	color: #FFF;
+	text-align: center;
+	font-family: "微軟正黑體", "Century Gothic", "Heiti TC";
+}
+
+.input_account{
+	width: 140px;
+	border: 1px solid #333;
+	padding-right: 6px;
+	padding-left: 6px;
+	color: #e8c787;
+	line-height: 22px;
+	height: 22px;
+	background-color: #151515;
+	font-family: "微軟正黑體", "Century Gothic", "Heiti TC";
+	font-size: 14px;
+}
+.input_password{
+	width: 158px;
+	border: 1px solid #333;
+	font-family: "微軟正黑體", "Century Gothic", "Heiti TC";
+	font-size: 14px;
+	padding-right: 6px;
+	padding-left: 6px;
+	color: #e8c787;
+	line-height: 22px;
+	height: 22px;
+	background-color: #151515;
+}
+.input_captcha{
+	color: #e8c787;
+	font-family: "微軟正黑體", "Century Gothic", "Heiti TC";
+	font-size: 14px;
+	width: 158px;
+	border: 1px solid #333;
+	padding-top: 4px;
+	padding-right: 6px;
+	padding-bottom: 4px;
+	padding-left: 6px;
+	height: auto;
+	margin-bottom: 4px;
+	background-color: #151515;
+}
+.log_input_1_container{
+	height: 30px;
+	padding-left: 5px;
+	margin-bottom:3px;
+}
+/********************/
+/***其他登入btn***/
+.main_btn_container{
+	position: relative;
+	width: 100%;
+}
+.btn_container_style_1{
+	width: 216px;
+	padding: 5px;
+	display: block;
+	height: 60px;
+	padding-left:35px;
+}
+
+.btn_container_style_1 a.login_btn_facebook{
+	background-image: url(../images/member/login/btn_other_login_facebook.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 42px;
+	width: 42px;
+	display: block;
+	/* position: relative; */
+	right: 50%;
+	float: left;
+	margin-right: 6px;
+}
+.btn_container_style_1 a:hover.login_btn_facebook{
+	background-image: url(../images/member/login/btn_other_login_facebook.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 42px;
+	width: 42px;
+}
+.btn_container_style_1 a.login_btn_yahoo{
+	background-image: url(../images/member/login/btn_other_login_yahoo.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 42px;
+	width: 42px;
+	display: block;
+	/* position: relative; */
+	right: 50%;
+	float: left;
+	margin-right: 6px;
+}
+.btn_container_style_1 a:hover.login_btn_yahoo{
+	background-image: url(../images/member/login/btn_other_login_yahoo.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 42px;
+	width: 42px;
+}
+.btn_container_style_1 a.login_btn_google{
+	background-image: url(../images/member/login/btn_other_login_google.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 42px;
+	width: 42px;
+	display: block;
+	/* position: relative; */
+	right: 50%;
+	float: left;
+	margin-right: 6px;
+}
+.btn_container_style_1 a:hover.login_btn_google{
+	background-image: url(../images/member/login/btn_other_login_google.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 42px;
+	width: 42px;
+}
+.btn_container_style_1 a.login_btn_8591{
+	background-image: url(../images/member/login/btn_other_login_8591.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 42px;
+	width: 42px;
+	display: block;
+	/* position: relative; */
+	right: 50%;
+	float: left;
+	margin-right: 6px;
+}
+.btn_container_style_1 a:hover.login_btn_8591{
+	background-image: url(../images/member/login/btn_other_login_8591.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 42px;
+	width: 42px;
+}
+.btn_container_style_1 a.login_btn_gamebase{
+	background-image: url(../images/member/login/btn_other_login_gamebase.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 42px;
+	width: 42px;
+	display: block;
+	/* position: relative; */
+	right: 50%;
+	float: left;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+.btn_container_style_1 a:hover.login_btn_gamebase{
+	background-image: url(../images/member/login/btn_other_login_gamebase.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 42px;
+	width: 42px;
+}
+.btn_container_style_1 a.login_btn_igamer{
+	background-image: url(../images/member/login/btn_other_login_igamer.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 42px;
+	width: 42px;
+	display: block;
+	/* position: relative; */
+	right: 50%;
+	float: left;
+	margin-right: 6px;
+}
+.btn_container_style_1 a:hover.login_btn_igamer{
+	background-image: url(../images/member/login/btn_other_login_igamer.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 42px;
+	width: 42px;
+}
+.btn_container_style_1 a.login_btn_gamer{
+	background-image: url(../images/member/login/btn_other_login_gamer.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 42px;
+	width: 42px;
+	display: block;
+	/* position: relative; */
+	right: 50%;
+	float: left;
+}
+.btn_container_style_1 a:hover.login_btn_gamer{
+	background-image: url(../images/member/login/btn_other_login_gamer.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 42px;
+	width: 42px;
+}
+
+/******登入後******/
+.membrer_info{
+	display: block;
+	width: 226px;
+}
+.membrer_data{
+	display: block;
+	font-size: 14px;
+	line-height: 25px;
+	height: auto;
+	color: #e8c787;
+	font-family: "微軟正黑體", "Century Gothic", "Heiti TC";
+	margin-bottom: 5px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.membrer_data .txt_style_1{
+	margin: 0px;
+	font-weight: bold;
+	color: #e8c787;
+}
+.membrer_data .txt_style_2{
+	margin: 0px;
+	color: #F00;
+	text-overflow : ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.membrer_data .txt_style_3{
+	margin: 0px;
+	color: #3185d4;
+}
+.btn_logout{
+	width: 215px;
+	margin-bottom: 5px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+.btn_logout a{
+	background-image: url(../images/member/login/btn_logout.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	display: block;
+	height: 46px;
+	width: 215px;
+		
+-webkit-transition: all 0.5s ease-out;
+   -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+     -o-transition: all 0.5s ease-out;
+        transition: all 0.5s ease-out;
+}
+.btn_logout a:hover{
+	background-image: url(../images/member/login/btn_logout.png);
+	background-repeat: no-repeat;
+	background-position: left -46px;
+	display: block;
+	height: 46px;
+	width: 215px;
+		
+-webkit-transition: all 0.5s ease-out;
+   -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+     -o-transition: all 0.5s ease-out;
+        transition: all 0.5s ease-out;
+}
+.btn_member_center{
+	display: block;
+	width: 215px;
+	margin-bottom: 5px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+.btn_member_center a{
+	display: block;
+	background-image: url(../images/member/login/btn_member_center.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 46px;
+	width: 240px;
+		
+-webkit-transition: all 0.5s ease-out;
+   -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+     -o-transition: all 0.5s ease-out;
+        transition: all 0.5s ease-out;
+}
+.btn_member_center a:hover{
+	display: block;
+	background-image: url(../images/member/login/btn_member_center.png);
+	background-repeat: no-repeat;
+	background-position: left -46px;
+	height: 46px;
+	width: 215px;
+		
+-webkit-transition: all 0.5s ease-out;
+   -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+     -o-transition: all 0.5s ease-out;
+        transition: all 0.5s ease-out;
+}
+.loginBtn {
+	float: left;
+	height: 42px;
+	width: 42px;
+	margin-left: 5px;
+	margin-bottom: 5px;
+}
+.area_verifyimg {
+	float: left;
+	height: 35px;
+	width: 105px;
+	margin-left: 63px;
+	margin-right:7px;
+}

@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+
+.article_title {
+	width: 650px;
+	height: 70px;
+	background-image: url(../images/article/article_title.jpg);
+	font-size: 28px;
+	font-family: "微軟正黑體", "Heiti TC";
+	color: #FFCF6A;
+	font-weight: bold;
+	background-repeat: no-repeat;
+	line-height: 70px;
+	padding-left: 55px;
+	margin-bottom: 10px;
+	position:relative;
+}
+.article_content {
+	width: 622px;
+	min-height: 783px;
+	margin: 0 auto;
+	background-color: rgba(100, 100, 100, 0.7);
+	
+	padding: 10px;
+	font-family: "微軟正黑體", "Heiti TC";
+	color: #FFF;
+	font-size: 30px;
+	position:relative;
+	word-break: break-all;
+}

@@ -1,0 +1,289 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>《神印王座》官方網站</title>
+<link rel="shortcut icon" href="images/favicon.ico" />
+<link rel='stylesheet' type='text/css' href='css/reset.css'>
+
+<link rel="stylesheet" type="text/css" href='css/banner.css'>
+<link rel="stylesheet" type="text/css" href='css/login.css'>
+<link rel="stylesheet" type="text/css" href='css/index_news.css'>
+<link rel="stylesheet" type="text/css" href='css/menu.css'>
+<link rel="stylesheet" type="text/css" href='css/main_top.css'>
+<link rel="stylesheet" type="text/css" href='css/nav.css'>
+<link rel="stylesheet" type="text/css" href='css/footer.css'>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<script type="text/javascript" src="js/index_banner.js"></script>
+
+<script type="text/javascript" src="js/index_news.js"></script>
+
+
+<style type="text/css">
+
+
+
+.date{
+	color:#999;
+	font-size:12px;
+	font-family: "微軟正黑體","Heiti TC";
+	float:right;
+	margin-top:3px;
+	}
+
+.main_bg{
+	background-color: #000000;
+	background-image: url(images/index_2.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	}
+
+
+
+
+.nav_btn_1{
+	width:222px;
+	height:71px;
+	margin:auto;
+	margin-top:10px;
+	background-image: url(images/nav/nav_btn_1.png);
+	}
+.nav_btn_1:hover{
+	width:222px;
+	height:71px;
+	margin:auto;
+	margin-top:10px;
+	background-image: url(images/nav/nav_btn_1_on.png);
+	}
+.nav_btn_2{
+	width:222px;
+	height:71px;
+	margin:auto;
+	margin-top:10px;
+	background-image: url(images/nav/nav_btn_2.png);
+	}
+.nav_btn_2:hover{
+	width:222px;
+	height:71px;
+	margin:auto;
+	margin-top:10px;
+	background-image: url(images/nav/nav_btn_2_on.png);
+	
+	}
+
+.article_wrapper{
+	width:650px;
+	min-height:900px;
+	float:left;
+	margin:auto;
+	margin-left:10px;	
+	}
+
+
+.fb{
+	width:377px;
+	height:224px;
+	float:left;
+	}
+.article_btn_wrapper{
+	width:223px;
+	height:265px;
+	margin:0px 0px 0px 10px;
+	float:left;
+	}
+.article_btn_1{
+
+	}
+.article_btn_2{
+	margin-top:10px;
+	}
+.article_btn_3{
+	margin-top:10px;
+	}
+
+</style>
+
+
+
+</head>
+
+<body>
+<div class="main_bg">
+
+	<div class="menu_wrapper">
+		<div id="limit">
+			<a href="#"><div class="logo"></div></a>
+			<div class="menu">
+				<a href="#"><div class="menu_1"><img src="images/menu/menu_1.png" /></div></a>
+				<a href="#"><div class="menu_2"><img src="images/menu/menu_2.png" /></div></a>
+				<a href="#"><div class="menu_3"><img src="images/menu/menu_3.png" /></div></a>
+				<a href="#"><div class="menu_4"><img src="images/menu/menu_4.png" /></div></a>
+			</div>
+		</div><!---limit-->
+	</div><!---menu-->
+
+	<div class="main_top">
+		<div class="limit">
+			<div class="container_left"></div><!---無用-->
+			<div class="flash_light"></div>
+		</div><!---limit-->
+	</div>
+
+	<div class="main">
+		<div class="limit">
+
+			<div class="nav">
+				<a href="#"><div id="gamestart"></div></a>
+				<div class="area1">
+					<div class="login">
+						<!----會員資訊(未登入)begin---->
+						<form>
+						<div class="log_input_1_container">
+							<div class="area_l">帳號：</div>
+							<div class="area_r">
+								<input type="email"  placeholder="「會員帳號/電子信箱」" class="input_account" id="input_account" value="" name="input_account" ><br>
+							</div>
+						</div>
+						<div class="log_input_1_container">
+							<div class="area_l">密碼：</div>
+							<div class="area_r">
+								<input type="password"  required autocomplete="off" maxlength="16"  placeholder="英數混合8碼~16碼" class="input_account" id="input_password" value="" name="input_password"><br>
+							</div>
+						</div>
+						<div class="log_input_1_container">
+							<div class="area_l">驗證碼</div>
+							<div class="area_r">
+								<input type="text"required autocomplete="off" maxlength="4"  placeholder="請輸入「驗證碼」" class="input_account" id="input_captcha"  value="" name="input_captcha">
+							</div>
+						</div>
+						<div class="area_verifyimg"><img id="captcha_img" src="images/verifyimg.jpg"/></div>
+						<div class="area_verifyimg_change"><a id="captcha_reload" href="#"><img src="images/member/login/verifyimg_change.png"></a></div> 
+						<div class="btn_login">
+							<input type="submit" class="button_login" id="button_login" name="button_login" value="">
+						</div>
+						</form>
+						<div class="s_link_container">
+							<span class="s_link"><a href="#">忘記密碼</a> ｜ <a href="#">重發驗證</a> ｜ <a href="#">快速註冊</a></span>
+						</div>
+						<div class="other_login_container">
+							<div class="other_login_txt">免申請，使用其他帳號登入：</div>
+							<div class="btn_container_style_1">
+								<a href='/co_auth/memberAuth/facebook' target='_top' class='login_auth_button login_btn_facebook'></a>
+								<a href='/co_auth/memberAuth/yahoo' target='_top' class='login_auth_button login_btn_yahoo'></a>
+								<a href='/co_auth/memberAuth/google' target='_top' class='login_auth_button login_btn_google'></a>
+							</div>
+						</div>
+						<!----會員資訊(未登入)end--->
+						<!----會員區塊(已登入) begin--
+						<div class="membrer_info">
+							<div class="membrer_data">
+								<div class="txt_style_1">親愛的會員您好：</div>
+								<div class="txt_style_2">boyuan@jinko.com.tw</div>
+								<div class="">UID:<span class="txt_style_2">150707165532783569</span></div>
+								<div class="">您剩餘 KO幣點數：<span class="txt_style_2">0</span> 點</div>
+								<div class="txt_style_3">您是從「真子高手」登入</div>
+							</div>
+							<div class="btn_member_center"><a href=""></a></div>
+							<div class="btn_logout"><a href="#"></a></div>
+						</div>
+						<!----會員區塊(已登入) end-->
+					</div><!---login--->
+				</div>
+				<a href="#"><div class="nav_btn_1"></div></a>
+				<a href="#"><div class="nav_btn_2"></div></a>
+				<div class="nav_service"></div>
+			</div>
+
+		</div>
+
+			<div class="article_wrapper">
+				<div id="abgneBlock">
+					<ul class="list">
+						<li><a target="_blank" href="#"><img src="images/banner/a.jpg"></a></li>
+						<li><a target="_blank" href="#"><img src="images/banner/b.jpg"></a></li>
+						<li><a target="_blank" href="#"><img src="images/banner/c.jpg"></a></li>
+						<li><a target="_blank" href="#"><img src="images/banner/d.jpg"></a></li>
+						<li><a target="_blank" href="#"><img src="images/banner/e.jpg"></a></li>
+						<li><a target="_blank" href="#"><img src="images/banner/f.jpg"></a></li>
+						<li><a target="_blank" href="#"><img src="images/banner/g.jpg"></a></li>
+						<li><a target="_blank" href="#"><img src="images/banner/h.jpg"></a></li>
+						<li><a target="_blank" href="#"><img src="images/banner/i.jpg"></a></li>
+						<li><a target="_blank" href="#"><img src="images/banner/j.jpg"></a></li>
+						<li><a target="_blank" href="#"><img src="images/banner/k.jpg"></a></li>
+						<li><a target="_blank" href="#"><img src="images/banner/l.jpg"></a></li>
+					</ul>                 
+				</div>
+				<div class="abgne_tab">
+					<ul class="tabs">
+						<li><a href="#tab1">全部公告</a></li>
+						<li><a href="#tab2">遊戲公告</a></li>
+						<li><a href="#tab3">系統公告</a></li>
+						<li><a href="#tab4">活動公告</a></li>
+						<li><a href="#"> more+ </a></li>
+					</ul>
+					<div class="tab_container">
+						<div id="tab1" class="tab_content">
+							<div class="tab_img">
+								<img src="images/news/icon_news_6.gif">&nbsp;&nbsp;&nbsp;<a href="#" style="color:#fff;font-size:15px;">做官網太刺激啦做官網太刺激啦</a><div class="date">2016.08.23</div>
+							</div>
+							<div class="tab_img">
+								<img src="images/news/icon_news_6.gif">&nbsp;&nbsp;&nbsp;<a href="#" style="color:#fff;font-size:15px;">做官網太刺激啦</a><div class="date">2016.08.23</div>
+							</div>
+							<div class="tab_img">
+								<img src="images/news/icon_news_6.gif">&nbsp;&nbsp;&nbsp;<a href="#" style="color:#fff;font-size:15px;">做官網太刺激啦</a><div class="date">2016.08.23</div>
+							</div>
+							<div class="tab_img">
+								<img src="images/news/icon_news_6.gif">&nbsp;&nbsp;&nbsp;<a href="#" style="color:#fff;font-size:15px;">做官網太刺激啦</a><div class="date">2016.08.23</div>
+							</div>
+							<div class="tab_img">
+								<img src="images/news/icon_news_6.gif">&nbsp;&nbsp;&nbsp;<a href="#" style="color:#fff;font-size:15px;">做官網太刺激啦</a><div class="date">2016.08.23</div>
+							</div>
+							<div class="tab_img">
+								<img src="images/news/icon_news_6.gif">&nbsp;&nbsp;&nbsp;<a href="#" style="color:#fff;font-size:15px;">做官網太刺激啦做官網太刺激啦</a><div class="date">2016.08.23</div>
+							</div>
+						</div>
+						<div id="tab2" class="tab_content">
+							<div class="tab_img">
+								<img src="images/news/icon_news_6.gif">&nbsp;&nbsp;&nbsp;<a href="#" style="color:#fff;font-size:15px;">做官網太刺激啦做官網太刺激啦</a><div class="date">2016.08.23</div>
+							</div>
+							<div class="tab_img">
+								<img src="images/news/icon_news_6.gif">&nbsp;&nbsp;&nbsp;<a href="#" style="color:#fff;font-size:15px;">做官網太刺激啦做官網太刺激啦</a><div class="date">2016.08.23</div>
+							</div>
+						</div>
+						<div id="tab3" class="tab_content">
+							<div class="tab_img">
+								<img src="images/news/icon_news_6.gif">&nbsp;&nbsp;&nbsp;<a href="#" style="color:#fff;font-size:15px;">做官網太刺激啦做官網太刺激啦</a><div class="date">2016.08.23</div>
+							</div>
+							<div class="tab_img">
+								<img src="images/news/icon_news_6.gif">&nbsp;&nbsp;&nbsp;<a href="#" style="color:#fff;font-size:15px;">做官網太刺激啦做官網太刺激啦</a><div class="date">2016.08.23</div>
+							</div>
+						</div>
+						<div id="tab4" class="tab_content">
+							<div class="tab_img">
+								<img src="images/news/icon_news_6.gif">&nbsp;&nbsp;&nbsp;<a href="#" style="color:#fff;font-size:15px;">做官網太刺激啦做官網太刺激啦</a><div class="date">2016.08.23</div>
+							</div>
+							<div class="tab_img">
+								<img src="images/news/icon_news_6.gif">&nbsp;&nbsp;&nbsp;<a href="#" style="color:#fff;font-size:15px;">做官網太刺激啦做官網太刺激啦</a><div class="date">2016.08.23</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="fb"><iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fddweb01&tabs=timeline&width=377&height=224&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=482937571836892" width="377" height="224" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></div>
+				<div class="article_btn_wrapper">
+					<a href="#"><div class="article_btn_1"><img src="images/article/article_btn_1.png" /></div></a>
+					<a href="#"><div class="article_btn_2"><img src="images/article/article_btn_2.png" /></div></a>
+					<a href="#"><div class="article_btn_3"><img src="images/article/article_btn_3.png" /></div></a>
+				</div>
+			</div>
+
+	</div><!---main-->
+
+</div><!---main_bg-->
+    
+<div class="footer">
+	<div class="limit"><img src="images/footer/copyright.jpg"/></div>
+</div><!---footer-->
+</body>
+</html>

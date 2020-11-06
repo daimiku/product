@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+.menu_wrapper{
+	height:73px;
+	background-image: url(../images/menu/menu_wrapper.jpg);
+	}
+.menu_wrapper .menu{
+	width:700px;
+	height:73px;
+	margin:auto;
+	margin-left:287px;
+	position:absolute;
+	z-index:11;
+	padding:15px 0px 10px 52px;
+	
+	}
+
+.menu_wrapper .menu_1{
+	float:left;
+	}
+.menu_wrapper .menu_1:hover {
+	background-image: url(../images/menu/menu_1_on.png);
+	}	
+.menu_wrapper .menu_2{
+	float:left;
+	margin-left:95px;
+	}
+.menu_wrapper .menu_2:hover {
+	background-image: url(../images/menu/menu_2_on.png);
+	}
+.menu_wrapper .menu_3{
+	float:left;
+	margin-left:96px;
+	}
+.menu_wrapper .menu_3:hover {
+	background-image: url(../images/menu/menu_3_on.png);
+	}
+.menu_wrapper .menu_4{
+	float:left;
+	margin-left:95px;
+	}
+.menu_wrapper .menu_4:hover {
+	background-image: url(../images/menu/menu_4_on.png);
+	}
+	
+.logo{
+	background-repeat: no-repeat;
+	width: 363px;
+	height: 204px;
+	position:absolute;
+	background-image: url(../images/menu/logo.png);
+	z-index:10;
+	}
+.limit{
+	margin:0 auto;
+	position:relative;
+	width:1000px;
+	}
+#limit{
+	margin:0 auto;
+	position:relative;
+	width:1130px;
+	}

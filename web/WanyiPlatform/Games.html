@@ -1,0 +1,647 @@
+<!doctype html>
+<html class="easy-sidebar-active">
+<head>
+<title>Wanyi | Mobile</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="css/WanyiDefault.css">
+<link rel="stylesheet" href="css/easy-sidebar.css">
+<script src="../js/jquery-2.2.3.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<!--[if lte IE 8]>
+  <script type="text/javascript" src="libs/excanvas.js"></script>
+  <script type="text/javascript" src="js/process_ie78.js"></script>
+<![endif]-->
+<script src="js/WanyiScript.js"></script>
+</head>
+<body>
+
+<div class="modal fade PopLogin" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+   
+    <div class="LoginContent">
+      <div class="LoginTitle text-center">
+          <div class="icon-avatar"></div> <h1>登录</h1>
+          <a data-dismiss="modal" aria-label="Close" class="BtnRight"><span class="glyphicon glyphicon-remove"></span></a>
+      </div>
+      
+  
+<form class="LoginContain">
+    <div class="input-group">
+      <span class="input-group-addon glyphicon glyphicon-user" id="basic-addon1"></span>
+      <input type="text" class="form-control" placeholder="手机/用户名/邮箱">
+    </div>
+    <div class="row">
+    <label class="col-xs-6">
+      <input type="checkbox"> 记住帐号
+    </label>
+    <a href="Password.html" class="alert-link">找回密码</a>
+    </div>
+    <div class="input-group">
+      <span class="input-group-addon glyphicon glyphicon-lock" id="basic-addon1"></span>
+      <input type="password" class="form-control" placeholder="密码">
+      <span class="glyphicon glyphicon-eye-close Pwd"></span>
+    </div>
+    <div class="alert alert-danger" role="alert">
+        <span class="glyphicon glyphicon-exclamation-sign"></span>必填 
+    </div>
+    <div class="LoginBtn">
+        <button type="submit" class="btn btn-main btn-lg Submit">登录</button>
+    </div>
+</form>
+<!--message-->
+    
+    <div class="LoginFooter">
+        登錄時有任何問題，請 <a href="#">聯繫我們</a>
+    </div>
+  
+   
+    </div>
+    </div>
+  </div>
+
+<div class="modal fade PopRegister" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+   
+    <div class="LoginContent">
+      <div class="LoginTitle text-center">
+          <div class="icon-avatar"></div> <h1>新建帐号</h1>
+          <a data-dismiss="modal" aria-label="Close" class="BtnRight"><span class="glyphicon glyphicon-remove"></span></a>
+      </div>
+      
+  
+  <form class="LoginContain row">
+    <div class="input-group">
+      <span class="input-group-addon glyphicon glyphicon-user" id="basic-addon1"></span>
+      <input type="text" class="form-control" placeholder="用户名">
+    </div>
+    <div class="input-group">
+      <span class="input-group-addon glyphicon glyphicon-lock" id="basic-addon1"></span>
+      <input type="password" class="form-control" placeholder="密码">
+    </div>
+    <div class="input-group">
+      <span class="input-group-addon glyphicon glyphicon-phone" id="basic-addon1"></span>
+      <select class="form-control">
+          <option>中國86</option>
+          <option>越南84</option>
+          <option>泰國66</option>
+      </select>
+      <input type="text" class="form-control" placeholder="手机号码">
+    </div>
+    <div class="input-group">
+      <span class="input-group-addon glyphicon glyphicon-briefcase" id="basic-addon1"></span>
+      <input type="text" class="form-control" placeholder="代理代码(如没有代理请留空)">
+    </div>
+    <label>
+        <input type="checkbox"> 我确认我已年满18岁，并已阅读和接受本网站的策略、隐私声明、条款及条件。
+    </label>
+    <div class="alert alert-danger" role="alert">
+        <span class="glyphicon glyphicon-exclamation-sign"></span>必填 
+    </div>
+    <div class="LoginBtn">
+        <button type="submit" class="btn btn-main btn-lg Submit">新建帐号</button>
+    </div>
+</form>
+<!--message-->
+    
+    <div class="LoginFooter">
+        登錄時有任何問題，請 <a href="#">聯繫我們</a>
+    </div>
+  
+   
+    </div>
+    
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse easy-sidebar-left hidden-lg hidden-md">
+<div class="container-fluid"> 
+<ul class="SideMenu">
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">繁體中文<span class="
+glyphicon glyphicon-triangle-bottom"></span></a>
+            <ol class="dropdown-menu HdBtnMenu" role="menu" aria-labelledby="dLabel">
+                    <li><a href="#">繁體中文</a>
+                    <li><a href="#">简体中文</a>
+                    <li><a href="#">English</a>
+            </ol>
+        </li>
+        <li><a href="Index.html">首页</a></li>
+        <li><a href="#">最新公告</a></li>
+        <li><a href="Casino.html">真人娱乐</a></li>
+        <li class="Active"><a href="Games.html">电子游戏</a></li>
+        <li><a href="#">体育投注</a></li>
+        <li><a href="#">彩票游戏</a></li>
+        <li><a href="#">最新优惠</a></li>
+</ul>
+</div>
+<!-- /.container-fluid --> 
+</nav>
+
+<div class="Wrap"> 
+                
+<!--start of Top-->
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-1 col-md-1 hidden-sm hidden-xs"><a href="Index.html">首页</a></div>
+            <div class="visible-sm col-sm-3 visible-xs col-xs-2 easy-sidebar-toggle-left"><a href="#"><span class="
+glyphicon glyphicon-menu-hamburger"></span></a></div>
+            <div class="col-lg-2 col-md-2 hidden-sm hidden-xs dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">繁體中文<span class="
+glyphicon glyphicon-triangle-bottom"></span></a>
+            <ul class="HdBtnMenu dropdown-menu" role="menu" aria-labelledby="dLabel">
+                    <li><a href="#">繁體中文</a>
+                    <li><a href="#">简体中文</a>
+                    <li><a href="#">English</a>
+                </ul>
+            </div>
+            <div class="Logo col-lg-2 col-md-2 col-sm-3 hidden-xs col-lg-offset-1 col-md-offset-1">LOGO</div>
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-7 col-lg-offset-3 col-md-offset-3"><a href="#" data-toggle="modal" data-target=".PopRegister">新建帐号</a></div>
+            <div class="col-lg-1 col-md-1 col-sm-3 col-xs-3"><a href="#" data-toggle="modal" data-target=".PopLogin">登录</a></div>
+        </div>
+    </div>
+</header>
+
+<nav class="hidden-xs hidden-sm">
+   <div class="container">
+    <ul class="row">
+        <li class="col-lg-2 col-md-2"><a href="#">最新公告</a></li>
+        <li class="col-lg-2 col-md-2"><a href="Casino.html">真人娱乐</a></li>
+        <li class="col-lg-2 col-md-2 Active"><a href="Games.html">电子游戏</a></li>
+        <li class="col-lg-2 col-md-2"><a href="#">体育投注</a></li>
+        <li class="col-lg-2 col-md-2"><a href="#">彩票游戏</a></li>
+        <li class="col-lg-2 col-md-2"><a href="#">最新优惠</a></li>
+    </ul>
+    </div>
+</nav>
+
+<!--end of Top--> 
+
+<article class="HotTopic">
+  <div class="container">
+   <div class="row">
+   <div class="col-lg-9 col-md-9 hidden-xs hidden-sm">
+   <h1>热门游戏</h1>
+    <div class="col-lg-4 col-md-4">
+        <div class="GameList">
+        <img src="images/casino1.png">
+        <div class="GamePlay">
+        <a href="#" data-toggle="modal" data-target=".PopLogin"><button type="button" class="btn btn-warning"><span class="
+glyphicon glyphicon-play-circle"></span> 进入游戏</button></a>
+        <a href="#" data-toggle="modal" data-target=".PopLogin"><button type="button" class="btn btn-success"><span class="
+glyphicon glyphicon-play-circle"></span> 试玩游戏</button></a>
+        <span class="GameTitle HotGame">HOT</span>
+        </div>
+        </div>
+        <h4 class="text-center">游戏名称</h4>
+    </div>
+    <div class="col-lg-4 col-md-4">
+        <div class="GameList">
+        <img src="images/casino2.png">
+        <div class="GamePlay">
+        <a href="#" data-toggle="modal" data-target=".PopLogin"><button type="button" class="btn btn-warning"><span class="
+glyphicon glyphicon-play-circle"></span> 进入游戏</button></a>
+        <button type="button" class="btn btn-danger">不支持试玩</button>
+        <span class="GameTitle HotGame">HOT</span>
+        </div>
+        </div>
+        <h4 class="text-center">游戏名称</h4>
+    </div>
+    <div class="col-lg-4 col-md-4">
+        <div class="GameList">
+        <img src="images/casino3.png">
+        <div class="GamePlay">
+        <a href="#" data-toggle="modal" data-target=".PopLogin"><button type="button" class="btn btn-warning"><span class="
+glyphicon glyphicon-play-circle"></span> 进入游戏</button></a>
+        <button type="button" class="btn btn-danger">不支持试玩</button>
+        <span class="GameTitle HotGame">HOT</span>
+        </div>
+        </div>
+        <h4 class="text-center">游戏名称</h4>
+    </div>
+  <h1>排行榜</h1>
+    <div class="col-lg-4 col-md-4">
+        <div class="GameList">
+        <img src="images/casino1.png">
+        <div class="GamePlay">
+        <a href="#" data-toggle="modal" data-target=".PopLogin"><button type="button" class="btn btn-warning"><span class="
+glyphicon glyphicon-play-circle"></span> 进入游戏</button></a>
+        <a href="#" data-toggle="modal" data-target=".PopLogin"><button type="button" class="btn btn-success"><span class="
+glyphicon glyphicon-play-circle"></span> 试玩游戏</button></a>
+        <div class="icon-medal1">1</div>
+        </div>
+        </div>
+        <h4 class="text-center">游戏名称</h4>
+    </div>
+    <div class="col-lg-4 col-md-4">
+        <div class="GameList">
+        <img src="images/casino2.png">
+        <div class="GamePlay">
+        <a href="#" data-toggle="modal" data-target=".PopLogin"><button type="button" class="btn btn-warning"><span class="
+glyphicon glyphicon-play-circle"></span> 进入游戏</button></a>
+        <a href="#" data-toggle="modal" data-target=".PopLogin"><button type="button" class="btn btn-success"><span class="
+glyphicon glyphicon-play-circle"></span> 试玩游戏</button></a>
+        <div class="icon-medal2">2</div>
+        </div>
+        </div>
+        <h4 class="text-center">游戏名称</h4>
+    </div>
+    <div class="col-lg-4 col-md-4">
+        <div class="GameList">
+        <img src="images/casino3.png">
+        <div class="GamePlay">
+        <a href="#" data-toggle="modal" data-target=".PopLogin"><button type="button" class="btn btn-warning"><span class="
+glyphicon glyphicon-play-circle"></span> 进入游戏</button></a>
+        <a href="#" data-toggle="modal" data-target=".PopLogin"><button type="button" class="btn btn-success"><span class="
+glyphicon glyphicon-play-circle"></span> 试玩游戏</button></a>
+        <div class="icon-medal3">3</div>
+        </div>
+        </div>
+        <h4 class="text-center">游戏名称</h4>
+    </div>
+   </div> 
+   <div class="JpMenu col-lg-3 col-md-3">
+<div class="panel panel-warning text-center">
+  <div class="panel-heading"><span class="glyphicon glyphicon-star"></span>JACKPOT<span class="glyphicon glyphicon-star"></span></div>
+  <div class="panel-body">
+  
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner" role="listbox">
+    <div class="JpGame item active">
+    <h3>¥<span>123456789.01</span></h3>
+        <img src="images/casino1.png">赌场德州扑克
+        <a href="#">
+        <button type="button" class="btn btn-warning"><span class="
+        glyphicon glyphicon-play-circle"></span> 进入游戏</button></a>
+    </div>
+    <div class="JpGame item">
+    <h3>¥<span>987654321.98</span></h3>
+        <img src="images/casino2.png">百家乐
+        <a href="#">
+        <button type="button" class="btn btn-warning"><span class="
+        glyphicon glyphicon-play-circle"></span> 进入游戏</button></a>
+    </div>
+    <div class="JpGame item">
+    <h3>¥<span>777777777.77</span></h3>
+        <img src="images/casino3.png">美国队长復仇
+        <a href="#">
+        <button type="button" class="btn btn-warning"><span class="
+        glyphicon glyphicon-play-circle"></span> 进入游戏</button></a>
+    </div>
+  </div>
+  </div>
+  
+  </div><!--panelbody-->
+</div>
+<div class="JpUser panel panel-warning hidden-xs hidden-sm">
+  <div class="panel-heading text-center"><span class="glyphicon glyphicon-star"></span>最新幸运星<span class="glyphicon glyphicon-star"></span></div>
+  <div class="panel-body">
+    <ul class="list-group">
+  <li class="list-group-item">
+      <h4 class="list-group-item-heading">赌场德州扑克 </h4>
+    <p class="list-group-item-text">civ*****n中了¥633.23</p>
+  </li>
+  <li class="list-group-item">
+      <h4 class="list-group-item-heading">百家乐</h4>
+    <p class="list-group-item-text">hun*****g中了¥3266.41</p>
+  </li>
+  <li class="list-group-item">
+      <h4 class="list-group-item-heading">美国队长復仇</h4>
+    <p class="list-group-item-text">ngu*****90中了¥423.65</p>
+  </li>
+  <li class="list-group-item">
+      <h4 class="list-group-item-heading">復古花园</h4>
+    <p class="list-group-item-text">abc*****z中了¥123.45</p>
+  </li>
+  <li class="list-group-item">
+      <h4 class="list-group-item-heading">灵猴献瑞</h4>
+    <p class="list-group-item-text">zyx*****a中了¥987.65</p>
+  </li>
+</ul>
+  </div><!--panelbody-->
+</div>
+   </div> 
+   </div> 
+    
+  </div>
+</article>
+<article class="container">
+ <ul class="nav nav-tabs nav-justified hidden-xs">
+    <li role="presentation" class="active"><a href="#">
+    <span class="icon-game1-a"></span>
+    编辑精选<span class="badge">42</span>
+    </a></li>
+    <li role="presentation"><a href="#">
+    <span class="icon-game2"></span>
+    累积大奖<span class="badge">42</span>
+    </a></li>
+    <li role="presentation"><a href="#">
+    <span class="icon-game3"></span>
+    老虎机<span class="badge">42</span>
+    </a></li>
+    <li role="presentation"><a href="#">
+    <span class="icon-game4"></span>
+    桌面游戏<span class="badge">42</span>
+    </a></li>
+    <li role="presentation"><a href="#">
+    <span class="icon-game5"></span>
+    刮刮卡<span class="badge">42</span>
+    </a></li>
+    <li role="presentation"><a href="#">
+    <span class="icon-game6"></span>
+    游戏厅<span class="badge">42</span>
+    </a></li>
+    <li role="presentation"><a href="#">
+    <span class="icon-game7"></span>
+    视频扑克<span class="badge">42</span>
+    </a></li>
+    <li role="presentation"><a href="#">
+    <span class="icon-game8"></span>
+    全部游戏<span class="badge">42</span>
+     </a></li>
+      </ul>
+      <div class="GameBtn visible-xs">
+      <div class="input-group">
+      <select class="form-control">
+          <option>编辑精选</option>
+          <option>累积大奖</option>
+          <option>老虎机</option>
+          <option>桌面游戏</option>
+          <option>刮刮卡</option>
+          <option>游戏厅</option>
+          <option>视频扑克</option>
+          <option>游戏厅</option>
+       </select>
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Go!</button>
+      </span>
+      </div><!-- /input-group -->
+      </div>
+  <div class="Topic">
+   <div class="PageNav row">
+     <div class="col-lg-3 col-lg-offset-9 col-md-3 col-md-offset-9 col-sm-3 col-sm-offset-9">
+       <select class="form-control">
+          <option>全部游戏</option>
+          <option>BBIN</option>
+          <option>GamesOS</option>
+          <option>Playtech</option>
+          <option>Betsoft</option>
+          <option>NYX</option>
+       </select>
+    </div>
+  </div>
+    <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="GameList">
+        <img src="images/casino1.png">
+        <div class="GamePlay">
+        <a href="#" data-toggle="modal" data-target=".PopLogin"><button type="button" class="btn btn-warning"><span class="
+glyphicon glyphicon-play-circle"></span> 进入游戏</button></a>
+        <a href="#" data-toggle="modal" data-target=".PopLogin"><button type="button" class="btn btn-success"><span class="
+glyphicon glyphicon-play-circle"></span> 试玩游戏</button></a>
+        <span class="GameTitle JackGame">JACKPOT</span>
+         <div class="JackGame2">
+             ¥<span>1234567.89</span>
+         </div>
+        </div>
+        </div>
+        <h4 class="text-center">游戏名称</h4>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="GameList">
+        <img src="images/casino2.png">
+        <div class="GamePlay">
+        <a href="#" data-toggle="modal" data-target=".PopLogin"><button type="button" class="btn btn-warning"><span class="
+glyphicon glyphicon-play-circle"></span> 进入游戏</button></a>
+        <a href="#" data-toggle="modal" data-target=".PopLogin"><button type="button" class="btn btn-success"><span class="
+glyphicon glyphicon-play-circle"></span> 试玩游戏</button></a>
+        <span class="GameTitle EventGame">赛事</span>
+        </div>
+        </div>
+        <h4 class="text-center">游戏名称</h4>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="GameList">
+        <img src="images/casino3.png">
+        <div class="GamePlay">
+        <a href="#" data-toggle="modal" data-target=".PopLogin"><button type="button" class="btn btn-warning"><span class="
+glyphicon glyphicon-play-circle"></span> 进入游戏</button></a>
+        <button type="button" class="btn btn-danger">不支持试玩</button>
+        <span class="GameTitle HotGame">HOT</span>
+        </div>
+        </div>
+        <h4 class="text-center">游戏名称</h4>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="GameList">
+        <img src="images/casino1.png">
+        <div class="GamePlay">
+        <a href="#" data-toggle="modal" data-target=".PopLogin"><button type="button" class="btn btn-warning"><span class="
+glyphicon glyphicon-play-circle"></span> 进入游戏</button></a>
+        <a href="#" data-toggle="modal" data-target=".PopLogin"><button type="button" class="btn btn-success"><span class="
+glyphicon glyphicon-play-circle"></span> 试玩游戏</button></a>
+        <span class="GameTitle HotGame">HOT</span>
+        </div>
+        </div>
+        <h4 class="text-center">游戏名称</h4>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="GameList">
+        <img src="images/casino2.png">
+        <div class="GamePlay">
+        <a href="#" data-toggle="modal" data-target=".PopLogin"><button type="button" class="btn btn-warning"><span class="
+glyphicon glyphicon-play-circle"></span> 进入游戏</button></a>
+        <button type="button" class="btn btn-danger">不支持试玩</button>
+        </div>
+        </div>
+        <h4 class="text-center">游戏名称</h4>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="GameList">
+        <img src="images/casino3.png">
+        <div class="GamePlay">
+        <a href="#" data-toggle="modal" data-target=".PopLogin"><button type="button" class="btn btn-warning"><span class="
+glyphicon glyphicon-play-circle"></span> 进入游戏</button></a>
+        <a href="#" data-toggle="modal" data-target=".PopLogin"><button type="button" class="btn btn-success"><span class="
+glyphicon glyphicon-play-circle"></span> 试玩游戏</button></a>
+        </div>
+        </div>
+        <h4 class="text-center">游戏名称</h4>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="GameList">
+        <img src="images/casino1.png">
+        <div class="GamePlay">
+        <a href="#" data-toggle="modal" data-target=".PopLogin"><button type="button" class="btn btn-warning"><span class="
+glyphicon glyphicon-play-circle"></span> 进入游戏</button></a>
+        <button type="button" class="btn btn-danger">不支持试玩</button>
+        </div>
+        </div>
+        <h4 class="text-center">游戏名称</h4>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="GameList">
+        <img src="images/casino2.png">
+        <div class="GamePlay">
+        <a href="#" data-toggle="modal" data-target=".PopLogin"><button type="button" class="btn btn-warning"><span class="
+glyphicon glyphicon-play-circle"></span> 进入游戏</button></a>
+        <a href="#" data-toggle="modal" data-target=".PopLogin"><button type="button" class="btn btn-success"><span class="
+glyphicon glyphicon-play-circle"></span> 试玩游戏</button></a>
+        </div>
+        </div>
+        <h4 class="text-center">游戏名称</h4>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="GameList">
+        <img src="images/casino3.png">
+        <div class="GamePlay">
+        <a href="#" data-toggle="modal" data-target=".PopLogin"><button type="button" class="btn btn-warning"><span class="
+glyphicon glyphicon-play-circle"></span> 进入游戏</button></a>
+        <button type="button" class="btn btn-danger">不支持试玩</button>
+        </div>
+        </div>
+        <h4 class="text-center">游戏名称</h4>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="GameList">
+        <img src="images/casino1.png">
+        <div class="GamePlay">
+        <a href="#" data-toggle="modal" data-target=".PopLogin"><button type="button" class="btn btn-warning"><span class="
+glyphicon glyphicon-play-circle"></span> 进入游戏</button></a>
+        <a href="#" data-toggle="modal" data-target=".PopLogin"><button type="button" class="btn btn-success"><span class="
+glyphicon glyphicon-play-circle"></span> 试玩游戏</button></a>
+        </div>
+        </div>
+        <h4 class="text-center">游戏名称</h4>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="GameList">
+        <img src="images/casino2.png">
+        <div class="GamePlay">
+        <a href="#" data-toggle="modal" data-target=".PopLogin"><button type="button" class="btn btn-warning"><span class="
+glyphicon glyphicon-play-circle"></span> 进入游戏</button></a>
+        <button type="button" class="btn btn-danger">不支持试玩</button>
+        </div>
+        </div>
+        <h4 class="text-center">游戏名称</h4>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="GameList">
+        <img src="images/casino3.png">
+        <div class="GamePlay">
+        <a href="#" data-toggle="modal" data-target=".PopLogin"><button type="button" class="btn btn-warning"><span class="
+glyphicon glyphicon-play-circle"></span> 进入游戏</button></a>
+        <a href="#" data-toggle="modal" data-target=".PopLogin"><button type="button" class="btn btn-success"><span class="
+glyphicon glyphicon-play-circle"></span> 试玩游戏</button></a>
+        </div>
+        </div>
+        <h4 class="text-center">游戏名称</h4>
+    </div>
+    <div class="PageNav row">
+      <div class="col-lg-12 col-md-12">
+        <ul class="pagination Pages">
+        <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+        <li class="active"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">6</a></li>
+        <li><a href="#">7</a></li>
+        <li class="disabled"><a href="#"><span class="glyphicon glyphicon-option-horizontal"></span></a></li>
+        <li><a href="#">99</a></li>
+        <li><a href="#">100</a></li>
+        <li>
+          <a href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+        </ul>
+       </div>
+  </div>
+  </div>
+</article>
+
+</div><!--warp--> 
+
+<!--start of bottom-->
+<div class="FooNav hidden-xs hidden-sm">
+    <div class="container">
+        <div class="row">
+            <h4 class="col-lg-2 col-md-2">產品下載</h4>
+            <h4 class="col-lg-2 col-md-2">關於</h4>
+            <h4 class="col-lg-4 col-md-2">使用幫助</h4>
+            <h4 class="col-lg-2 col-md-2">社交工具</h4>
+            <h4 class="col-lg-2 col-md-2">加盟合作</h4>
+        </div>
+        <div class="row">
+            <ul class="col-lg-2 col-md-2">
+                <li><a href="#">鉑金館下載版</a>
+                <li><a href="#">翡翠廳下載版</a>
+                <li><a href="#">GOS小遊戲下載版</a>
+            </ul>
+            <ul class="col-lg-2 col-md-2">
+                <li><a href="#">關於WANYI</a>
+                <li><a href="#">責任博彩</a>
+                <li><a href="#">條款及條件</a>
+                <li><a href="#">優惠活動規則與條款</a>
+                <li><a href="#">隱私權政策</a>
+                <li><a href="Contact.html">聯繫我們</a>
+            </ul>
+            <ul class="col-lg-2 col-md-2">
+                <li><a href="#">存款流程</a>
+                <li><a href="#">提款流程</a>
+                <li><a href="#">如何開戶</a>
+                <li><a href="#">常見問題</a>
+            </ul>
+            <ul class="col-lg-2 col-md-2">
+                <li><a href="#">體育規則</a>
+                <li><a href="#">沙巴體育規則</a>
+                <li><a href="#">快樂彩規則</a>
+                <li><a href="#">世界樂透規則</a>
+                <li><a href="#">娛樂場規則</a>
+                <li><a href="#">電子遊戲規則</a>
+            </ul>
+            <ul class="col-lg-2 col-md-2">
+                <li><a href="#">微信</a>
+                <li><a href="#">微博</a>
+                <li><a href="#">土豆</a>
+                <li><a href="#">56.com</a>
+            </ul>
+            <ul class="col-lg-2 col-md-2">
+                <li>代理合作共創輝煌</li>
+                <li>國內24小時免費電話</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container">
+       <div class="row">
+        <ul class="FooIcon hidden-xs col-lg-6 col-md-6">
+            <li class="icon-playtech">
+            <li class="icon-AG">
+            <li class="icon-EV">
+            <li class="icon-EA">
+            <li class="icon-BBIN">
+            <li class="icon-union">
+            <li class="icon-visa">
+            <li class="icon-master">
+            <li class="icon-net">
+            <li class="icon-Cagayan">
+            <li class="icon-gwcam">
+            <li class="icon-18">
+            <li class="icon-no">
+            </li>
+            </ul>
+        <div class="FooAboutPc hidden-xs col-lg-6 col-md-6">
+        VWIN.COM屬於VW GROUP ASIA 有限公司Morgan Building, PO Box 958,Pasea Estate,Road Town,Tortola British
+        <br>Virgin Islands於2013年3月25日獲得菲律賓第一卡格楊(FCLRC)頒發的牌照(牌照號碼074)並受其監督版權所有©2014VWIN.COM
+        </div>
+    </div></div>
+    <div class="FooAboutMobile visible-xs">
+        <div class="Logo">WANYI</div>
+        版权所有©2016WANYI.COM</div>
+</footer>
+<!--end of bottom-->
+</body>
+</html>

@@ -1,0 +1,2583 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+.btntw-sprite, .btntw-a1, .btntw-a2, .btntw-a3, .btntw-a4, .btntw-b1, .btntw-b2, .btntw-b3, .btntw-b4, .btntw-b5, .btntw-b6, .btntw-b7 {
+  background-image: url('../images/btntw-s06783e6502.png');
+  background-repeat: no-repeat;
+}
+
+.btntw-a1 {
+  background-position: 0 0;
+  height: 111px;
+  width: 287px;
+}
+.btntw-a1:hover, .btntw-a1.a1-hover {
+  background-position: 0 -111px;
+}
+
+.btntw-a2 {
+  background-position: 0 -222px;
+  height: 111px;
+  width: 287px;
+}
+.btntw-a2:hover, .btntw-a2.a2-hover {
+  background-position: 0 -333px;
+}
+
+.btntw-a3 {
+  background-position: 0 -444px;
+  height: 111px;
+  width: 287px;
+}
+.btntw-a3:hover, .btntw-a3.a3-hover {
+  background-position: 0 -555px;
+}
+
+.btntw-a4 {
+  background-position: 0 -666px;
+  height: 206px;
+  width: 318px;
+}
+.btntw-a4:hover, .btntw-a4.a4-hover {
+  background-position: 0 -872px;
+}
+
+.btntw-b1 {
+  background-position: 0 -1078px;
+  height: 102px;
+  width: 263px;
+}
+.btntw-b1:hover, .btntw-b1.b1-hover {
+  background-position: 0 -1180px;
+}
+
+.btntw-b2 {
+  background-position: 0 -1282px;
+  height: 102px;
+  width: 263px;
+}
+.btntw-b2:hover, .btntw-b2.b2-hover {
+  background-position: 0 -1384px;
+}
+
+.btntw-b3 {
+  background-position: 0 -1486px;
+  height: 102px;
+  width: 263px;
+}
+.btntw-b3:hover, .btntw-b3.b3-hover {
+  background-position: 0 -1588px;
+}
+
+.btntw-b4 {
+  background-position: 0 -1690px;
+  height: 102px;
+  width: 263px;
+}
+.btntw-b4:hover, .btntw-b4.b4-hover {
+  background-position: 0 -1792px;
+}
+
+.btntw-b5 {
+  background-position: 0 -1894px;
+  height: 102px;
+  width: 263px;
+}
+.btntw-b5:hover, .btntw-b5.b5-hover {
+  background-position: 0 -1996px;
+}
+
+.btntw-b6 {
+  background-position: 0 -2098px;
+  height: 102px;
+  width: 263px;
+}
+.btntw-b6:hover, .btntw-b6.b6-hover {
+  background-position: 0 -2200px;
+}
+
+.btntw-b7 {
+  background-position: 0 -2302px;
+  height: 102px;
+  width: 263px;
+}
+
+.btnen-sprite, .btnen-a1, .btnen-a2, .btnen-a3, .btnen-a4, .btnen-b1, .btnen-b2, .btnen-b3, .btnen-b4, .btnen-b5, .btnen-b6, .btnen-b7 {
+  background-image: url('../images/btnen-s576f0c0d20.png');
+  background-repeat: no-repeat;
+}
+
+.btnen-a1 {
+  background-position: 0 0;
+  height: 111px;
+  width: 287px;
+}
+.btnen-a1:hover, .btnen-a1.a1-hover {
+  background-position: 0 -111px;
+}
+
+.btnen-a2 {
+  background-position: 0 -222px;
+  height: 111px;
+  width: 287px;
+}
+.btnen-a2:hover, .btnen-a2.a2-hover {
+  background-position: 0 -333px;
+}
+
+.btnen-a3 {
+  background-position: 0 -444px;
+  height: 111px;
+  width: 287px;
+}
+.btnen-a3:hover, .btnen-a3.a3-hover {
+  background-position: 0 -555px;
+}
+
+.btnen-a4 {
+  background-position: 0 -666px;
+  height: 206px;
+  width: 318px;
+}
+.btnen-a4:hover, .btnen-a4.a4-hover {
+  background-position: 0 -872px;
+}
+
+.btnen-b1 {
+  background-position: 0 -1078px;
+  height: 102px;
+  width: 263px;
+}
+.btnen-b1:hover, .btnen-b1.b1-hover {
+  background-position: 0 -1180px;
+}
+
+.btnen-b2 {
+  background-position: 0 -1282px;
+  height: 102px;
+  width: 263px;
+}
+.btnen-b2:hover, .btnen-b2.b2-hover {
+  background-position: 0 -1384px;
+}
+
+.btnen-b3 {
+  background-position: 0 -1486px;
+  height: 102px;
+  width: 263px;
+}
+.btnen-b3:hover, .btnen-b3.b3-hover {
+  background-position: 0 -1588px;
+}
+
+.btnen-b4 {
+  background-position: 0 -1690px;
+  height: 102px;
+  width: 263px;
+}
+.btnen-b4:hover, .btnen-b4.b4-hover {
+  background-position: 0 -1792px;
+}
+
+.btnen-b5 {
+  background-position: 0 -1894px;
+  height: 102px;
+  width: 263px;
+}
+.btnen-b5:hover, .btnen-b5.b5-hover {
+  background-position: 0 -1996px;
+}
+
+.btnen-b6 {
+  background-position: 0 -2098px;
+  height: 102px;
+  width: 263px;
+}
+.btnen-b6:hover, .btnen-b6.b6-hover {
+  background-position: 0 -2200px;
+}
+
+.btnen-b7 {
+  background-position: 0 -2302px;
+  height: 102px;
+  width: 263px;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Microsoft YaHei", "Arial", Verdana, Geneva, "Noto Sans TC", sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  overflow-x: hidden;
+  background: #ffc1f1;
+}
+
+.wrap {
+  margin: 0 auto -61px;
+  background: url("../images/bg.jpg") center top no-repeat;
+}
+
+.qr_l-tw, .qr_l-en {
+  left: 1px;
+}
+
+.qr_r-tw, .qr_r-en {
+  right: 1px;
+}
+
+.qr_l-tw, .qr_r-tw, .qr_l-en, .qr_r-en {
+  position: fixed;
+  top: 314px;
+  z-index: 60;
+}
+.qr_l-tw a, .qr_r-tw a, .qr_l-en a, .qr_r-en a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.lang-tw {
+  background: url("../images/lang_tw.png") center no-repeat;
+  width: 122px;
+  height: 42px;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+.lang-tw:hover, .lang-tw:focus, .lang-tw.on {
+  background: url("../images/lang_tw_on.png") center no-repeat;
+  width: 122px;
+  height: 42px;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+
+.lang-en {
+  background: url("../images/lang_en.png") center no-repeat;
+  width: 122px;
+  height: 42px;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+.lang-en:hover, .lang-en:focus, .lang-en.on {
+  background: url("../images/lang_en_on.png") center no-repeat;
+  width: 122px;
+  height: 42px;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+
+.lang-tw, .lang-en {
+  display: inline-block;
+}
+.lang-tw a, .lang-en a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.langbtn {
+  position: absolute;
+  left: 50%;
+  margin-top: 13px;
+  margin-left: 342px;
+  z-index: 50;
+}
+
+.nav {
+  position: absolute;
+  left: 50%;
+  z-index: 50;
+}
+
+.btntw-a1, .btnen-a1 {
+  float: left;
+  cursor: pointer;
+}
+
+.btntw-a2, .btnen-a2 {
+  float: left;
+  cursor: pointer;
+}
+
+.btntw-a3, .btnen-a3 {
+  float: left;
+  cursor: pointer;
+}
+
+.btntw-a4, .btnen-a4 {
+  float: left;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3a126a;
+}
+
+::-webkit-scrollbar-button {
+  background: transparent;
+}
+
+::-webkit-scrollbar-corner {
+  background: #ffc1f1;
+}
+
+/**p0* */
+.top {
+  height: 750px;
+  overflow: hidden;
+  position: relative;
+}
+
+.logo-tw, .logo-en {
+  position: absolute;
+  left: 50%;
+  margin-left: 197px;
+  z-index: 40;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+
+.chara1 {
+  background: url("../images/chara_main.png") center no-repeat;
+  width: 662px;
+  height: 733px;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
+  position: absolute;
+  left: 50%;
+  margin-top: 25px;
+  margin-left: -214px;
+  z-index: 30;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+
+.chara2 {
+  background: url("../images/chara_sub.png") center no-repeat;
+  width: 1414px;
+  height: 613px;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
+  position: absolute;
+  left: 50%;
+  margin-top: 25px;
+  margin-left: -686px;
+  z-index: 20;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+
+.slogan-tw, .slogan-en {
+  position: absolute;
+  left: 50%;
+  z-index: 40;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+
+.cont_0 {
+  width: 1200px;
+  height: 150px;
+  position: absolute;
+  left: 50%;
+  margin-top: 600px;
+  margin-left: -640px;
+  padding: 0 40px;
+  z-index: 35;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF00FFFF', endColorstr='#FFFFFFFF');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjcwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjUiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMC41Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(70%, rgba(255, 255, 255, 0.5)), color-stop(100%, rgba(255, 255, 255, 0.5)));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 70%, rgba(255, 255, 255, 0.5) 100%);
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 70%, rgba(255, 255, 255, 0.5) 100%);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 70%, rgba(255, 255, 255, 0.5) 100%);
+}
+
+.dot1 {
+  background: url("../images/dot1.png") center no-repeat;
+  width: 66px;
+  height: 61px;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
+  position: absolute;
+}
+
+.dot2 {
+  background: url("../images/dot2.png") center no-repeat;
+  width: 82px;
+  height: 74px;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
+  position: absolute;
+}
+
+.dot3 {
+  background: url("../images/dot3.png") center no-repeat;
+  width: 95px;
+  height: 73px;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
+  position: absolute;
+}
+
+#confetti {
+  position: absolute;
+  width: 100%;
+  height: 750px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.page {
+  height: 100%;
+  min-height: 1000px;
+  overflow: hidden;
+  position: relative;
+}
+
+.luna {
+  background: url("../images/bg_luna.png") center no-repeat;
+  width: 245px;
+  height: 203px;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+
+/**p1* */
+.cont_bg {
+  width: 1280px;
+  z-index: 25;
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: 50%;
+  margin-left: -640px;
+}
+
+.cont, .cont_bg, .cont_vote {
+  display: block;
+  height: 100%;
+  padding-bottom: 50px;
+  min-height: 1150px;
+}
+
+.cont {
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.cont:not(:nth-of-type(2)) {
+  display: none;
+}
+.cont span {
+  margin-left: 1em;
+}
+.cont .luna {
+  position: absolute;
+  left: 50%;
+  margin-top: 70px;
+}
+
+.cont, .cont_vote {
+  width: 1160px;
+  position: relative;
+  margin: 0 auto;
+  z-index: 35;
+  line-height: 1.5em;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #493019;
+  text-shadow: white 0 2px 0;
+}
+.cont h3, .cont_vote h3 {
+  font-size: 1.6em;
+  text-align: center;
+}
+.cont h5, .cont_vote h5 {
+  font-size: 1.1em;
+  line-height: 2em;
+}
+.cont span, .cont_vote span {
+  font-weight: normal;
+}
+.cont li, .cont_vote li {
+  font-weight: normal;
+  list-style-type: disc;
+  text-align: left;
+  line-height: 1.8em;
+}
+.cont a, .cont_vote a {
+  color: #ff4462;
+  font-weight: bold;
+}
+.cont img, .cont_vote img {
+  display: block;
+  height: auto;
+  margin: 10px auto;
+}
+.cont img.panel:not(:last-of-type), .cont_vote img.panel:not(:last-of-type) {
+  margin-bottom: 30px;
+}
+.cont table, .cont_vote table {
+  border-collapse: collapse;
+  margin: 20px auto;
+  table-layout: fixed;
+}
+.cont table td, .cont_vote table td {
+  text-align: center;
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+.t1-tw, .t1-en {
+  left: 50%;
+  margin: 20px auto;
+}
+
+.t2-tw, .t2-en {
+  left: 50%;
+  margin: 20px auto;
+}
+
+.t3-tw, .t3-en {
+  left: 50%;
+  margin: 20px auto;
+}
+
+.t4-tw, .t4-en {
+  left: 50%;
+  margin: 20px auto;
+}
+
+.t5-tw, .t5-en {
+  left: 50%;
+  margin: 20px auto;
+}
+
+.t6-tw, .t6-en {
+  left: 50%;
+  margin: 20px auto;
+}
+
+.t7-tw, .t7-en {
+  left: 50%;
+  margin: 20px auto;
+}
+
+.t8-tw, .t8-en {
+  left: 50%;
+  margin: 20px auto;
+}
+
+.hr {
+  background: url("../images/hr.png") center no-repeat;
+  width: 656px;
+  height: 46px;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
+  margin: 20px auto;
+}
+
+.diagroup_en {
+  letter-spacing: 0.5px;
+}
+
+.dialogue {
+  width: 1000px;
+  margin: 0 auto;
+}
+.dialogue:not(:first-of-type) {
+  margin-top: 30px;
+}
+.dialogue .icon1_tw {
+  background: url("../images/tw/icon_1.png") center no-repeat;
+  width: 190px;
+  height: 125px;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
+  position: absolute;
+  z-index: 20;
+}
+.dialogue .icon1_tw.co2 {
+  margin-top: -8px;
+}
+.dialogue .icon1_tw.co3 {
+  margin-top: 3px;
+}
+.dialogue .icon1_en {
+  background: url("../images/en/icon_1.png") center no-repeat;
+  width: 190px;
+  height: 125px;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
+  position: absolute;
+  z-index: 20;
+}
+.dialogue .icon1_en.co2 {
+  margin-top: -8px;
+}
+.dialogue .icon1_en.co3 {
+  margin-top: 3px;
+}
+.dialogue .icon1_en.co4 {
+  margin-top: 18px;
+}
+.dialogue .icon2_tw {
+  background: url("../images/tw/icon_2.png") center no-repeat;
+  width: 190px;
+  height: 125px;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
+  position: absolute;
+  z-index: 20;
+}
+.dialogue .icon2_tw.co2 {
+  margin-top: -8px;
+}
+.dialogue .icon2_tw.co3 {
+  margin-top: 3px;
+}
+.dialogue .icon2_en {
+  background: url("../images/en/icon_2.png") center no-repeat;
+  width: 190px;
+  height: 125px;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
+  position: absolute;
+  z-index: 20;
+}
+.dialogue .icon2_en.co2 {
+  margin-top: -8px;
+}
+.dialogue .icon2_en.co3 {
+  margin-top: 3px;
+}
+.dialogue .icon2_en.co4 {
+  margin-top: 18px;
+}
+.dialogue .dianext {
+  background: url("../images/dialog.png") center no-repeat;
+  width: 42px;
+  height: 60px;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
+  position: absolute;
+  z-index: 20;
+  right: 10px;
+}
+.dialogue .dianext.co3 {
+  margin-top: 13px;
+}
+.dialogue .dianext.co4 {
+  margin-top: 23px;
+}
+.dialogue .diabg {
+  position: relative;
+  width: 700px;
+  margin: 0 auto;
+  padding: 8px 40px 8px 100px;
+  z-index: 10;
+  border-style: solid;
+  border-width: 9px;
+  -moz-border-image: url("../images/border.png") 10 10 repeat;
+  -webkit-border-image: url("../images/border.png") 10 10 repeat;
+  -o-border-image: url("../images/border.png") 10 10 repeat;
+  border-image: url("../images/border.png") 10 10 repeat;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FFA9BABB', endColorstr='#FFF0EEE5');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2E5YmFiYiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2YwZWVlNSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #a9babb), color-stop(100%, #f0eee5));
+  background-image: -moz-linear-gradient(left, #a9babb 0%, #f0eee5 100%);
+  background-image: -webkit-linear-gradient(left, #a9babb 0%, #f0eee5 100%);
+  background-image: linear-gradient(to right, #a9babb 0%, #f0eee5 100%);
+  color: #243031;
+  text-shadow: #fff 0 0 0;
+}
+
+/**p3* */
+.wp {
+  cursor: pointer;
+}
+
+.dlbtn {
+  background: url("../images/dlbtn.png") center no-repeat;
+  width: 69px;
+  height: 69px;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 10px;
+}
+.dlbtn a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/**p4* */
+.pic_vote {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 976px;
+  height: 636px;
+}
+.pic_vote .vslogan_tw {
+  background: url("../images/tw/slogan_vote.png") center no-repeat;
+  width: 806px;
+  height: 636px;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
+  position: absolute;
+  z-index: 20;
+  margin-top: 10px;
+  margin-left: 70px;
+}
+.pic_vote .vslogan_en {
+  background: url("../images/en/slogan_vote.png") center no-repeat;
+  width: 878px;
+  height: 566px;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
+  position: absolute;
+  z-index: 20;
+  margin-top: 40px;
+  margin-left: 50px;
+}
+.pic_vote .vchara {
+  background: url("../images/chara0.gif") center no-repeat;
+  width: 721px;
+  height: 617px;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
+  position: absolute;
+  z-index: 15;
+  margin-top: 20px;
+  margin-left: 130px;
+}
+.pic_vote .vbg {
+  background: url("../images/v_bg.png") center no-repeat;
+  width: 976px;
+  height: 630px;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
+  position: absolute;
+  z-index: 10;
+}
+
+.btntw-b1, .btnen-b1 {
+  float: left;
+  cursor: pointer;
+  display: block;
+  position: relative;
+}
+
+.btntw-b2, .btnen-b2 {
+  float: left;
+  cursor: pointer;
+  display: block;
+  position: relative;
+}
+
+.btntw-b3, .btnen-b3 {
+  float: left;
+  cursor: pointer;
+  display: block;
+  position: relative;
+}
+
+.btntw-b4, .btnen-b4 {
+  float: left;
+  cursor: pointer;
+  display: block;
+  position: relative;
+}
+
+.btntw-b5, .btnen-b5 {
+  float: left;
+  cursor: pointer;
+  display: block;
+  position: relative;
+}
+
+.btntw-b6, .btnen-b6 {
+  float: left;
+  cursor: pointer;
+  display: block;
+  position: relative;
+}
+
+.btntw-b7, .btnen-b7 {
+  float: left;
+  cursor: pointer;
+  display: block;
+  position: relative;
+}
+
+.btngroup {
+  position: relative;
+  width: 1080px;
+  left: 50%;
+  margin-top: 30px;
+  margin-left: -540px;
+}
+.btngroup .btntw-b2, .btngroup .btntw-b3, .btngroup .btnen-b2, .btngroup .btnen-b3, .btngroup .btnen-b6, .btngroup .btnen-b6 {
+  margin-right: 5px;
+}
+
+button {
+  background: none;
+  border: none;
+}
+button a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+input, select {
+  font-family: "Microsoft YaHei", "Arial", Verdana, Geneva, "Noto Sans TC", sans-serif;
+  font-size: 1.1em;
+  display: block;
+  margin: 20px auto;
+  border: none;
+  padding: 20px;
+  color: #fd3858;
+  background: rgba(255, 255, 255, 0.8);
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+input {
+  width: calc(75% - 40px);
+}
+
+select {
+  width: 75%;
+}
+
+.btntw-b1, .btnen-b1 {
+  left: 50%;
+  margin-left: -131px;
+}
+
+.swiper {
+  position: relative;
+  overflow: hidden;
+  width: 1140px;
+}
+.swiper .swiper-slide {
+  background: url("../images/v_base.png") center no-repeat;
+  width: 574px;
+  height: 696px;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+.swiper .swiper-slide img {
+  position: relative;
+  left: 50%;
+  margin-top: 21px;
+  margin-left: -268px;
+}
+.swiper .swiper-slide-active img, .swiper .swiper-slide-prev img, .swiper .swiper-slide-next img {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+.swiper .swiper-slide-duplicate-active img, .swiper .swiper-slide-duplicate-prev img, .swiper .swiper-slide-duplicate-next img {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+.swiper h2, .swiper h4 {
+  color: #fff;
+  text-align: center;
+}
+.swiper h2 {
+  font-size: 1.6em;
+  text-shadow: #870016 0 4px 0;
+  margin-top: 5px;
+  line-height: 1.5em;
+}
+.swiper h4 {
+  font-size: 1.4em;
+  text-shadow: #870016 0 3px 0;
+}
+
+.swiper-button-next {
+  width: 98px;
+  height: 90px;
+}
+
+.swiper-button-prev {
+  width: 98px;
+  height: 88px;
+}
+
+.swiper-button-prev {
+  background: url("../images/prev.png") no-repeat 0 0;
+}
+
+.swiper-button-next {
+  background: url("../images/next.png") no-repeat 0 0;
+}
+
+.chart {
+  position: relative;
+  width: 700px;
+  left: 50%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: -350px;
+}
+.chart span {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+.chart .vico1_tw, .chart .vico1_en {
+  position: absolute;
+  background: url("../images/vote_icon1.png") center no-repeat;
+  width: 68px;
+  height: 68px;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
+  z-index: 50;
+  margin-top: -10px;
+}
+.chart .vico2 {
+  background: url("../images/vote_icon2.png") center no-repeat;
+  width: 72px;
+  height: 73px;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
+  display: inline-block;
+  vertical-align: middle;
+}
+.chart .vbase {
+  display: inline-block;
+  width: 400px;
+  height: 30px;
+  background: #666;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  border: 2px solid #000;
+  overflow: hidden;
+  vertical-align: top;
+  margin-left: 10px;
+  margin-right: 40px;
+}
+.chart .vbase .vper {
+  height: 30px;
+  background: #ffc3ce;
+}
+
+.vpic {
+  position: relative;
+  padding-top: 1px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  background: url("../images/v_base.png") center no-repeat;
+  width: 574px;
+  height: 696px;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
+  z-index: 10;
+}
+.vpic img {
+  margin-top: 21px;
+}
+.vpic h2, .vpic h4 {
+  color: #fff;
+  text-align: center;
+}
+.vpic h2 {
+  font-size: 1.6em;
+  text-shadow: #180f08 0 4px 0;
+  margin-top: 5px;
+  line-height: 1.5em;
+}
+.vpic h4 {
+  font-size: 1.2em;
+  text-shadow: #180f08 0 3px 0;
+}
+
+.vmsg {
+  background: url("../images/panel.png") center no-repeat;
+  width: 926px;
+  height: 299px;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
+  position: absolute;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: -463px;
+  padding-top: 80px;
+  z-index: 15;
+  color: #fff;
+  font-size: 2em;
+  font-weight: normal;
+  line-height: 1.5em;
+  text-shadow: rgba(24, 15, 8, 0.5) 0 4px 0;
+  text-align: center;
+}
+.vmsg span {
+  color: #f6d343;
+  font-weight: bold;
+}
+
+.btntw-b5, .btnen-b5 {
+  left: 50%;
+  margin-top: 130px;
+  margin-left: -131px;
+}
+
+.popbg, .pop {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.popbg {
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 100;
+}
+
+.pop {
+  z-index: 120;
+}
+.pop .pop_view {
+  display: block;
+  margin: 0 auto;
+  margin-top: 150px;
+  width: 800px;
+}
+.pop img {
+  display: none;
+}
+.pop .close {
+  background: url("../images/close.png") center no-repeat;
+  width: 52px;
+  height: 55px;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
+  position: absolute;
+  cursor: pointer;
+  left: 50%;
+  margin-top: 98px;
+  margin-left: 395px;
+}
+.pop .pop_vote1, .pop .pop_vote2 {
+  display: none;
+  width: 780px;
+  height: 440px;
+  margin: 0 auto;
+  margin-top: 150px;
+  padding: 10px;
+  background-color: #f25b76;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFF25B76', endColorstr='#FF97241D');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2YyNWI3NiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzk3MjQxZCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f25b76), color-stop(100%, #97241d));
+  background-image: -moz-linear-gradient(top, #f25b76 0%, #97241d 100%);
+  background-image: -webkit-linear-gradient(top, #f25b76 0%, #97241d 100%);
+  background-image: linear-gradient(to bottom, #f25b76 0%, #97241d 100%);
+  border-style: solid;
+  border-width: 9px;
+  -moz-border-image: url("../images/border.png") 10 10 repeat;
+  -webkit-border-image: url("../images/border.png") 10 10 repeat;
+  -o-border-image: url("../images/border.png") 10 10 repeat;
+  border-image: url("../images/border.png") 10 10 repeat;
+  color: #fff;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  text-align: center;
+  overflow-y: auto;
+}
+.pop .pop_vote1 span, .pop .pop_vote2 span {
+  color: #f6d343;
+  font-weight: bold;
+}
+.pop .pop_vote1 ol, .pop .pop_vote2 ol {
+  position: relative;
+  text-align: center;
+  width: 310px;
+  left: 50%;
+  margin-left: calc(-155px + 1em);
+}
+.pop .pop_vote1 li, .pop .pop_vote2 li {
+  list-style-type: decimal;
+}
+.pop .pop_vote1 .btntw-b4, .pop .pop_vote1 .btnen-b4, .pop .pop_vote2 .btntw-b4, .pop .pop_vote2 .btnen-b4 {
+  position: relative;
+  left: 50%;
+  margin-left: -131px;
+}
+.pop .pop_vote1 .btntw-b4, .pop .pop_vote2 .btntw-b4 {
+  margin-top: 30px;
+}
+.pop .pop_vote1 .btnen-b4, .pop .pop_vote2 .btnen-b4 {
+  margin-top: 10px;
+}
+.pop .pop_vote1 .luna, .pop .pop_vote2 .luna {
+  position: relative;
+  left: 50%;
+  margin-top: 10px;
+  margin-left: -131px;
+}
+
+/**************index/ */
+@media only screen and (min-width: 1500px) {
+  .logo-tw {
+    background: url("../images/tw/logo.png") center no-repeat;
+    width: 398px;
+    height: 291px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 410px;
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1499px) {
+  .logo-tw {
+    background: url("../images/tw/logo.png") center no-repeat;
+    width: 318.4px;
+    height: 232.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 460px;
+  }
+}
+@media only screen and (max-width: 1299px) {
+  .logo-tw {
+    background: url("../images/tw/logo.png") center no-repeat;
+    width: 318.4px;
+    height: 232.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 460px;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .logo-en {
+    background: url("../images/en/logo.png") center no-repeat;
+    width: 421px;
+    height: 291px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 410px;
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1499px) {
+  .logo-en {
+    background: url("../images/en/logo.png") center no-repeat;
+    width: 336.8px;
+    height: 232.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 460px;
+  }
+}
+@media only screen and (max-width: 1299px) {
+  .logo-en {
+    background: url("../images/en/logo.png") center no-repeat;
+    width: 336.8px;
+    height: 232.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 460px;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .slogan-tw {
+    background: url("../images/tw/slogan.png") center no-repeat;
+    width: 773px;
+    height: 172px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 507px;
+    margin-left: -574px;
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1499px) {
+  .slogan-tw {
+    background: url("../images/tw/slogan.png") center no-repeat;
+    width: 618.4px;
+    height: 137.6px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 507px;
+    margin-left: -464px;
+  }
+}
+@media only screen and (max-width: 1299px) {
+  .slogan-tw {
+    background: url("../images/tw/slogan.png") center no-repeat;
+    width: 618.4px;
+    height: 137.6px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 507px;
+    margin-left: -464px;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .slogan-en {
+    background: url("../images/en/slogan.png") center no-repeat;
+    width: 844px;
+    height: 141px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 527px;
+    margin-left: -604px;
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1499px) {
+  .slogan-en {
+    background: url("../images/en/slogan.png") center no-repeat;
+    width: 675.2px;
+    height: 112.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 527px;
+    margin-left: -464px;
+  }
+}
+@media only screen and (max-width: 1299px) {
+  .slogan-en {
+    background: url("../images/en/slogan.png") center no-repeat;
+    width: 675.2px;
+    height: 112.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 527px;
+    margin-left: -464px;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .qr_l-tw {
+    background: url("../images/tw/qr_l.png") center no-repeat;
+    width: 205px;
+    height: 246px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1499px) {
+  .qr_l-tw {
+    background: url("../images/tw/qr_l.png") center no-repeat;
+    width: 205px;
+    height: 246px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 1299px) {
+  .qr_l-tw {
+    background: url("../images/tw/qr_l.png") center no-repeat;
+    width: 143.5px;
+    height: 172.2px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .qr_r-tw {
+    background: url("../images/tw/qr_r.png") center no-repeat;
+    width: 205px;
+    height: 246px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1499px) {
+  .qr_r-tw {
+    background: url("../images/tw/qr_r.png") center no-repeat;
+    width: 205px;
+    height: 246px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 1299px) {
+  .qr_r-tw {
+    background: url("../images/tw/qr_r.png") center no-repeat;
+    width: 143.5px;
+    height: 172.2px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .qr_l-en {
+    background: url("../images/en/qr_l.png") center no-repeat;
+    width: 205px;
+    height: 246px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1499px) {
+  .qr_l-en {
+    background: url("../images/en/qr_l.png") center no-repeat;
+    width: 205px;
+    height: 246px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 1299px) {
+  .qr_l-en {
+    background: url("../images/en/qr_l.png") center no-repeat;
+    width: 143.5px;
+    height: 172.2px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .qr_r-en {
+    background: url("../images/en/qr_r.png") center no-repeat;
+    width: 205px;
+    height: 246px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1499px) {
+  .qr_r-en {
+    background: url("../images/en/qr_r.png") center no-repeat;
+    width: 205px;
+    height: 246px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 1299px) {
+  .qr_r-en {
+    background: url("../images/en/qr_r.png") center no-repeat;
+    width: 143.5px;
+    height: 172.2px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1499px) {
+  .btntw-a1 {
+    background: url("../images/btntw/a1.png") center no-repeat;
+    width: 229.6px;
+    height: 88.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .btntw-a1:hover, .btntw-a1:focus, .btntw-a1.active {
+    background: url("../images/btntw/a1_hover.png") center no-repeat;
+    width: 229.6px;
+    height: 88.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 1299px) {
+  .btntw-a1 {
+    background: url("../images/btntw/a1.png") center no-repeat;
+    width: 229.6px;
+    height: 88.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .btntw-a1:hover, .btntw-a1:focus, .btntw-a1.active {
+    background: url("../images/btntw/a1_hover.png") center no-repeat;
+    width: 229.6px;
+    height: 88.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1499px) {
+  .btnen-a1 {
+    background: url("../images/btnen/a1.png") center no-repeat;
+    width: 229.6px;
+    height: 88.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .btnen-a1:hover, .btnen-a1:focus, .btnen-a1.active {
+    background: url("../images/btnen/a1_hover.png") center no-repeat;
+    width: 229.6px;
+    height: 88.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 1299px) {
+  .btnen-a1 {
+    background: url("../images/btnen/a1.png") center no-repeat;
+    width: 229.6px;
+    height: 88.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .btnen-a1:hover, .btnen-a1:focus, .btnen-a1.active {
+    background: url("../images/btnen/a1_hover.png") center no-repeat;
+    width: 229.6px;
+    height: 88.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1499px) {
+  .btntw-a2 {
+    background: url("../images/btntw/a2.png") center no-repeat;
+    width: 229.6px;
+    height: 88.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .btntw-a2:hover, .btntw-a2:focus, .btntw-a2.active {
+    background: url("../images/btntw/a2_hover.png") center no-repeat;
+    width: 229.6px;
+    height: 88.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 1299px) {
+  .btntw-a2 {
+    background: url("../images/btntw/a2.png") center no-repeat;
+    width: 229.6px;
+    height: 88.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .btntw-a2:hover, .btntw-a2:focus, .btntw-a2.active {
+    background: url("../images/btntw/a2_hover.png") center no-repeat;
+    width: 229.6px;
+    height: 88.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1499px) {
+  .btnen-a2 {
+    background: url("../images/btnen/a2.png") center no-repeat;
+    width: 229.6px;
+    height: 88.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .btnen-a2:hover, .btnen-a2:focus, .btnen-a2.active {
+    background: url("../images/btnen/a2_hover.png") center no-repeat;
+    width: 229.6px;
+    height: 88.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 1299px) {
+  .btnen-a2 {
+    background: url("../images/btnen/a2.png") center no-repeat;
+    width: 229.6px;
+    height: 88.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .btnen-a2:hover, .btnen-a2:focus, .btnen-a2.active {
+    background: url("../images/btnen/a2_hover.png") center no-repeat;
+    width: 229.6px;
+    height: 88.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1499px) {
+  .btntw-a3 {
+    background: url("../images/btntw/a3.png") center no-repeat;
+    width: 229.6px;
+    height: 88.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .btntw-a3:hover, .btntw-a3:focus, .btntw-a3.active {
+    background: url("../images/btntw/a3_hover.png") center no-repeat;
+    width: 229.6px;
+    height: 88.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 1299px) {
+  .btntw-a3 {
+    background: url("../images/btntw/a3.png") center no-repeat;
+    width: 229.6px;
+    height: 88.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .btntw-a3:hover, .btntw-a3:focus, .btntw-a3.active {
+    background: url("../images/btntw/a3_hover.png") center no-repeat;
+    width: 229.6px;
+    height: 88.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1499px) {
+  .btnen-a3 {
+    background: url("../images/btnen/a3.png") center no-repeat;
+    width: 229.6px;
+    height: 88.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .btnen-a3:hover, .btnen-a3:focus, .btnen-a3.active {
+    background: url("../images/btnen/a3_hover.png") center no-repeat;
+    width: 229.6px;
+    height: 88.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 1299px) {
+  .btnen-a3 {
+    background: url("../images/btnen/a3.png") center no-repeat;
+    width: 229.6px;
+    height: 88.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .btnen-a3:hover, .btnen-a3:focus, .btnen-a3.active {
+    background: url("../images/btnen/a3_hover.png") center no-repeat;
+    width: 229.6px;
+    height: 88.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1499px) {
+  .btntw-a4 {
+    background: url("../images/btntw/a4.png") center no-repeat;
+    width: 254.4px;
+    height: 164.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .btntw-a4:hover, .btntw-a4:focus, .btntw-a4.active {
+    background: url("../images/btntw/a4_hover.png") center no-repeat;
+    width: 254.4px;
+    height: 164.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 1299px) {
+  .btntw-a4 {
+    background: url("../images/btntw/a4.png") center no-repeat;
+    width: 254.4px;
+    height: 164.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .btntw-a4:hover, .btntw-a4:focus, .btntw-a4.active {
+    background: url("../images/btntw/a4_hover.png") center no-repeat;
+    width: 254.4px;
+    height: 164.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1499px) {
+  .btnen-a4 {
+    background: url("../images/btnen/a4.png") center no-repeat;
+    width: 254.4px;
+    height: 164.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .btnen-a4:hover, .btnen-a4:focus, .btnen-a4.active {
+    background: url("../images/btnen/a4_hover.png") center no-repeat;
+    width: 254.4px;
+    height: 164.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 1299px) {
+  .btnen-a4 {
+    background: url("../images/btnen/a4.png") center no-repeat;
+    width: 254.4px;
+    height: 164.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .btnen-a4:hover, .btnen-a4:focus, .btnen-a4.active {
+    background: url("../images/btnen/a4_hover.png") center no-repeat;
+    width: 254.4px;
+    height: 164.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+.btntw-a1, .btnen-a1 {
+  margin-left: 4px;
+}
+@media only screen and (min-width: 1500px) {
+  .btntw-a1.active, .btnen-a1.active {
+    background-position-y: -111px;
+  }
+}
+
+.btntw-a2, .btnen-a2 {
+  margin-left: 4px;
+}
+@media only screen and (min-width: 1500px) {
+  .btntw-a2.active, .btnen-a2.active {
+    background-position-y: -333px;
+  }
+}
+
+.btntw-a3, .btnen-a3 {
+  margin-left: 4px;
+}
+@media only screen and (min-width: 1500px) {
+  .btntw-a3.active, .btnen-a3.active {
+    background-position-y: -555px;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .btntw-a4, .btnen-a4 {
+    margin-top: -53px;
+    margin-margin-left: 7px;
+  }
+  .btntw-a4.active, .btnen-a4.active {
+    background-position: 0 -872px;
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1499px) {
+  .btntw-a4, .btnen-a4 {
+    margin-top: -40px;
+    margin-margin-left: 7px;
+  }
+}
+@media only screen and (max-width: 1299px) {
+  .btntw-a4, .btnen-a4 {
+    margin-top: -40px;
+    margin-margin-left: 7px;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .nav {
+    width: 1200px;
+    margin-top: 721px;
+    margin-left: -600px;
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1499px) {
+  .nav {
+    width: 960px;
+    margin-top: 671px;
+    margin-left: -480px;
+  }
+}
+@media only screen and (max-width: 1299px) {
+  .nav {
+    width: 960px;
+    margin-top: 671px;
+    margin-left: -480px;
+  }
+}
+
+/**************page/ */
+@media only screen and (min-width: 1500px) {
+  .cont, .cont_bg {
+    padding-top: 100px;
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1499px) {
+  .cont, .cont_bg {
+    padding-top: 20px;
+  }
+}
+@media only screen and (max-width: 1299px) {
+  .cont, .cont_bg {
+    padding-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .cont h5 {
+    margin: 0 60px;
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1499px) {
+  .cont h5 {
+    margin: 0 120px;
+  }
+}
+@media only screen and (max-width: 1299px) {
+  .cont h5 {
+    margin: 0 150px;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .cont span {
+    margin: 0 80px;
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1499px) {
+  .cont span {
+    margin: 0 140px;
+  }
+}
+@media only screen and (max-width: 1299px) {
+  .cont span {
+    margin: 0 170px;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .cont li {
+    margin: 0 80px;
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1499px) {
+  .cont li {
+    margin: 0 140px;
+  }
+}
+@media only screen and (max-width: 1299px) {
+  .cont li {
+    margin: 0 170px;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .cont table {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1499px) {
+  .cont table {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 1299px) {
+  .cont table {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .t1-tw {
+    background: url("../images/tw/t1.png") center no-repeat;
+    width: 342px;
+    height: 70px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1499px) {
+  .t1-tw {
+    background: url("../images/tw/t1.png") center no-repeat;
+    width: 342px;
+    height: 70px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 1299px) {
+  .t1-tw {
+    background: url("../images/tw/t1.png") center no-repeat;
+    width: 239.4px;
+    height: 49px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .t1-en {
+    background: url("../images/en/t1.png") center no-repeat;
+    width: 426px;
+    height: 64px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1499px) {
+  .t1-en {
+    background: url("../images/en/t1.png") center no-repeat;
+    width: 426px;
+    height: 64px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 1299px) {
+  .t1-en {
+    background: url("../images/en/t1.png") center no-repeat;
+    width: 298.2px;
+    height: 44.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .t2-tw {
+    background: url("../images/tw/t2.png") center no-repeat;
+    width: 342px;
+    height: 70px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1499px) {
+  .t2-tw {
+    background: url("../images/tw/t2.png") center no-repeat;
+    width: 342px;
+    height: 70px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 1299px) {
+  .t2-tw {
+    background: url("../images/tw/t2.png") center no-repeat;
+    width: 239.4px;
+    height: 49px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .t2-en {
+    background: url("../images/en/t2.png") center no-repeat;
+    width: 875px;
+    height: 70px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1499px) {
+  .t2-en {
+    background: url("../images/en/t2.png") center no-repeat;
+    width: 875px;
+    height: 70px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 1299px) {
+  .t2-en {
+    background: url("../images/en/t2.png") center no-repeat;
+    width: 612.5px;
+    height: 49px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .t3-tw {
+    background: url("../images/tw/t3.png") center no-repeat;
+    width: 876px;
+    height: 71px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1499px) {
+  .t3-tw {
+    background: url("../images/tw/t3.png") center no-repeat;
+    width: 876px;
+    height: 71px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 1299px) {
+  .t3-tw {
+    background: url("../images/tw/t3.png") center no-repeat;
+    width: 613.2px;
+    height: 49.7px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .t3-en {
+    background: url("../images/en/t3.png") center no-repeat;
+    width: 956px;
+    height: 70px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1499px) {
+  .t3-en {
+    background: url("../images/en/t3.png") center no-repeat;
+    width: 956px;
+    height: 70px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 1299px) {
+  .t3-en {
+    background: url("../images/en/t3.png") center no-repeat;
+    width: 669.2px;
+    height: 49px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .t4-tw {
+    background: url("../images/tw/t4.png") center no-repeat;
+    width: 460px;
+    height: 71px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1499px) {
+  .t4-tw {
+    background: url("../images/tw/t4.png") center no-repeat;
+    width: 460px;
+    height: 71px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 1299px) {
+  .t4-tw {
+    background: url("../images/tw/t4.png") center no-repeat;
+    width: 322px;
+    height: 49.7px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .t4-en {
+    background: url("../images/en/t4.png") center no-repeat;
+    width: 506px;
+    height: 64px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1499px) {
+  .t4-en {
+    background: url("../images/en/t4.png") center no-repeat;
+    width: 506px;
+    height: 64px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 1299px) {
+  .t4-en {
+    background: url("../images/en/t4.png") center no-repeat;
+    width: 354.2px;
+    height: 44.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .t5-tw {
+    background: url("../images/tw/t5.png") center no-repeat;
+    width: 342px;
+    height: 71px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1499px) {
+  .t5-tw {
+    background: url("../images/tw/t5.png") center no-repeat;
+    width: 342px;
+    height: 71px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 1299px) {
+  .t5-tw {
+    background: url("../images/tw/t5.png") center no-repeat;
+    width: 239.4px;
+    height: 49.7px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .t5-en {
+    background: url("../images/en/t5.png") center no-repeat;
+    width: 360px;
+    height: 64px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1499px) {
+  .t5-en {
+    background: url("../images/en/t5.png") center no-repeat;
+    width: 360px;
+    height: 64px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 1299px) {
+  .t5-en {
+    background: url("../images/en/t5.png") center no-repeat;
+    width: 252px;
+    height: 44.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .t6-tw {
+    background: url("../images/tw/t6.png") center no-repeat;
+    width: 342px;
+    height: 71px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1499px) {
+  .t6-tw {
+    background: url("../images/tw/t6.png") center no-repeat;
+    width: 342px;
+    height: 71px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 1299px) {
+  .t6-tw {
+    background: url("../images/tw/t6.png") center no-repeat;
+    width: 239.4px;
+    height: 49.7px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .t6-en {
+    background: url("../images/en/t6.png") center no-repeat;
+    width: 694px;
+    height: 70px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1499px) {
+  .t6-en {
+    background: url("../images/en/t6.png") center no-repeat;
+    width: 694px;
+    height: 70px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 1299px) {
+  .t6-en {
+    background: url("../images/en/t6.png") center no-repeat;
+    width: 485.8px;
+    height: 49px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .t7-tw {
+    background: url("../images/tw/t7.png") center no-repeat;
+    width: 286px;
+    height: 69px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1499px) {
+  .t7-tw {
+    background: url("../images/tw/t7.png") center no-repeat;
+    width: 286px;
+    height: 69px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 1299px) {
+  .t7-tw {
+    background: url("../images/tw/t7.png") center no-repeat;
+    width: 200.2px;
+    height: 48.3px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .t7-en {
+    background: url("../images/en/t7.png") center no-repeat;
+    width: 399px;
+    height: 64px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1499px) {
+  .t7-en {
+    background: url("../images/en/t7.png") center no-repeat;
+    width: 399px;
+    height: 64px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 1299px) {
+  .t7-en {
+    background: url("../images/en/t7.png") center no-repeat;
+    width: 279.3px;
+    height: 44.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .t8-tw {
+    background: url("../images/tw/t8.png") center no-repeat;
+    width: 342px;
+    height: 70px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1499px) {
+  .t8-tw {
+    background: url("../images/tw/t8.png") center no-repeat;
+    width: 342px;
+    height: 70px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 1299px) {
+  .t8-tw {
+    background: url("../images/tw/t8.png") center no-repeat;
+    width: 239.4px;
+    height: 49px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .t8-en {
+    background: url("../images/en/t8.png") center no-repeat;
+    width: 344px;
+    height: 64px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1499px) {
+  .t8-en {
+    background: url("../images/en/t8.png") center no-repeat;
+    width: 344px;
+    height: 64px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 1299px) {
+  .t8-en {
+    background: url("../images/en/t8.png") center no-repeat;
+    width: 240.8px;
+    height: 44.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .cont .luna {
+    margin-left: 300px;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+    opacity: 0.9;
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1499px) {
+  .cont .luna {
+    margin-left: 200px;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+    opacity: 0.9;
+  }
+}
+@media only screen and (max-width: 1299px) {
+  .cont .luna {
+    margin-left: 200px;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
+    opacity: 0.75;
+  }
+}

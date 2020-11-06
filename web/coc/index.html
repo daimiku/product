@@ -1,0 +1,600 @@
+<!doctype html>
+<html>
+<head>
+    <title>戰亂之聲2</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="css/screen.css">
+    <script src="../js/jquery-2.2.3.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+<div class="login modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+       <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#login" aria-controls="login" role="tab" data-toggle="tab"><h1 class="modal-title text-center">會員登入</h1></a></li>
+        <li role="presentation"><a href="#register" aria-controls="register" role="tab" data-toggle="tab"><h1 class="modal-title text-center">簡易註冊</h1></a></li>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </ul>
+      </div>
+      <div class="modal-body">
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="login">
+          <div class="row">
+  <div class="form-group">
+    <label for="id" class="col-lg-offset-1 col-md-offset-1 col-lg-3 col-md-3 col-sm-3 col-xs-3 control-label">帳號：</label>
+    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-9">
+      <input type="text" class="form-control" id="id" placeholder="請輸入帳號">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="pwd" class="col-lg-offset-1 col-md-offset-1 col-lg-3 col-md-3 col-sm-3 col-xs-3 control-label">密碼：</label>
+    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-9">
+      <input type="password" class="form-control" id="pwd" placeholder="請輸入密碼">
+      <span class="glyphicon glyphicon-eye-close pwd pull-right"></span>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="mod" class="col-lg-offset-1 col-md-offset-1 col-lg-3 col-md-3 col-sm-3 col-xs-3 control-label">驗證碼：</label>
+    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-9">
+      <input type="text" class="form-control" id="mod" placeholder="請輸入驗證碼"><br>
+      <img src="images/autcode.png">
+      <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-refresh"></span></button>
+      <a href="#"><span class="small">忘記密碼</span></a>
+      <a href="#"><span class="small">重發驗證</span></a>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+      
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+      <button type="submit" class="btn btn-block btn-warning">確認</button>
+    </div>
+  </div>
+     </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="register">
+          <div class="row">
+  <div class="form-group">
+    <label for="id" class="col-lg-3 col-md-3 col-sm-3 col-xs-3 control-label">帳號：</label>
+    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-9">
+      <input type="text" class="form-control" id="id" placeholder="請輸入「會員帳號/電子信箱」">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="pwd" class="col-lg-3 col-md-3 col-sm-3 col-xs-3 control-label">密碼：</label>
+    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-9">
+      <input type="password" class="form-control" id="pwd" placeholder="請輸入「密碼」英數混合8碼~16碼">
+      <span class="glyphicon glyphicon-eye-close pwd pull-right"></span>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="pwd" class="col-lg-3 col-md-3 col-sm-3 col-xs-3 control-label">密碼：</label>
+    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-9">
+      <input type="password" class="form-control" id="pwd" placeholder="請再次輸入「密碼」">
+      <span class="glyphicon glyphicon-eye-close pwd pull-right"></span>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="name" class="col-lg-3 col-md-3 col-sm-3 col-xs-3 control-label">姓名：</label>
+    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-9">
+      <input type="text" class="form-control" id="name" placeholder="請輸入「您的姓名」">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="phone" class="col-lg-3 col-md-3 col-sm-3 col-xs-3 control-label">手機號碼：</label>
+    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-9">
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-3">
+      <select class="form-control">
+          <option>+886台灣</option>
+          <option>+886台灣</option>
+          <option>+886台灣</option>
+      </select>
+    </div>
+    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-9">
+      <input type="tel" class="form-control" id="phone" placeholder="(選填)">
+    </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="bd" class="col-lg-3 col-md-3 col-sm-3 col-xs-3 control-label">出生年月日：</label>
+    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-9">
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-3">
+      <input type="text" class="form-control" id="bd" placeholder="西元年">
+    </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-3">
+      <select class="form-control">
+          <option>月份</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+          <option>11</option>
+          <option>12</option>
+      </select>
+    </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-3">
+      <select class="form-control">
+          <option>日期</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+          <option>11</option>
+          <option>12</option>
+          <option>13</option>
+          <option>14</option>
+          <option>15</option>
+          <option>16</option>
+          <option>17</option>
+          <option>18</option>
+          <option>19</option>
+          <option>20</option>
+          <option>21</option>
+          <option>22</option>
+          <option>23</option>
+          <option>24</option>
+          <option>25</option>
+          <option>26</option>
+          <option>27</option>
+          <option>28</option>
+          <option>29</option>
+          <option>30</option>
+          <option>31</option>
+      </select>
+    </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="mod" class="col-lg-3 col-md-3 col-sm-3 col-xs-3 control-label">驗證碼：</label>
+    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-9">
+      <input type="text" class="form-control" id="mod" placeholder="請輸入「驗證碼」"><br>
+      <img src="images/autcode.png">
+      <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-refresh"></span></button>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-2 col-lg-9 col-md-9 col-sm-9 col-xs-10">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> 我已閱讀並同意<a href="#">《服務條款》和《隱私權政策》</a>
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+      <button type="submit" class="btn btn-block btn-warning">確認</button>
+    </div>
+  </div>
+     </div>
+        </div>
+      </div>
+      
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="wrap top_page">
+
+<nav class="container-fluid">
+   <div class="container">
+   <div class="visible-xs">
+   <a href="index.html"><div class="logo pull-left" title="回首頁"></div></a>
+   <span class="glyphicon glyphicon-menu-hamburger pull-right xsbtn"></span>
+   </div>
+    <ul class="hidden-xs">
+        <li><a href="index.html"><div class="logo" title="回首頁"></div></a></li>
+        <li><a href="#">會員中心</a></li>
+        <li><a href="news.html">最新消息</a></li>
+        <li><a href="guide_1.html">遊戲指南</a></li>
+        <li><a href="charge.html">儲值專區</a></li>
+        <li><a href="download.html">下載專區</a></li>
+        <li><a href="qa.html">客服中心</a></li>
+    </ul>
+    </div>
+</nav>
+
+<div class="xsnav">
+    <ul class="text-center">
+        <li><a href="#">會員中心</a></li>
+        <li><a href="news.html">最新消息</a></li>
+        <li><a href="guide_1.html">遊戲指南</a></li>
+        <li><a href="charge.html">儲值專區</a></li>
+        <li><a href="download.html">下載專區</a></li>
+        <li><a href="qa.html">客服中心</a></li>
+    </ul>
+</div>
+
+<header>
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <a href="#"><img src="images/aaaaa.jpg" class="center-block"></a>
+    </div>
+    <div class="item">
+      <a href="#" target="_blank"><img src="images/bbbbb.jpg" class="center-block"></a>
+    </div>
+    <div class="item">
+      <a href="#"><img src="images/ccccc.jpg" class="center-block"></a>
+    </div>
+    <div class="item">
+      <a href="#"><img src="images/ddddd.jpg" class="center-block"></a>
+    </div>
+    <div class="item">
+      <a href="#"><img src="images/eeeee.jpg" class="center-block"></a>
+    </div>
+    <div class="item">
+      <a href="#"><img src="images/fffff.jpg" class="center-block"></a>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+    <div class="top_btn">
+    <div class="hr1 hidden-xs"></div>
+    <div class="container">
+    <div class="hidden-xs">
+        <a href="#" data-toggle="modal" data-target=".login"><div class="btn-a1 pull-left"></div></a>
+        <a href="download.html"><div class="btn-a4 pull-left"></div></a>
+        <a href="#"><div class="btn-a3 pull-left"></div></a>
+    </div>
+    <div class="visible-xs">
+        <a href="#" data-toggle="modal" data-target=".login"><div class="btnmob-a1"></div></a>
+        <a href="download.html"><div class="btnmob-a2"></div></a>
+        <a href="#"><div class="btnmob-a3"></div></a>
+    </div>
+    </div>
+    
+    </div>
+</header>
+
+<div class="content container-fluid">
+  <div class="ctbg"></div>
+  <div class="ctbg"></div>
+  <span class="glyphicon glyphicon-circle-arrow-up topbtn" title="回頁首"></span>
+   <div class="container">
+   
+   <div class="col-lg-3 col-md-3 col-lg-push-9 col-md-push-9">
+      <div class="hidden-sm hidden-xs">
+        <a href="exchange.html"><div class="btn-b1"></div></a>
+        <a href="#"><div class="btn-b2"></div></a>
+        <a href="qa.html"><div class="btn-b3"></div></a>
+        <a href="vip.html"><div class="btn-b4"></div></a>
+        <a href="shop.html"><div class="btn-b5"></div></a>
+        <a href="#"><div class="btn-b6 tbc"></div></a>
+        </div>
+      <div class="visible-sm visible-xs">
+        <a href="exchange.html"><div class="btnmob-b1 pull-left"></div></a>
+        <a href="#"><div class="btnmob-b2 pull-left"></div></a>
+        <a href="qa.html"><div class="btnmob-b3 pull-left"></div></a>
+        <a href="vip.html"><div class="btnmob-b4 pull-left"></div></a>
+        <a href="shop.html"><div class="btnmob-b5 pull-left"></div></a>
+        <a href="#"><div class="btnmob-b6 pull-left tbc"></div></a>
+        </div>
+    </div>
+    
+    <div class="col-lg-9 col-md-9 col-lg-pull-3 col-md-pull-3">
+    <div class="col-lg-6 col-md-6 col-lg-push-6 col-md-pull-6">
+      <div class="news">
+      <div class="abgne_tab">
+	<div class="title_container">
+				<ul class="tabs">
+					<li class="menuall"><a href='javascript:void(0);' target='_top'>所有</a></li> <!-- (最新)  後來改成'所有' -->
+					<li class="menu1"><a href='javascript:void(0);' target='_top'>遊戲</a></li> <!-- (新聞) -->
+					<li class="menu2"><a href='javascript:void(0);' target='_top'>系統</a></li><!-- (系統) -->
+					<li class="menu3"><a href='javascript:void(0);' target='_top'>活動</a></li>	<!--(活動)-->			
+					<li class="menu5"> <!-- (更多+) -->
+						<a href="news.html" target="_top">more...</a>
+					</li>
+					<br class="clearfloat" />
+				</ul>
+				<br class="clearfloat" />
+	 </div>
+	<!--  以上是 橫條選項  -->
+
+	<!--  以下是訊息公告標題列表  ---> 
+	 <div class="news_m_container">  
+			<div class="tab_container">
+					<div id="taball" class="tab_content">
+						<ul class="news_list_index">
+							<li>
+								<div class="news_class">
+									<div class="news_icon_1">	</div>
+								</div>
+								<div class="news_subject" style="text-align: left;">
+									<a target="_top" href="news_info.html">【戰亂-Call of Chaos】產包專區道具說明</a>
+								</div><div class="news_date">2017.05.04</div>
+								<br class="clearfloat" />
+							</li>
+							<li>
+								<div class="news_class">
+									<div class="news_icon_1"></div>
+								</div>
+								<div class="news_subject" style="text-align: left;">
+									<a target="_top" href="news_info.html">【戰亂-Call of Chaos】8/15(二) 例行維護暫停一次</a>
+								</div>
+								<div class="news_date">2017.08.15</div>
+								<br class="clearfloat" />
+							</li>
+							<li><div class="news_class"><div class="news_icon_2"></div></div><div class="news_subject" style="text-align: left;"><a target="_top" href="news_info.html">【戰亂-Call of Chaos】8/8 (二)臨時維護公告</a></div><div class="news_date">2017.08.08</div><br class="clearfloat" />
+							</li>		
+							<li>
+								<div class="news_class">
+									<div class="news_icon_3">	</div>
+								</div>
+								<div class="news_subject" style="text-align: left;">
+									<a target="_top" href="news_info.html">【戰亂-Call of Chaos】產包專區道具說明</a>
+								</div><div class="news_date">2017.05.04</div>
+								<br class="clearfloat" />
+							</li>
+							<li>
+								<div class="news_class">
+									<div class="news_icon_1"></div>
+								</div>
+								<div class="news_subject" style="text-align: left;">
+									<a target="_top" href="news_info.html">【戰亂-Call of Chaos】8/15(二) 例行維護暫停一次</a>
+								</div>
+								<div class="news_date">2017.08.15</div>
+								<br class="clearfloat" />
+							</li>
+							<li><div class="news_class"><div class="news_icon_2"></div></div><div class="news_subject" style="text-align: left;"><a target="_top" href="news_info.html">【戰亂-Call of Chaos】8/8 (二)臨時維護公告</a></div><div class="news_date">2017.08.08</div><br class="clearfloat" />
+							</li>	
+							<li><div class="news_class"><div class="news_icon_3"></div></div><div class="news_subject" style="text-align: left;"><a target="_top" href="news_info.html">【戰亂-Call of Chaos】8/8 (二)臨時維護公告</a></div><div class="news_date">2017.08.08</div><br class="clearfloat" />
+							</li>						
+						</ul>					
+				   </div>
+						
+					<div id="tab1" class="tab_content">
+						<ul class="news_list_index">
+							<li>
+								<div class="news_class">
+									<div class="news_icon_1">	</div>
+								</div>
+								<div class="news_subject" style="text-align: left;">
+									<a target="_top" href="news_info.html">【戰亂-Call of Chaos】產包專區道具說明</a>
+								</div><div class="news_date">2017.05.04</div>
+								<br class="clearfloat" />
+							</li>
+							<li>
+								<div class="news_class">
+									<div class="news_icon_1"></div>
+								</div>
+								<div class="news_subject" style="text-align: left;">
+									<a target="_top" href="news_info.html">【戰亂-Call of Chaos】8/15(二) 例行維護暫停一次</a>
+								</div>
+								<div class="news_date">2017.08.15</div>
+								<br class="clearfloat" />
+							</li>
+							<li><div class="news_class"><div class="news_icon_1"></div></div><div class="news_subject" style="text-align: left;"><a target="_top" href="news_info.html">【戰亂-Call of Chaos】8/8 (二)臨時維護公告</a></div><div class="news_date">2017.08.08</div><br class="clearfloat" />
+							</li>		
+							<li>
+								<div class="news_class">
+									<div class="news_icon_1">	</div>
+								</div>
+								<div class="news_subject" style="text-align: left;">
+									<a target="_top" href="news_info.html">【戰亂-Call of Chaos】產包專區道具說明</a>
+								</div><div class="news_date">2017.05.04</div>
+								<br class="clearfloat" />
+							</li>
+							<li>
+								<div class="news_class">
+									<div class="news_icon_1"></div>
+								</div>
+								<div class="news_subject" style="text-align: left;">
+									<a target="_top" href="news_info.html">【戰亂-Call of Chaos】8/15(二) 例行維護暫停一次</a>
+								</div>
+								<div class="news_date">2017.08.15</div>
+								<br class="clearfloat" />
+							</li>
+							<li><div class="news_class"><div class="news_icon_1"></div></div><div class="news_subject" style="text-align: left;"><a target="_top" href="news_info.html">【戰亂-Call of Chaos】8/8 (二)臨時維護公告</a></div><div class="news_date">2017.08.08</div><br class="clearfloat" />
+							</li>	
+							<li><div class="news_class"><div class="news_icon_1"></div></div><div class="news_subject" style="text-align: left;"><a target="_top" href="news_info.html">【戰亂-Call of Chaos】8/8 (二)臨時維護公告</a></div><div class="news_date">2017.08.08</div><br class="clearfloat" />
+							</li>						
+						</ul>	
+					</div>
+					
+					<div id="tab2" class="tab_content">
+						<ul class="news_list_index">
+							<li>
+								<div class="news_class">
+									<div class="news_icon_2">	</div>
+								</div>
+								<div class="news_subject" style="text-align: left;">
+									<a target="_top" href="news_info.html">【戰亂-Call of Chaos】產包專區道具說明</a>
+								</div><div class="news_date">2017.05.04</div>
+								<br class="clearfloat" />
+							</li>
+							<li>
+								<div class="news_class">
+									<div class="news_icon_2"></div>
+								</div>
+								<div class="news_subject" style="text-align: left;">
+									<a target="_top" href="news_info.html">【戰亂-Call of Chaos】8/15(二) 例行維護暫停一次</a>
+								</div>
+								<div class="news_date">2017.08.15</div>
+								<br class="clearfloat" />
+							</li>
+							<li><div class="news_class"><div class="news_icon_2"></div></div><div class="news_subject" style="text-align: left;"><a target="_top" href="news_info.html">【戰亂-Call of Chaos】8/8 (二)臨時維護公告</a></div><div class="news_date">2017.08.08</div><br class="clearfloat" />
+							</li>		
+							<li>
+								<div class="news_class">
+									<div class="news_icon_2">	</div>
+								</div>
+								<div class="news_subject" style="text-align: left;">
+									<a target="_top" href="news_info.html">【戰亂-Call of Chaos】產包專區道具說明</a>
+								</div><div class="news_date">2017.05.04</div>
+								<br class="clearfloat" />
+							</li>
+							<li>
+								<div class="news_class">
+									<div class="news_icon_2"></div>
+								</div>
+								<div class="news_subject" style="text-align: left;">
+									<a target="_top" href="news_info.html">【戰亂-Call of Chaos】8/15(二) 例行維護暫停一次</a>
+								</div>
+								<div class="news_date">2017.08.15</div>
+								<br class="clearfloat" />
+							</li>
+							<li><div class="news_class"><div class="news_icon_2"></div></div><div class="news_subject" style="text-align: left;"><a target="_top" href="news_info.html">【戰亂-Call of Chaos】8/8 (二)臨時維護公告</a></div><div class="news_date">2017.08.08</div><br class="clearfloat" />
+							</li>	
+							<li><div class="news_class"><div class="news_icon_2"></div></div><div class="news_subject" style="text-align: left;"><a target="_top" href="news_info.html">【戰亂-Call of Chaos】8/8 (二)臨時維護公告</a></div><div class="news_date">2017.08.08</div><br class="clearfloat" />
+							</li>						
+						</ul>	
+					</div>	
+
+					<div id="tab3" class="tab_content">
+						<ul class="news_list_index">
+							<li style="color:white;">暫無公告</li>
+							<li>
+									<!--省略-->
+							</li>
+							<li>
+									<!--省略-->
+							</li>			
+							<li>
+									<!--省略-->
+							</li>
+							<li>
+									<!--省略-->
+							</li>
+							<li>
+									<!--省略-->
+							</li>	
+							<li>
+									<!--省略-->
+							</li>							
+						</ul>	
+					</div>	
+					
+					<div id="tab8" class="tab_content">
+						<ul class="news_list_index">
+							<li>
+									<!--省略-->
+							</li>
+							<li>
+									<!--省略-->
+							</li>
+							<li>
+									<!--省略-->
+							</li>			
+							<li>
+									<!--省略-->
+							</li>
+							<li>
+									<!--省略-->
+							</li>
+							<li>
+									<!--省略-->
+							</li>	
+							<li>
+									<!--省略-->
+							</li>				
+						</ul>
+					</div>							
+						   
+			</div>
+			
+	   </div> 
+
+</div>	 
+      
+      </div>
+        <a href="#">
+            <div class="btn-c2 pull-left hidden-xs"></div>
+        </a>
+      </div>
+    <div class="col-lg-6 col-md-6 col-lg-pull-6 col-md-pull-6">
+     <div class="embed-responsive embed-responsive-4by3">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/lGgas6vrV-E"></iframe>
+     </div>
+     <a href="#">
+            <div class="btnmob-c2 pull-left visible-xs"></div>
+        </a>
+     <a href="#" target="_blank">
+            <div class="btn-c1 pull-left hidden-xs"></div>
+            <div class="btnmob-c1 pull-left visible-xs"></div>
+        </a>
+     </div>
+     
+    </div>
+    
+    
+    <div class="col-sm-12 col-xs-12">
+        <div class="hidden-xs">
+           <div class="btn-d3"></div>
+           <a href="#"><div class="btn-d1"></div></a>
+           <div class="btn-d2"></div> 
+           <a href="#" target="_blank"><div class="btn-d4"></div></a>
+       </div>
+       <div class="visible-xs">
+           <div class="col-sm-12 col-xs-12">
+              <a href="#"><div class="btnmob-d1 pull-left"></div></a>
+              <div class="btnmob-d2 pull-left"></div>
+           </div>
+           <div class="col-sm-12 col-xs-12">
+              <div class="btnmob-d3 pull-left"></div>
+              <a href="#" target="_blank"><div class="btnmob-d4 pull-left"></div></a>
+           </div>
+       </div>
+    </div>
+   </div>
+</div>
+
+</div>
+
+<footer class="container-fluid">
+   <div class="row container center-block">
+   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-10">
+   <div class="icon-cclogo pull-left hidden-xs"></div>
+   <div class="icon-malogo pull-left hidden-xs"></div>
+   <span>
+    ©Call of Chaos 2 All Right Reserved.<br>
+    ©Masang soft  All Right Reserved.
+    </span>
+   </div>
+   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-2">
+   <div class="icon-class12 pull-left"></div>
+   <span class="hidden-xs">
+   注意使用時間，避免沉迷於遊戲<br>
+若有以購買遊戲點數（卡）、虛擬遊戲幣或虛擬寶物作為付費方式者，應標示其付費內容及金額、遊戲部分內容或服務需另行支付其他費用，或其他類似警語
+   </span>
+   </div>
+   </div>
+</footer>
+
+</body>
+</html>

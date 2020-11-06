@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>《神印王座》官方網站</title>
+<link rel="shortcut icon" href="images/favicon.ico" />
+<link rel='stylesheet' type='text/css' href='css/reset.css'>
+<link rel="stylesheet" type="text/css" href='css/banner.css'>
+<link rel="stylesheet" type="text/css" href='css/login.css'>
+<link rel="stylesheet" type="text/css" href='css/index_news.css'>
+<link rel="stylesheet" type="text/css" href='css/menu.css'>
+<link rel="stylesheet" type="text/css" href='css/main_top.css'>
+<link rel="stylesheet" type="text/css" href='css/nav.css'>
+<link rel="stylesheet" type="text/css" href='css/footer.css'>
+<link rel="stylesheet" type="text/css" href="css/alixixi.css" />
+<link rel="stylesheet" type="text/css" href="css/article_content.css" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$.easing.def = "easeOutBounce";
+	$('li.button a').click(function(e){
+		var dropDown = $(this).parent().next();
+		$('.dropdown').not(dropDown).slideUp('slow');
+		dropDown.slideToggle('slow');
+		e.preventDefault();
+	})
+});
+</script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="js/index_banner.js"></script>
+<script type="text/javascript" src="js/index_news.js"></script>
+<style type="text/css">
+.date {
+	color: #666;
+	font-size: 12px;
+	font-family: "微軟正黑體", "Heiti TC";
+	float: right;
+	margin-top: 3px;
+}
+.main_bg {
+	background-image: url(images/index_2.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-color: #000;
+}
+
+.article_wrapper {
+	width: 650px;
+	min-height: 887px;
+	float: left;
+	margin-left: 10px;
+	margin-top: 30px;
+	background-color: rgba(0, 0, 0, 0.7);
+	border: 2px solid #666;
+	padding: 8px;
+
+}
+
+
+</style>
+</head>
+
+<body>
+<div class="main_bg">
+
+	<div class="menu_wrapper">
+		<div id="limit">
+			<a href="#"><div class="logo"></div></a>
+			<div class="menu">
+				<a href="#"><div class="menu_1"><img src="images/menu/menu_1.png" /></div></a>
+				<a href="#"><div class="menu_2"><img src="images/menu/menu_2.png" /></div></a>
+				<a href="#"><div class="menu_3"><img src="images/menu/menu_3.png" /></div></a>
+				<a href="#"><div class="menu_4"><img src="images/menu/menu_4.png" /></div></a>
+			</div>
+		</div>
+		<!---limit-->
+    </div><!---menu-->
+
+    <div class="main_top">
+    	<div class="limit">
+        	<div class="container_left"></div><!---無用-->
+        	<div class="flash_light"></div>
+        </div><!---limit-->
+    </div>
+
+	<div class="main">
+		<div class="limit">
+			<div class="nav">
+				<a href="#"><div id="gamestart"></div></a>
+				<div class="area1">
+					<div class="login">
+					<!----會員資訊(未登入)begin---->
+						<form>
+						<div class="log_input_1_container">
+							<div class="area_l">帳號：</div>
+							<div class="area_r">
+							<input type="email"  placeholder="「會員帳號/電子信箱」" class="input_account" id="input_account" value="" name="input_account" ><br>
+							</div>
+						</div>
+						<div class="log_input_1_container">
+							<div class="area_l">密碼：</div>
+							<div class="area_r">
+							<input type="password"  required autocomplete="off" maxlength="16"  placeholder="英數混合8碼~16碼" class="input_account" id="input_password" value="" name="input_password"><br>
+							</div>
+						</div>
+						<div class="log_input_1_container">
+							<div class="area_l">驗證碼</div>
+							<div class="area_r">
+							<input type="text"required autocomplete="off" maxlength="4"  placeholder="請輸入「驗證碼」" class="input_account" id="input_captcha"  value="" name="input_captcha">
+							</div>
+						</div>
+						<div class="area_verifyimg"><img id="captcha_img" src="images/verifyimg.jpg"/></div>
+						<div class="area_verifyimg_change"><a id="captcha_reload" href="#"><img src="images/member/login/verifyimg_change.png"></a></div> 
+						<div class="btn_login">
+						<input type="submit" class="button_login" id="button_login" name="button_login" value="">
+						</div>
+						</form>
+
+						<div class="s_link_container">
+							<span class="s_link"><a href="#">忘記密碼</a> ｜ <a href="#">重發驗證</a> ｜ <a href="#">快速註冊</a></span>
+						</div>
+
+						<div class="other_login_container">
+							<div class="other_login_txt">免申請，使用其他帳號登入：</div>
+							<div class="btn_container_style_1">
+								<a href='/co_auth/memberAuth/facebook' target='_top' class='login_auth_button login_btn_facebook'></a>
+								<a href='/co_auth/memberAuth/yahoo' target='_top' class='login_auth_button login_btn_yahoo'></a>
+								<a href='/co_auth/memberAuth/google' target='_top' class='login_auth_button login_btn_google'></a>
+							</div>
+						</div>
+					<!----會員資訊(未登入)end--->
+					<!----會員區塊(已登入) begin--
+						<div class="membrer_info">
+							<div class="membrer_data">
+								<div class="txt_style_1">親愛的會員您好：</div>
+								<div class="txt_style_2">boyuan@jinko.com.tw</div>
+								<div class="">UID:<span class="txt_style_2">150707165532783569</span></div>
+								<div class="">您剩餘 KO幣點數：<span class="txt_style_2">0</span> 點</div>
+								<div class="txt_style_3">您是從「真子高手」登入</div>
+							</div>
+							<div class="btn_member_center"><a href=""></a></div>
+							<div class="btn_logout"><a href="#"></a></div>
+						</div>
+					<!----會員區塊(已登入) end-->
+					</div><!---login--->
+				</div>
+				<div class="nav_menu">
+					<ul class="container">
+						<li class="menu">
+							<ul>
+								<li class="button"><a href="#" class="green">特色系統<span></span></a></li>
+								<li class="dropdown">
+									<ul>
+										<li><a href="#" onClick="$('.button a').eq(2).click();return false;">公會系統</a></li>
+										<li><a href="#" onClick="$('.dropdown').slideUp('slow');return false;">坐騎系統</a></li>
+										<li class="active"><a href="#">攻城介紹</a></li>
+										<li><a href="#">防禦武將介紹</a></li>
+										<li><a href="#">武將介紹</a></li>
+										<li><a href="#">轉生系統</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="menu">
+							<ul>
+								<li class="button"><a href="#" class="orange">副本玩法<span></span></a></li>          	
+								<li class="dropdown">
+									<ul>
+										<li><a href="#" onClick="$('.button a:last').click();return false;">必拿禮包</a></li>
+										<li><a href="#">攻城掠地</a></li>
+										<li><a href="#">副本攻略</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="menu">
+							<ul>
+								<li class="button"><a href="#" class="blue">強化介紹<span></span></a></li>
+								<li class="dropdown">
+									<ul>
+										<li><a href="#">附魔系統</a></li>
+										<li><a href="#">洗煉系統</a></li>
+										<li><a href="#">藥劑系統</a></li>
+										<li><a href="#">神兵系統</a></li>
+										<li><a href="#">裝備進階</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+				<div class="nav_service"></div>
+            </div>
+		</div>
+		<div class="article_wrapper">
+			<div class="article_title">公會系統</div>
+			<div class="article_content">
+				55555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555
+			</div>
+		</div>  
+	</div><!---main--> 
+
+</div><!---main_bg-->
+<div class="footer">
+	<div class="limit"><img src="images/footer/copyright.jpg"/></div>
+</div><!---footer-->
+</body>
+</html>

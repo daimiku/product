@@ -1,0 +1,1226 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  /*font: inherit;*/
+  /*font-size: 100%;*/
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@keyframes fadeInUp {
+  from {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    -webkit-transform: translate3d(0, 25%, 0);
+    transform: translate3d(0, 25%, 0);
+  }
+  to {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeInUpFixed {
+  from {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    transform: translate3d(0, 1em, 0);
+  }
+  to {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes button_move {
+  50% {
+    transform: translateY(-5px) scaleX(1.03);
+  }
+  100% {
+    transform: translateY(0) scaleX(1);
+  }
+}
+@keyframes zoomIn {
+  from {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+}
+@keyframes leftMove {
+  from {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    transform: translate3d(30em, 20em, 0) scale(0.1) rotate(0);
+  }
+  to {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+    transform: scale(1) rotate(-15deg);
+  }
+}
+@keyframes rightMove {
+  from {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    transform: translate3d(-30em, 20em, 0) scale(0.1) rotate(0);
+  }
+  to {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1) rotate(-15deg);
+  }
+}
+body {
+  font-family: "Noto Sans TC", "黑體-繁", "微軟正黑體", "Verdana", "Geneva", "sans-serif";
+  font-size: 14px;
+  overflow-x: hidden;
+  overflow-y: scroll !important;
+  padding-right: 0 !important;
+}
+body.modal-fixed {
+  position: fixed;
+  width: 100%;
+  overflow-y: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+h1 {
+  color: #333;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+h2 {
+  color: #353535;
+  font-size: 2em;
+  padding-bottom: 10px;
+}
+
+p {
+  color: #757575;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  word-break: break-all;
+}
+
+.invisible {
+  visibility: visible;
+}
+
+.navbar {
+  /*position: relative;*/
+}
+
+.preregister {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  position: relative;
+  overflow: hidden;
+  font: 400 0.83333vw/1.2 Arial, sans-serif;
+  background-color: #5b3333;
+  color: #fff;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+  /*background-image: url("../images/bg.jpg");*/
+}
+.preregister .bkg {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+.preregister .img {
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+}
+.preregister .prereg-button {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+.preregister .prereg-button .receive_updates {
+  position: relative;
+  z-index: 2;
+  margin-top: 0.5em;
+  margin-left: -3em;
+  font-size: 0.875em;
+  color: #79e5ec;
+  display: none;
+}
+.preregister .prereg-button .receive_updates label {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.preregister .prereg-button .receive_updates input {
+  position: absolute;
+  opacity: 0;
+}
+.preregister .prereg-button .receive_updates input:checked ~ .checkmark:after {
+  display: block;
+}
+.preregister .prereg-button .receive_updates .checkmark {
+  position: relative;
+  width: 1.75em;
+  height: 1.75em;
+  margin-right: 0.5em;
+  font-size: 1em;
+  border-radius: 0.33333em;
+  background: rgba(0, 0, 0, 0.6);
+}
+.preregister .prereg-button .receive_updates .checkmark:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: none;
+  width: 0.35em;
+  height: 0.75em;
+  border: solid #79e5ec;
+  border-width: 0 0.2em 0.2em 0;
+  content: "";
+  transform: rotate(45deg) translate(-110%, -25%);
+}
+.preregister .prereg-button .receive_updates .label-text {
+  padding: 0.3em 0.75em;
+  border-radius: 0.33333em;
+  background: rgba(0, 0, 0, 0.6);
+}
+.preregister .prereg-button .pr-btn {
+  width: 25em;
+  height: 5.6875em;
+  /*background-image: url("../images/btn.png");*/
+  background-color: transparent;
+  border: none;
+}
+.preregister .prereg-button .pr-btn:hover {
+  animation: button_move 0.2s ease-in-out;
+}
+.preregister .invisible {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  visibility: hidden;
+}
+.preregister .visible {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  visibility: visible;
+}
+.preregister .fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+.preregister .fadeInUpFixed {
+  -webkit-animation-name: fadeInUpFixed;
+  animation-name: fadeInUpFixed;
+}
+.preregister .zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+}
+.preregister .leftMove {
+  -webkit-animation-name: leftMove;
+  animation-name: leftMove;
+}
+.preregister .rightMove {
+  -webkit-animation-name: rightMove;
+  animation-name: rightMove;
+}
+.preregister .character-left {
+  position: absolute;
+  left: 50%;
+}
+.preregister .character-right {
+  position: absolute;
+}
+.preregister .image {
+  position: relative;
+}
+.preregister .image > * {
+  position: relative;
+  z-index: 1;
+}
+.preregister .image img {
+  width: auto;
+  height: 100%;
+}
+.preregister .image::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: calc(100.1%);
+  height: calc(100.5%);
+  border-radius: 0.5em;
+}
+.preregister .masthead {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  height: 36.25em;
+}
+.preregister .masthead .logo {
+  z-index: 10;
+  width: 45.8125em;
+  height: 26.3125em;
+  /*background-image: url("../images/logo.png");*/
+}
+.preregister .masthead .prereg-button {
+  margin-top: 1.25em;
+}
+.preregister .rewards {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.preregister .rewards .title {
+  z-index: 2;
+  width: 63.875em;
+  height: 8.8125em;
+  margin-top: -3em;
+  margin-bottom: -3.5em;
+  /*background-image: url("../images/rewards-title.png");*/
+}
+.preregister .rewards .character-left {
+  position: absolute;
+  z-index: 0;
+  width: 53.5em;
+  height: 121em;
+  top: -35.75em;
+  left: 0;
+  /*background-image: url("../images/rewards-girl-left.png");*/
+}
+.preregister .rewards .character-right {
+  position: absolute;
+  z-index: 0;
+  top: -43.25em;
+  width: 66.6875em;
+  height: 101.5625em;
+  right: 0;
+  /*background-image: url("../images/rewards-girl-right.png");*/
+}
+.preregister .rewards .characters {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.preregister .rewards .characters [class*=character-] {
+  width: 24.1875em;
+  height: 24.4375em;
+}
+/*.preregister .rewards .characters .character-1 {
+  background-image: url("../images/rewards-item-1.png");
+}
+.preregister .rewards .characters .character-2 {
+  background-image: url("../images/rewards-item-2.png");
+}
+.preregister .rewards .characters .character-3 {
+  background-image: url("../images/rewards-item-3.png");
+}
+.preregister .rewards .characters .character-4 {
+  background-image: url("../images/rewards-item-4.png");
+}
+.preregister .rewards .characters .character-5 {
+  background-image: url("../images/rewards-item-5.png");
+}
+.preregister .rewards .characters .character-6 {
+  background-image: url("../images/rewards-item-6.png");
+}*/
+.preregister .rewards .characters.con-3 [class*=character-] {
+  margin: 2.75em -3em 1.25em;
+}
+.preregister .rewards .characters.con-4 [class*=character-] {
+  margin: 2.75em -4em 1.25em;
+}
+.preregister .rewards .characters.con-5 {
+  width: 60%;
+}
+.preregister .rewards .characters.con-5 [class*=character-] {
+  margin: 2.75em -3em 1.25em;
+}
+.preregister .rewards .characters.con-5 .character-1 {
+  margin-bottom: 0;
+}
+.preregister .rewards .characters.con-5 .character-2 {
+  margin-bottom: 0;
+}
+.preregister .rewards .characters.con-5 .character-3 {
+  margin-bottom: 0;
+}
+.preregister .rewards .characters.con-5 .character-4 {
+  margin-top: -7.75em;
+}
+.preregister .rewards .characters.con-5 .character-5 {
+  margin-top: -7.75em;
+}
+.preregister .rewards .characters.con-6 {
+  width: 60%;
+}
+.preregister .rewards .characters.con-6 [class*=character-] {
+  margin: 2.75em -3em 1.25em;
+}
+.preregister .rewards .characters.con-6 .character-1 {
+  margin-bottom: 0;
+}
+.preregister .rewards .characters.con-6 .character-2 {
+  margin-bottom: 0;
+}
+.preregister .rewards .characters.con-6 .character-3 {
+  margin-bottom: 0;
+}
+.preregister .rewards .characters.con-6 .character-4 {
+  margin-top: -7.75em;
+}
+.preregister .rewards .characters.con-6 .character-5 {
+  margin-top: -7.75em;
+}
+.preregister .rewards .characters.con-6 .character-6 {
+  margin-top: -7.75em;
+}
+.preregister .rewards .text {
+  z-index: 1;
+  width: 74.8125em;
+  height: 13.75em;
+  /*background-image: url("../images/rewards-text.png");*/
+  margin-top: -5em;
+}
+.preregister .rewards .prereg-button {
+  margin-top: 2em;
+}
+.preregister .gameplay {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.preregister .gameplay .flexitem {
+  max-width: 100%;
+  flex-shrink: 0;
+}
+.preregister .gameplay .prereg-button {
+  margin-top: 3.75em;
+}
+.preregister .gameplay .character-left {
+  top: 59.375em;
+  width: 39.5em;
+  height: 41.625em;
+  margin-left: -60em;
+  /*background-image: url("../images/cute.png");*/
+  z-index: 10;
+}
+.preregister .gameplay .character-left-2 {
+  display: none;
+}
+.preregister .gameplay .character-right {
+  top: 34.375em;
+  width: 52.9375em;
+  height: 109.75em;
+  right: 0;
+  /*background-image: url("../images/girl_03.png");*/
+  z-index: 2;
+}
+.preregister .gameplay .title {
+  width: 64em;
+  height: 8.8125em;
+  margin: 1em 0 3.5em;
+  /*background-image: url("../images/gameplay_title.png");*/
+  z-index: 12;
+}
+.preregister .gameplay .text {
+  width: 59.8125em;
+  height: 13.75em;
+  /*background-image: url("../images/gameplay_text.png");*/
+  margin-top: 4.375em;
+  z-index: 11;
+}
+.preregister .gameplay .carousel {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: -5em;
+  z-index: 3;
+}
+.preregister .gameplay .carousel [class*=image] {
+  width: 30.8125em;
+  height: 17.375em;
+  margin: 2em 1em;
+}
+.preregister .availabilty {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  height: 79.125em;
+}
+.preregister .availabilty .trailer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 74.0625em;
+  height: 43.375em;
+  margin-bottom: 1.25em;
+  z-index: 5;
+}
+.preregister .availabilty .trailer .poster {
+  width: 71.25em;
+  height: 41.25em;
+  margin-top: 1.75em;
+  background-image: url("../images/poster.png");
+}
+.preregister .availabilty .title {
+  width: 32.0625em;
+  height: 8.8125em;
+  /*background-image: url("../images/availability-title.png");*/
+  z-index: 3;
+}
+.preregister .availabilty .text {
+  z-index: 1;
+  width: 59.8125em;
+  height: 13.75em;
+  /*background-image: url("../images/availabilty-text.png");*/
+  margin-top: 1.875em;
+}
+.preregister .availabilty .prereg-button {
+  margin-top: 1.875em;
+}
+.preregister .ehscenes {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  height: 54.8125em;
+}
+.preregister .ehscenes .character-left {
+  top: -34.375em;
+  width: 29.5625em;
+  height: 84.1875em;
+  margin-left: -60em;
+  /*background-image: url("../images/girl-05.png");*/
+  z-index: 2;
+}
+.preregister .ehscenes .character-right {
+  top: -34.375em;
+  width: 31.5625em;
+  height: 95.9375em;
+  right: 0;
+  /*background-image: url("../images/girl-06.png");*/
+  z-index: 2;
+}
+.preregister .ehscenes .title {
+  width: 39.6875em;
+  height: 8.8125em;
+  margin: 1em 0 3.5em;
+  /*background-image: url("../images/hscenes-title.png");*/
+}
+.preregister .ehscenes .text {
+  width: 59.8125em;
+  height: 13.75em;
+  /*background-image: url("../images/hscenes_text.png");*/
+  margin-top: 1.875em;
+  z-index: 3;
+}
+.preregister .ehscenes .screens {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: -5em;
+  z-index: 3;
+}
+.preregister .ehscenes .screens [class*=image] {
+  width: 45.125em;
+  height: 24.5625em;
+  margin: 2em 1em;
+}
+.preregister .last-sec {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  height: 70.1875em;
+}
+.preregister .last-sec .lamp {
+  z-index: 2;
+  width: 31.625em;
+  height: 41.1875em;
+  /*background-image: url("../images/lamp.png");*/
+  position: absolute;
+  right: 0;
+  top: -31.25em;
+}
+.preregister .last-sec .girls {
+  z-index: 1;
+  width: 120em;
+  height: 87.4375em;
+  /*background-image: url("../images/girls.png");*/
+  margin-top: -15.625em;
+  background-size: cover;
+}
+.preregister .last-sec .prereg-button {
+  margin-top: 56.25em;
+  position: absolute;
+}
+
+.modal-fixed section, .modal-fixed footer {
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+}
+
+.modal-content {
+  border: 1px solid #f39;
+}
+
+.modal-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #f39;
+}
+
+.modal-header {
+  border: none;
+}
+
+.modal-body h3 {
+  font-weight: normal;
+}
+
+.form-control {
+  margin: 10px 0;
+}
+
+.text-error {
+  color: red;
+  margin: 20px;
+}
+.text-error.on {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+.text-error.off {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+
+.btn {
+  margin-bottom: 20px;
+  padding: 8px 0;
+}
+.btn a {
+  color: #fff;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-pre {
+  color: #fff;
+  background-color: #f39;
+  border-color: #ba3778;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.btn-pre:hover, .btn-pre:focus {
+  color: #fff;
+  background-color: #ba3778;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.modal-footer {
+  text-align: center;
+  border: none;
+  line-height: 1.2em;
+}
+
+.icon-fb {
+  background-image: url("../images/icon-fb.png");
+  width: 40px;
+  height: 39px;
+  display: inline-block;
+  vertical-align: -12px;
+  margin-right: 5px;
+}
+
+.icon-tg {
+  background-image: url("../images/icon-tg.png");
+  width: 43px;
+  height: 43px;
+  display: inline-block;
+  vertical-align: -14px;
+  margin-right: 5px;
+}
+
+@media (min-width: 1401px) {
+  .modal-content {
+    margin-top: 300px;
+  }
+
+  .modal-body {
+    height: 180px;
+  }
+  .modal-body h3 {
+    font-size: 20px;
+    margin-top: 60px;
+  }
+
+  .preregister .rewards .characters.con-3, .preregister .rewards .characters.con-4 {
+    margin-top: -6em;
+  }
+  .preregister .rewards .characters.con-5, .preregister .rewards .characters.con-6 {
+    margin: -5em auto 0;
+  }
+  .preregister .gameplay {
+    height: 82.625em;
+  }
+
+  .modal-body .btn {
+    width: 400px;
+  }
+}
+@media (max-width: 1400px) {
+  .modal-content {
+    margin-top: 200px;
+  }
+
+  .modal-body h3 {
+    font-size: 20px;
+  }
+
+  .preregister .prereg-button .receive_updates {
+    font-size: 10px;
+  }
+  .preregister .rewards .characters.con-5, .preregister .rewards .characters.con-6 {
+    margin: 0 auto;
+  }
+  .preregister .gameplay {
+    height: 85.625em;
+  }
+  .preregister .gameplay .text {
+    width: 69.8125em;
+    height: 19.75em;
+    margin-top: 1.375em;
+  }
+
+  .modal-body .btn {
+    width: 400px;
+  }
+}
+@media (max-width: 1024px) {
+  .modal-content {
+    margin-top: 150px;
+  }
+
+  .modal-body h3 {
+    font-size: 16px;
+  }
+
+  .preregister .masthead .prereg-button {
+    margin-top: 0;
+  }
+  .preregister .rewards.con-3, .preregister .rewards.con-4 {
+    margin-top: -5em;
+  }
+  .preregister .rewards.con-5, .preregister .rewards.con-6 {
+    margin: 0 auto;
+  }
+  .preregister .rewards .text {
+    z-index: 1;
+    width: 74.8125em;
+    height: 19.75em;
+  }
+  .preregister .rewards .title {
+    margin-top: -2em;
+    margin-bottom: -4.5em;
+  }
+  .preregister .gameplay {
+    height: 92.625em;
+  }
+  .preregister .gameplay .text {
+    width: 69.8125em;
+    height: 19.75em;
+    margin-top: 1.375em;
+  }
+  .preregister .ehscenes .text {
+    width: 69.8125em;
+    height: 19.75em;
+    margin-top: 0;
+  }
+
+  .modal-body .btn {
+    width: 400px;
+  }
+}
+@media (max-width: 720px) {
+  .modal-content {
+    margin-top: 150px;
+  }
+
+  .modal-body h3 {
+    font-size: 16px;
+  }
+
+  .modal-body .btn {
+    width: 250px;
+  }
+
+  .preregister {
+    font-size: 2.5vw;
+    /*background-image: url("../images/bg-640.jpg");*/
+  }
+  .preregister .prereg-button {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+  }
+  .preregister .prereg-button .receive_updates {
+    font-size: 12px;
+    margin-top: 0.5em;
+  }
+  .preregister .prereg-button .btn {
+    width: 20.25em;
+    height: 4.625em;
+    /*background-image: url("../images/btn-640.png");*/
+    background-color: transparent;
+    border: none;
+  }
+  .preregister .prereg-button .btn:hover {
+    animation: button_move 0.2s ease-in-out;
+  }
+  .preregister .masthead {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    height: 26.625em;
+  }
+  .preregister .masthead .logo {
+    width: 26.4375em;
+    height: 17.375em;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    top: auto;
+    left: auto;
+    /*background-image: url("../images/logo-640.png");*/
+  }
+  .preregister .masthead .prereg-button {
+    margin-top: 2em;
+  }
+  .preregister .rewards {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .preregister .rewards .character-left {
+    top: -26.625em;
+    width: 19.375em;
+    height: 41.5em;
+    left: 0;
+    margin-left: 0;
+    z-index: 2;
+    /*background-image: url("../images/girl-02-m.png");*/
+  }
+  .preregister .rewards .character-right {
+    top: -26.625em;
+    width: 21.0625em;
+    height: 33.3125em;
+    right: 0;
+    margin-left: auto;
+    z-index: 2;
+    /*background-image: url("../images/girl-01-m.png");*/
+  }
+  .preregister .rewards .title {
+    width: 32.0625em;
+    height: 7em;
+    margin-top: -1em;
+    /*background-image: url("../images/rewards-title-640.png");*/
+  }
+  .preregister .rewards .text {
+    z-index: 1;
+    width: 38.5625em;
+    height: 16.25em;
+    /*background-image: url("../images/rewards-text-640.png");*/
+    margin-top: -5em;
+  }
+  .preregister .rewards .characters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    margin-top: 0;
+  }
+  .preregister .rewards .characters [class*=character-] {
+    width: 17.5em;
+    height: 18.4375em;
+  }
+  /*.preregister .rewards .characters .character-1 {
+    background-image: url("../images/rewards-item-1-m.png");
+  }
+  .preregister .rewards .characters .character-2 {
+    background-image: url("../images/rewards-item-2-m.png");
+  }
+  .preregister .rewards .characters .character-3 {
+    background-image: url("../images/rewards-item-3-m.png");
+  }
+  .preregister .rewards .characters .character-4 {
+    background-image: url("../images/rewards-item-4-m.png");
+  }
+  .preregister .rewards .characters .character-5 {
+    background-image: url("../images/rewards-item-5-m.png");
+  }
+  .preregister .rewards .characters .character-6 {
+    background-image: url("../images/rewards-item-6-m.png");
+  }*/
+  .preregister .rewards .characters.con-3 {
+    flex-flow: row nowrap;
+  }
+  .preregister .rewards .characters.con-3 [class*=character-] {
+    margin: 2.75em -3.5em 1.25em;
+  }
+  .preregister .rewards .characters.con-4 {
+    flex-flow: row wrap;
+  }
+  .preregister .rewards .characters.con-4 [class*=character-] {
+    margin: 0 -1.5em 1.25em;
+  }
+  .preregister .rewards .characters.con-4 .character-1 {
+    margin-bottom: 0;
+  }
+  .preregister .rewards .characters.con-4 .character-2 {
+    margin-bottom: 0;
+  }
+  .preregister .rewards .characters.con-4 .character-3 {
+    margin-top: -5.75em;
+  }
+  .preregister .rewards .characters.con-4 .character-4 {
+    margin-top: -5.75em;
+  }
+  .preregister .rewards .characters.con-5 {
+    width: 80%;
+    margin: 0 auto;
+    flex-flow: row wrap;
+  }
+  .preregister .rewards .characters.con-5 [class*=character-] {
+    margin: 2.75em -4em 1.25em;
+  }
+  .preregister .rewards .characters.con-5 .character-1 {
+    margin-bottom: 0;
+  }
+  .preregister .rewards .characters.con-5 .character-2 {
+    margin-bottom: 0;
+  }
+  .preregister .rewards .characters.con-5 .character-3 {
+    margin-bottom: 0;
+  }
+  .preregister .rewards .characters.con-5 .character-4 {
+    margin-top: -5.75em;
+    margin-left: -2em;
+  }
+  .preregister .rewards .characters.con-5 .character-5 {
+    margin-top: -5.75em;
+    margin-left: -2em;
+  }
+  .preregister .rewards .characters.con-6 {
+    width: 80%;
+    margin: 0 auto;
+    flex-flow: row wrap;
+  }
+  .preregister .rewards .characters.con-6 [class*=character-] {
+    margin: 2.75em -4em 1.25em;
+  }
+  .preregister .rewards .characters.con-6 .character-1 {
+    margin-bottom: 0;
+  }
+  .preregister .rewards .characters.con-6 .character-2 {
+    margin-bottom: 0;
+  }
+  .preregister .rewards .characters.con-6 .character-3 {
+    margin-bottom: 0;
+  }
+  .preregister .rewards .characters.con-6 .character-4 {
+    margin-top: -5.75em;
+  }
+  .preregister .rewards .characters.con-6 .character-5 {
+    margin-top: -5.75em;
+  }
+  .preregister .rewards .characters.con-6 .character-6 {
+    margin-top: -5.75em;
+  }
+  .preregister .gameplay {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    height: 91.625em;
+    padding-top: 15em;
+  }
+  .preregister .gameplay .prereg-button {
+    margin-top: 1.875em;
+  }
+  .preregister .gameplay .character-left {
+    top: -3.125em;
+    width: 13.0625em;
+    height: 17.875em;
+    margin-left: -50%;
+    /*background-image: url("../images/cute-m.png");*/
+    z-index: 10;
+  }
+  .preregister .gameplay .character-left-2 {
+    display: block;
+    top: 43.75em;
+    width: 36.8125em;
+    height: 44.0625em;
+    margin-left: -60em;
+    z-index: 10;
+  }
+  .preregister .gameplay .character-right {
+    top: -12.5em;
+    width: 18.1875em;
+    height: 44.3125em;
+    right: 0;
+    /*background-image: url("../images/girl-03-m.png");*/
+    z-index: 0;
+  }
+  .preregister .gameplay .title {
+    width: 21.25em;
+    height: 29.3125em;
+    margin: -28em 0 -5.5em;
+    /*background-image: url("../images/gameplay-title-640.png");*/
+  }
+  .preregister .gameplay .text {
+    width: 29.8125em;
+    height: 53.75em;
+    /*background-image: url("../images/gameplay-text-640.png");*/
+    margin-top: 1em;
+  }
+  .preregister .gameplay .carousel {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 98%;
+    margin-top: 5em;
+  }
+  .preregister .gameplay .carousel .no-mobile {
+    display: none;
+  }
+  .preregister .gameplay .carousel [class*=image] {
+    width: 100%;
+    height: 18.1875em;
+    margin: 0 0 2em -1em;
+  }
+  .preregister .availabilty {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    height: 47.3125em;
+  }
+  .preregister .availabilty .trailer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 74.0625em;
+    height: 43.375em;
+    margin-bottom: 1.25em;
+    z-index: 5;
+  }
+  .preregister .availabilty .trailer .poster {
+    width: 37.5em;
+    height: 21.625em;
+    margin-top: 1.75em;
+    /*background-image: url("../images/poster-640.png");*/
+  }
+  .preregister .availabilty .pc-left {
+    top: -2em;
+    width: 12.5em;
+    height: 11.3125em;
+    margin-left: -35vw;
+    z-index: 3;
+    position: absolute;
+    display: none;
+  }
+  .preregister .availabilty .phone-right {
+    top: -2em;
+    width: 8.9375em;
+    height: 11.25em;
+    right: 5vw;
+    z-index: 3;
+    position: absolute;
+    display: none;
+  }
+  .preregister .availabilty .title {
+    height: 14.5em;
+    margin-top: 1em;
+    z-index: 3;
+    /*background-image: url("../images/availability-title-640.png");*/
+  }
+  .preregister .availabilty .text {
+    z-index: 1;
+    width: 20.8125em;
+    height: 16.75em;
+    /*background-image: url("../images/availability_text-640.png");*/
+    margin-top: 0;
+  }
+  .preregister .availabilty .prereg-button {
+    margin-top: 1.875em;
+  }
+  .preregister .ehscenes {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    height: 67.1875em;
+  }
+  .preregister .ehscenes .character-left {
+    top: -20.3125em;
+    width: 11.1875em;
+    height: 39.5625em;
+    margin-left: -50%;
+    /*background-image: url("../images/girl_05-640.png");*/
+    z-index: 2;
+  }
+  .preregister .ehscenes .character-right {
+    top: -23.75em;
+    width: 12.875em;
+    height: 44.625em;
+    right: 0;
+    /*background-image: url("../images/girl_06-640.png");*/
+    z-index: 2;
+  }
+  .preregister .ehscenes .title {
+    width: 20.6875em;
+    height: 4.5em;
+    margin: 1em 0 3.5em;
+    z-index: 3;
+  }
+  .preregister .ehscenes .text {
+    width: 38.5625em;
+    height: 16.875em;
+    /*background-image: url("../images/hscenes-text-640.png");*/
+    margin-top: 1.25em;
+    margin-bottom: 0.3125em;
+    z-index: 3;
+  }
+  .preregister .ehscenes .screens {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: -4em;
+    z-index: 3;
+  }
+  .preregister .ehscenes .screens [class*=image] {
+    width: 90%;
+    height: 20.125em;
+    margin: 1em 1em;
+  }
+  .preregister .last-sec {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    height: 31.875em;
+  }
+  .preregister .last-sec .lamp {
+    z-index: 2;
+    width: 20.1875em;
+    height: 21.8125em;
+    /*background-image: url("../images/lamp-640.png");*/
+    position: absolute;
+    right: 0;
+    top: -4.375em;
+  }
+  .preregister .last-sec .girls {
+    z-index: 1;
+    width: 40em;
+    height: 31.5em;
+    /*background-image: url("../images/girls-640.png");*/
+    margin-top: 0.3125em;
+    background-size: cover;
+  }
+  .preregister .last-sec .prereg-button {
+    margin-top: 20em;
+    position: absolute;
+  }
+}

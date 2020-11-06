@@ -1,0 +1,626 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #000;
+
+}
+img{
+	border: 0px;
+}
+ul, li{
+	margin: 0px;
+	padding: 0px; list-style: none;
+}
+p{
+	padding-bottom: 2em;
+	padding-top: 0px;
+	margin: 0px;
+}
+a{
+	color: #333333;
+	border: none;
+	text-decoration: none;
+}
+a:hover{
+	color: #F00;
+	text-decoration: none;
+}
+
+h1{
+	margin: 0px;
+	font-size: 22px;
+	font-weight: 400;
+	font-family: "微軟正黑體", "Microsoft JhengHei", arial, helvetica, clean, Verdana, Geneva, sans-serif;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	color: #FFFFFF;
+}
+h2{
+	margin: 0px;
+	font-size: 18px;
+	font-weight: 400;
+	font-family: "微軟正黑體", "Microsoft JhengHei", arial, helvetica, clean, Verdana, Geneva, sans-serif;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	color: #E898FC;
+}
+h3{
+	margin: 0px;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: "微軟正黑體", "Microsoft JhengHei", arial, helvetica, clean, Verdana, Geneva, sans-serif;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	color: #f3e6d0;
+}
+
+.txt_style_1{
+	color: #F00;
+	font-weight: bold;
+}
+
+
+
+
+/******主背景圖*******/
+.bg_index{
+	width: auto;
+	height: auto;
+	background-image: url(../images/login/404.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-color: #000000;
+	position: relative;
+}
+
+.bg_index1{
+	width: auto;
+	height: auto;
+	background-image: url(../images/login/maintenance.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-color: #000000;
+	position: relative;
+}
+
+
+
+/******頂部區塊******/
+.header{
+	width: 1200px;
+	min-height: 680px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	position: relative;
+}
+.header_container{
+	width: 398px;
+	position: absolute;
+	top: 290px;
+	left: 140px;
+}
+.game_logo{
+	width: 440px;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+}
+.game_logo a{
+	width: 440px;
+	height: 240px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+.game_logo a:hover{
+	width: 440px;
+	height: 240px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(../images/login/btn_get_home.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+
+
+/*****會員登入區塊*****/
+.login_board{
+	height: auto;
+	width: 398px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+.tb_login{
+	margin: 0px;
+	display: block;
+	height: auto;
+	width: auto;
+}
+.tb_login .tb_login_t{
+	margin: 0px;
+	background-image: url(../images/login/tb_login_t.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	display: block;
+	height: 20px;
+	width: 398px;
+}
+.tb_login .tb_login_m{
+	background-image: url(../images/login/tb_login_m.png);
+	background-repeat: repeat-y;
+	background-position: left top;
+	display: block;
+	height: auto;
+	width: 368px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.tb_login .tb_login_m .sidebar_r{
+	float: left;
+	height: auto;
+	width: 370px;
+	display: block;
+}
+.tb_login .tb_login_m .tb_login_container{
+	padding-right: 14px;
+	display: block;
+	height: auto;
+	width: auto;
+	padding-left: 14px;
+}
+.tb_login .tb_login_m .tb_login_container .tb_login_title_1{
+	display: block;
+	background-image: url(../images/login/tb_login_title_1.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 40px;
+	width: 340px;
+}
+.tb_login .tb_login_m .tb_login_container .tb_login_title_2{
+	display: block;
+	background-image: url(../images/login/tb_login_title_2.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 40px;
+	width: 340px;
+}
+.tb_login .tb_login_m .tb_login_container .tb_login_title_3{
+	display: block;
+	background-image: url(../images/login/forget_password_title.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 40px;
+	width: 340px;
+}
+.tb_login .tb_login_m .tb_login_container .tb_login_title_4{
+	display: block;
+	background-image: url(../images/login/forget_verification_title.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 40px;
+	width: 340px;
+}
+.tb_login .tb_login_m .tb_login_container .tb_login_content{
+	display: block;
+	padding-top: 24px;
+	height: auto;
+	width: auto;
+}
+
+.tb_login .tb_login_m .tb_login_container .tb_login_content .log_input_1_container{
+	height: auto;
+	width: auto;
+	padding-bottom: 6px;
+}
+.tb_login .tb_login_m .tb_login_container .tb_login_content .log_input_2_container{
+	height: auto;
+	width: auto;
+	padding-bottom: 6px;
+	display: block;
+	font-size: 12px;
+}
+
+.tb_login .tb_login_m .tb_login_container .tb_login_content .log_input_1_container .area_l{
+	float: left;
+	display: block;
+	width: 65px;
+	text-align: right;
+	height: auto;
+	min-height: 1em;
+	font-size: 13px;
+}
+.tb_login .tb_login_m .tb_login_container .tb_login_content .log_input_1_container .area_r{
+	float: left;
+	width: 270px;
+	height: auto;
+	display: block;
+}
+.tb_login .tb_login_m .tb_login_container .tb_login_content .log_input_1_container .area_r2{
+	float: left;
+	width: auto;
+	height: auto;
+	display: block;
+}
+.tb_login .tb_login_m .tb_login_container .tb_login_content .log_input_1_container .area_r3{
+	float: left;
+	width: auto;
+	height: auto;
+	display: block;
+}
+.tb_login .tb_login_m .tb_login_container .tb_login_content .log_input_1_container .area_verifyimg{
+	float: left;
+	width: 104px;
+	height: auto;
+	display: block;
+}
+.tb_login .tb_login_m .tb_login_container .tb_login_content .log_input_1_container .area_verifyimg img{
+	display: block;
+	border: 1px solid #CCC;
+}
+.tb_login .tb_login_m .tb_login_container .tb_login_content .log_input_1_container .verifyimg{
+    float: left;
+	width: auto;
+	height: auto;}
+.tb_login .tb_login_m .tb_login_container .tb_login_content .log_input_1_container .area_verifyimg_change{	float: left;
+	width: auto;
+	height: auto;
+	display: block;
+	padding-left: 4px;
+}
+.btn_login{display: block;}
+.btn_login a, #button_login{
+	display: block;
+	background-image: url(../images/login/btn_login.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 42px;
+	width: 340px;
+        border: 0 none;
+}
+.btn_login a:hover, #button_login:hover{
+	display: block;
+	background-image: url(../images/login/btn_login.png);
+	background-repeat: no-repeat;
+	background-position: left -42px;
+	height: 42px;
+	width: 340px;
+}
+.btn_regist{display: block;}
+.btn_regist a, #button_regist{
+	display: block;
+	background-image: url(../images/login/btn_regist.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 42px;
+	width: 340px;
+        border  : 0px;
+}
+.btn_regist a:hover, #button_regist:hover{
+	display: block;
+	background-image: url(../images/login/btn_regist.png);
+	background-repeat: no-repeat;
+	background-position: left -42px;
+	height: 42px;
+	width: 340px;
+}
+.btn_submit{display: block;}
+.btn_submit a{
+	display: block;
+	background-image: url(../images/login/btn_submit.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 42px;
+	width: 340px;
+}
+.btn_submit a:hover{
+	display: block;
+	background-image: url(../images/login/btn_submit.png);
+	background-repeat: no-repeat;
+	background-position: left -42px;
+	height: 42px;
+	width: 340px;
+}
+
+.input_style_1, .input_account, .input_password, .input_re_password{
+	width: 264px;
+	border: 1px solid #CCCCCC;
+	font-size: 12px;
+	padding-right: 6px;
+	padding-left: 6px;
+	color: #000;
+	line-height: 22px;
+	height: 22px;
+}
+.input_style_2, .input_captcha{
+	color: #000000;
+	font-size: 12px;
+	width: 264px;
+	border: 1px solid #CCCCCC;
+	padding-top: 4px;
+	padding-right: 6px;
+	padding-bottom: 4px;
+	padding-left: 6px;
+	height: auto;
+	margin-bottom: 4px;
+}
+.right_info_style_1{
+	height: auto;
+	font-size: 12px;
+	color: #090;
+	background-image: url(../images/login/icon_right.gif);
+	background-repeat: no-repeat;
+	background-position: left 6px;
+	line-height: 18px;
+	padding-left: 14px;
+	width: auto;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.error_info_style_1{
+	height: auto;
+	font-size: 12px;
+	color: #F00;
+	background-image: url(../images/login/icon_erroe.gif);
+	background-repeat: no-repeat;
+	background-position: left 6px;
+	line-height: 18px;
+	padding-left: 14px;
+	width: auto;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.tb_login .tb_login_m .tb_login_container .tb_login_content .s_link_container{
+	height: auto;
+	width: auto;
+	padding-top: 10px;
+	display: block;
+	padding-bottom: 20px;
+	text-align: center;
+}
+.tb_login .tb_login_m .tb_login_container .tb_login_content .s_link_container .s_link{
+	width: auto;
+	border-radius: 12px;
+	background-color: #dedede;
+	font-size: 12px;
+	padding-right: 12px;
+	padding-left: 18px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	background-image: url(../images/login/icon_arrow.gif);
+	background-repeat: no-repeat;
+	background-position: 6px 5px;
+}
+
+/******/
+.other_login_container{
+	width: auto;
+	background-image: url(../images/login/line_1.png);
+	background-repeat: repeat-x;
+	background-position: top;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	display: block;
+	height: auto;
+}
+.other_login_txt{
+	width: auto;
+	display: block;
+	height: 24px;
+	background-image: url(../images/login/other_login_txt.png);
+	background-repeat: no-repeat;
+	background-position: center 2px;
+}
+
+/******按鈕置中******/
+.main_btn_container{
+	position: relative;
+	width: 100%;
+}
+.btn_container_style_1{
+	position: relative;
+	left: 50%;
+	padding-bottom: 10px;
+	padding-top: 8px;
+	width: auto;
+	float: left;
+}
+
+
+/***btn***/
+.main_btn_container a.login_btn_1, .main_btn_container a.login_btn_facebook{
+	background-image: url(../images/login/btn_other_login_1.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 42px;
+	width: 42px;
+	display: block;
+	position: relative;
+	right: 50%;
+	float: left;
+	margin-right: 6px;
+}
+.main_btn_container a:hover.login_btn_1, .main_btn_container a:hover.login_btn_facebook{
+	background-image: url(../images/login/btn_other_login_1.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 42px;
+	width: 42px;
+}
+.main_btn_container a.login_btn_2, .main_btn_container a.login_btn_yahoo{
+	background-image: url(../images/login/btn_other_login_2.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 42px;
+	width: 42px;
+	display: block;
+	position: relative;
+	right: 50%;
+	float: left;
+	margin-right: 6px;
+}
+.main_btn_container a:hover.login_btn_2, .main_btn_container a:hover.login_btn_yahoo{
+	background-image: url(../images/login/btn_other_login_2.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 42px;
+	width: 42px;
+}
+.main_btn_container a.login_btn_3, .main_btn_container a.login_btn_google{
+	background-image: url(../images/login/btn_other_login_3.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 42px;
+	width: 42px;
+	display: block;
+	position: relative;
+	right: 50%;
+	float: left;
+	margin-right: 6px;
+}
+.main_btn_container a:hover.login_btn_3, .main_btn_container a:hover.login_btn_google{
+	background-image: url(../images/login/btn_other_login_3.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 42px;
+	width: 42px;
+}
+.main_btn_container a.login_btn_4, .main_btn_container a.login_btn_8591{
+	background-image: url(../images/login/btn_other_login_4.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 42px;
+	width: 42px;
+	display: block;
+	position: relative;
+	right: 50%;
+	float: left;
+	margin-right: 6px;
+}
+.main_btn_container a:hover.login_btn_4, .main_btn_container a:hover.login_btn_8591{
+	background-image: url(../images/login/btn_other_login_4.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 42px;
+	width: 42px;
+}
+.main_btn_container a.login_btn_5, .main_btn_container a.login_btn_gamebase{
+	background-image: url(../images/login/btn_other_login_5.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 42px;
+	width: 42px;
+	display: block;
+	position: relative;
+	right: 50%;
+	float: left;
+	margin-right: 6px;
+}
+.main_btn_container a:hover.login_btn_5, .main_btn_container a:hover.login_btn_gamebase{
+	background-image: url(../images/login/btn_other_login_5.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 42px;
+	width: 42px;
+}
+.main_btn_container a.login_btn_6, .main_btn_container a.login_btn_igamer{
+	background-image: url(../images/login/btn_other_login_6.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 42px;
+	width: 42px;
+	display: block;
+	position: relative;
+	right: 50%;
+	float: left;
+	margin-right: 6px;
+}
+.main_btn_container a:hover.login_btn_6, .main_btn_container a:hover.login_btn_igamer{
+	background-image: url(../images/login/btn_other_login_6.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 42px;
+	width: 42px;
+}
+.main_btn_container a.login_btn_7, .main_btn_container a.login_btn_gamer{
+	background-image: url(../images/login/btn_other_login_7.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 42px;
+	width: 42px;
+	display: block;
+	position: relative;
+	right: 50%;
+	float: left;
+}
+.main_btn_container a:hover.login_btn_7, .main_btn_container a:hover.login_btn_gamer{
+	background-image: url(../images/login/btn_other_login_7.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 42px;
+	width: 42px;
+}
+
+
+
+
+.tb_login .tb_login_b{
+	margin: 0px;
+	background-image: url(../images/login/tb_login_b.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	display: block;
+	height: 20px;
+	width: 398px;
+}
+
+
+
+
+
+/******底區塊******/
+.footer{
+	height: 310px;
+	width: auto;
+	background-image: url(../images/templates_index/footer_bg.jpg);
+	background-repeat: repeat-x;
+	background-position: top;
+}
+.footer_container{
+	width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+	height: auto;
+	padding-top: 200px;
+}
+
+
+
+.clearfloat { /* 這個類別可放置在 <br /> 或空白的 Div 上，當做接在 #container 內最後一個浮動 Div 後方的最後一個元素 (如果從 #container 移除或取出 #footer) */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+a .back{ 
+	background-image:url(../images/back.png);
+	width:253px;
+	height:53px;
+	position:absolute;
+	top:530px;
+	left:200px;
+	
+}
+a .back:hover{
+	background-position: 0px -53px;	
+	
+}

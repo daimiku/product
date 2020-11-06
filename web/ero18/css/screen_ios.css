@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+.preregister {
+  background-image: url("../images/ios/bg.jpg");
+}
+.preregister .prereg-button .pr-btn {
+  background-image: url("../images/ios/btn.png");
+}
+.preregister .masthead .logo {
+  background-image: url("../images/ios/logo.png");
+}
+.preregister .rewards .title {
+  background-image: url("../images/ios/rewards-title.png");
+}
+.preregister .rewards .character-left {
+  background-image: url("../images/ios/rewards-girl-left.png");
+}
+.preregister .rewards .character-right {
+  background-image: url("../images/ios/rewards-girl-right.png");
+}
+.preregister .rewards .characters .character-1 {
+  background-image: url("../images/ios/rewards-item-1.png");
+}
+.preregister .rewards .characters .character-2 {
+  background-image: url("../images/ios/rewards-item-2.png");
+}
+.preregister .rewards .characters .character-3 {
+  background-image: url("../images/ios/rewards-item-3.png");
+}
+.preregister .rewards .characters .character-4 {
+  background-image: url("../images/ios/rewards-item-4.png");
+}
+.preregister .rewards .characters .character-5 {
+  background-image: url("../images/ios/rewards-item-5.png");
+}
+.preregister .rewards .characters .character-6 {
+  background-image: url("../images/ios/rewards-item-6.png");
+}
+.preregister .rewards .text {
+  background-image: url("../images/ios/rewards-text.png");
+}
+.preregister .gameplay .character-left {
+  background-image: url("../images/ios/cute.png");
+}
+.preregister .gameplay .character-right {
+  background-image: url("../images/ios/girl_03.png");
+}
+.preregister .gameplay .title {
+  background-image: url("../images/ios/gameplay_title.png");
+}
+.preregister .gameplay .text {
+  background-image: url("../images/ios/gameplay_text.png");
+}
+.preregister .availabilty .trailer .poster {
+  background-image: url("../images/ios/poster.png");
+}
+.preregister .availabilty .title {
+  background-image: url("../images/ios/availability-title.png");
+}
+.preregister .availabilty .text {
+  background-image: url("../images/ios/availabilty-text.png");
+}
+.preregister .ehscenes .character-left {
+  background-image: url("../images/ios/girl-05.png");
+}
+.preregister .ehscenes .character-right {
+  background-image: url("../images/ios/girl-06.png");
+}
+.preregister .ehscenes .title {
+  background-image: url("../images/ios/hscenes-title.png");
+}
+.preregister .ehscenes .text {
+  background-image: url("../images/ios/hscenes_text.png");
+}
+.preregister .last-sec .lamp {
+  background-image: url("../images/ios/lamp.png");
+}
+.preregister .last-sec .girls {
+  background-image: url("../images/ios/girls.png");
+}
+
+@media (max-width: 720px) {
+  .preregister {
+    background-image: url("../images/ios/bg-640.jpg");
+  }
+  .preregister .prereg-button .btn {
+    background-image: url("../images/ios/btn-640.png");
+  }
+  .preregister .masthead .logo {
+    background-image: url("../images/ios/logo-640.png");
+  }
+  .preregister .rewards .character-left {
+    background-image: url("../images/ios/girl-02-m.png");
+  }
+  .preregister .rewards .character-right {
+    background-image: url("../images/ios/girl-01-m.png");
+  }
+  .preregister .rewards .title {
+    background-image: url("../images/ios/rewards-title-640.png");
+  }
+  .preregister .rewards .text {
+    background-image: url("../images/ios/rewards-text-640.png");
+  }
+  .preregister .rewards .characters .character-1 {
+    background-image: url("../images/ios/rewards-item-1-m.png");
+  }
+  .preregister .rewards .characters .character-2 {
+    background-image: url("../images/ios/rewards-item-2-m.png");
+  }
+  .preregister .rewards .characters .character-3 {
+    background-image: url("../images/ios/rewards-item-3-m.png");
+  }
+  .preregister .rewards .characters .character-4 {
+    background-image: url("../images/ios/rewards-item-4-m.png");
+  }
+  .preregister .rewards .characters .character-5 {
+    background-image: url("../images/ios/rewards-item-5-m.png");
+  }
+  .preregister .rewards .characters .character-6 {
+    background-image: url("../images/ios/rewards-item-6-m.png");
+  }
+  .preregister .gameplay .character-left {
+    background-image: url("../images/ios/cute-m.png");
+  }
+  .preregister .gameplay .character-right {
+    background-image: url("../images/ios/girl-03-m.png");
+  }
+  .preregister .gameplay .title {
+    background-image: url("../images/ios/gameplay-title-640.png");
+  }
+  .preregister .gameplay .text {
+    background-image: url("../images/ios/gameplay-text-640.png");
+  }
+  .preregister .availabilty .trailer .poster {
+    background-image: url("../images/ios/poster-640.png");
+  }
+  .preregister .availabilty .title {
+    background-image: url("../images/ios/availability-title-640.png");
+  }
+  .preregister .availabilty .text {
+    background-image: url("../images/ios/availability_text-640.png");
+  }
+  .preregister .ehscenes .character-left {
+    background-image: url("../images/ios/girl_05-640.png");
+  }
+  .preregister .ehscenes .character-right {
+    background-image: url("../images/ios/girl_06-640.png");
+  }
+  .preregister .ehscenes .text {
+    background-image: url("../images/ios/hscenes-text-640.png");
+  }
+  .preregister .last-sec .lamp {
+    background-image: url("../images/ios/lamp-640.png");
+  }
+  .preregister .last-sec .girls {
+    background-image: url("../images/ios/girls-640.png");
+  }
+}

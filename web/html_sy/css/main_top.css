@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+
+
+.main_top{
+	width:auto;
+	height:475px;
+	
+	
+	}
+.container_left{
+	width:265px;
+	height:475px;
+	float:left;
+	}
+.flash_light{
+	width:835px;
+	height:475px;
+    background-image: url(../images/light.png);
+    margin-left: 55px;
+    margin-top: 50px;
+    position: absolute;
+    animation-name: flash;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+	}
+.main{
+	min-height:1010px;
+	overflow:auto; 
+	padding-bottom:10px; 
+
+	}
+	
+	
+@keyframes flash {
+  from, 50%, to {
+    opacity: .7;
+  }
+
+  25%, 75% {
+    opacity: 0;
+  }
+}

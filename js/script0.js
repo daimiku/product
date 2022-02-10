@@ -50,4 +50,25 @@ $(function(){
             return false;
         }
     });
+    $(".pagecontrol").change(function(){
+       $(location).attr("href", "page" + $(this).val() + ".html" );
+    });
+    
+    var nav = [
+        "視覺BANNER",
+        "長條BANNER",
+        "網頁設計",
+        "影片製作",
+    ];
+    var link = [
+        "1-8",
+        "2-8",
+        "3-8",
+        "4-1",
+    ];
+    
+    $("nav ul.text-center > li").each(function(){
+       var a = $(this).index();
+       $(this).html("<a href='page" + link[a] + ".html'>" + nav[a] + "</a>");
+    });
 });

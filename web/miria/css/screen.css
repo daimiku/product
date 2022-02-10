@@ -1,0 +1,4281 @@
+@keyframes shine {
+  0% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.3);
+  }
+  100% {
+    filter: brightness(1);
+  }
+}
+@keyframes downarrow {
+  0% {
+    transform: translateY(-10px);
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(10px);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-10px);
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+}
+.btn-sprite, .btn-b1, .btn-b2, .btn-b3, .btn-b4, .btn-b5, .btn-b6, .btn-b7 {
+  background-image: url('../images/btn-sd0215bc080.png');
+  background-repeat: no-repeat;
+}
+
+.btn-b1 {
+  background-position: 0 0;
+  height: 56px;
+  width: 80px;
+}
+.btn-b1:hover, .btn-b1.b1-hover {
+  background-position: 0 -56px;
+}
+
+.btn-b2 {
+  background-position: 0 -112px;
+  height: 56px;
+  width: 80px;
+}
+.btn-b2:hover, .btn-b2.b2-hover {
+  background-position: 0 -168px;
+}
+
+.btn-b3 {
+  background-position: 0 -224px;
+  height: 56px;
+  width: 80px;
+}
+.btn-b3:hover, .btn-b3.b3-hover {
+  background-position: 0 -280px;
+}
+
+.btn-b4 {
+  background-position: 0 -336px;
+  height: 56px;
+  width: 80px;
+}
+.btn-b4:hover, .btn-b4.b4-hover {
+  background-position: 0 -392px;
+}
+
+.btn-b5 {
+  background-position: 0 -448px;
+  height: 56px;
+  width: 80px;
+}
+.btn-b5:hover, .btn-b5.b5-hover {
+  background-position: 0 -504px;
+}
+
+.btn-b6 {
+  background-position: 0 -560px;
+  height: 56px;
+  width: 80px;
+}
+.btn-b6:hover, .btn-b6.b6-hover {
+  background-position: 0 -616px;
+}
+
+.btn-b7 {
+  background-position: 0 -672px;
+  height: 56px;
+  width: 80px;
+}
+.btn-b7:hover, .btn-b7.b7-hover {
+  background-position: 0 -728px;
+}
+
+/**************rwd/ */
+.pop {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 199;
+  display: none;
+}
+.pop .pop_close {
+  position: fixed;
+  z-index: 210;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+@media only screen and (min-width: 1400px) {
+  .pop .pop_close {
+    background: url("../images/x.png") center no-repeat;
+    width: 218px;
+    height: 217px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .pop .pop_close {
+    background: url("../images/x.png") center no-repeat;
+    width: 174.4px;
+    height: 173.6px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .pop .pop_close {
+    background: url("../images/x.png") center no-repeat;
+    width: 109px;
+    height: 108.5px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .pop .pop_close {
+    background: url("../images/x.png") center no-repeat;
+    width: 65.4px;
+    height: 65.1px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+.pop .pop_close:hover, .pop .pop_close:focus {
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+.pop .pop_bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 200;
+}
+.pop .pop_main {
+  position: absolute;
+  z-index: 205;
+  left: 50%;
+  overflow: hidden;
+  display: none;
+}
+@media only screen and (min-width: 1400px) {
+  .pop .pop_main {
+    background: url("../images/bg_pop_pc.jpg") center no-repeat;
+    width: 1920px;
+    height: 960px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -960px;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .pop .pop_main {
+    background: url("../images/bg_pop_pc.jpg") center no-repeat;
+    width: 1728px;
+    height: 864px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -864px;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .pop .pop_main {
+    width: 100%;
+    height: 80%;
+    background: url("../images/bg_pop_mobile.jpg") center no-repeat;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    margin-left: -50%;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .pop .pop_main {
+    width: 100%;
+    height: 480px;
+    background: url("../images/bg_pop_mobile.jpg") center no-repeat;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    margin-left: -50%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .pop .pop_main {
+    height: 380px;
+  }
+}
+.pop .pop_main .pop_chara {
+  display: none;
+}
+.pop .pop_main .txt {
+  position: absolute;
+  color: #c7425f;
+  font-weight: bold;
+  text-shadow: 0 0 8px #fff, 0 0 10px #fff;
+  line-height: 1.7em;
+  left: 50%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 1400px) {
+  .pop .pop_main .txt {
+    font-size: 28px;
+    text-align: center;
+    width: 970px;
+    margin-top: 80px;
+    margin-left: -220px;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .pop .pop_main .txt {
+    font-size: 24px;
+    text-align: center;
+    width: 870px;
+    margin-top: 80px;
+    margin-left: -240px;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .pop .pop_main .txt {
+    text-align: center;
+    width: 90%;
+    margin-top: 80px;
+    margin-left: -45%;
+    align-items: flex-end;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .pop .pop_main .txt {
+    text-align: right;
+    font-size: 10px;
+    width: 100%;
+    margin-top: 30px;
+    margin-left: -50%;
+    align-items: flex-end;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .pop .pop_main .txt {
+    font-size: 8px;
+    margin-top: 20px;
+  }
+}
+.pop .pop_main .txt p {
+  margin: 0;
+  z-index: 212;
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .pop .pop_main .txt p.mi {
+    margin-right: 20px;
+  }
+  .pop .pop_main .txt p.lm {
+    margin-right: 10px;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .pop .pop_main .txt p {
+    margin-right: 10px;
+  }
+}
+.pop .pop_pic {
+  z-index: 205;
+  position: absolute;
+  left: 50%;
+}
+@media only screen and (min-width: 1400px) {
+  .pop .pop_pic {
+    width: 1200px;
+    margin-left: -600px;
+    margin-top: 50px;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .pop .pop_pic {
+    width: 1000px;
+    margin-left: -500px;
+    margin-top: 100px;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .pop .pop_pic {
+    width: 100%;
+    margin-left: -50%;
+    margin-top: 110px;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .pop .pop_pic {
+    width: 100%;
+    margin-left: -50%;
+    margin-top: 80px;
+  }
+}
+.pop .pop_pic img {
+  display: none;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.char_miria, .char_lmiria {
+  z-index: 210;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+}
+
+@media only screen and (min-width: 1400px) {
+  .char_miria {
+    margin-left: -920px;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .char_miria {
+    margin-left: -800px;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .char_miria {
+    margin-left: -560px;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .char_miria {
+    margin-left: -330px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .char_miria {
+    margin-left: -270px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .char_lmiria {
+    margin-left: -860px;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .char_lmiria {
+    margin-left: -660px;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .char_lmiria {
+    margin-left: -440px;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .char_lmiria {
+    margin-left: -250px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .char_lmiria {
+    margin-left: -215px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .char_miria0 {
+    background: url("../images/char1_0.png") center no-repeat;
+    width: 783px;
+    height: 927px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .char_miria0 {
+    background: url("../images/char1_0.png") center no-repeat;
+    width: 704.7px;
+    height: 834.3px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .char_miria0 {
+    background: url("../images/char1_0.png") center no-repeat;
+    width: 665.55px;
+    height: 787.95px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .char_miria0 {
+    background: url("../images/char1_0.png") center no-repeat;
+    width: 391.5px;
+    height: 463.5px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .char_miria0 {
+    background: url("../images/char1_0.png") center no-repeat;
+    width: 313.2px;
+    height: 370.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .char_lmiria0 {
+    background: url("../images/char2_0.png") center no-repeat;
+    width: 571px;
+    height: 927px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .char_lmiria0 {
+    background: url("../images/char2_0.png") center no-repeat;
+    width: 513.9px;
+    height: 834.3px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .char_lmiria0 {
+    background: url("../images/char2_0.png") center no-repeat;
+    width: 485.35px;
+    height: 787.95px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .char_lmiria0 {
+    background: url("../images/char2_0.png") center no-repeat;
+    width: 285.5px;
+    height: 463.5px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .char_lmiria0 {
+    background: url("../images/char2_0.png") center no-repeat;
+    width: 228.4px;
+    height: 370.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .char_miria1 {
+    background: url("../images/char1_1.png") center no-repeat;
+    width: 750px;
+    height: 960px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .char_miria1 {
+    background: url("../images/char1_1.png") center no-repeat;
+    width: 675px;
+    height: 864px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .char_miria1 {
+    background: url("../images/char1_1.png") center no-repeat;
+    width: 637.5px;
+    height: 816px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .char_miria1 {
+    background: url("../images/char1_1.png") center no-repeat;
+    width: 375px;
+    height: 480px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .char_miria1 {
+    background: url("../images/char1_1.png") center no-repeat;
+    width: 300px;
+    height: 384px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .char_lmiria1 {
+    background: url("../images/char2_1.png") center no-repeat;
+    width: 571px;
+    height: 928px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .char_lmiria1 {
+    background: url("../images/char2_1.png") center no-repeat;
+    width: 513.9px;
+    height: 835.2px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .char_lmiria1 {
+    background: url("../images/char2_1.png") center no-repeat;
+    width: 485.35px;
+    height: 788.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .char_lmiria1 {
+    background: url("../images/char2_1.png") center no-repeat;
+    width: 285.5px;
+    height: 464px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .char_lmiria1 {
+    background: url("../images/char2_1.png") center no-repeat;
+    width: 228.4px;
+    height: 371.2px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .char_miria2 {
+    background: url("../images/char1_2.png") center no-repeat;
+    width: 750px;
+    height: 903px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .char_miria2 {
+    background: url("../images/char1_2.png") center no-repeat;
+    width: 675px;
+    height: 812.7px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .char_miria2 {
+    background: url("../images/char1_2.png") center no-repeat;
+    width: 637.5px;
+    height: 767.55px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .char_miria2 {
+    background: url("../images/char1_2.png") center no-repeat;
+    width: 375px;
+    height: 451.5px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .char_miria2 {
+    background: url("../images/char1_2.png") center no-repeat;
+    width: 300px;
+    height: 361.2px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .char_lmiria2 {
+    background: url("../images/char2_2.png") center no-repeat;
+    width: 571px;
+    height: 927px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .char_lmiria2 {
+    background: url("../images/char2_2.png") center no-repeat;
+    width: 513.9px;
+    height: 834.3px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .char_lmiria2 {
+    background: url("../images/char2_2.png") center no-repeat;
+    width: 485.35px;
+    height: 787.95px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .char_lmiria2 {
+    background: url("../images/char2_2.png") center no-repeat;
+    width: 285.5px;
+    height: 463.5px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .char_lmiria2 {
+    background: url("../images/char2_2.png") center no-repeat;
+    width: 228.4px;
+    height: 370.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .char_miria3 {
+    background: url("../images/char1_3.png") center no-repeat;
+    width: 750px;
+    height: 903px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .char_miria3 {
+    background: url("../images/char1_3.png") center no-repeat;
+    width: 675px;
+    height: 812.7px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .char_miria3 {
+    background: url("../images/char1_3.png") center no-repeat;
+    width: 637.5px;
+    height: 767.55px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .char_miria3 {
+    background: url("../images/char1_3.png") center no-repeat;
+    width: 375px;
+    height: 451.5px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .char_miria3 {
+    background: url("../images/char1_3.png") center no-repeat;
+    width: 300px;
+    height: 361.2px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .char_lmiria3 {
+    background: url("../images/char2_3.png") center no-repeat;
+    width: 571px;
+    height: 928px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .char_lmiria3 {
+    background: url("../images/char2_3.png") center no-repeat;
+    width: 513.9px;
+    height: 835.2px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .char_lmiria3 {
+    background: url("../images/char2_3.png") center no-repeat;
+    width: 485.35px;
+    height: 788.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .char_lmiria3 {
+    background: url("../images/char2_3.png") center no-repeat;
+    width: 285.5px;
+    height: 464px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .char_lmiria3 {
+    background: url("../images/char2_3.png") center no-repeat;
+    width: 228.4px;
+    height: 371.2px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+.name_miria, .name_lmiria {
+  z-index: 207;
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 1400px) {
+  .name_miria {
+    background: url("../images/char_name1.png") center no-repeat;
+    width: 389px;
+    height: 105px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -10px;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .name_miria {
+    background: url("../images/char_name1.png") center no-repeat;
+    width: 311.2px;
+    height: 84px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -10px;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .name_miria {
+    background: url("../images/char_name1.png") center no-repeat;
+    width: 272.3px;
+    height: 73.5px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-right: 30px;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .name_miria {
+    background: url("../images/char_name1.png") center no-repeat;
+    width: 155.6px;
+    height: 42px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-right: 15px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .name_miria {
+    background: url("../images/char_name1.png") center no-repeat;
+    width: 116.7px;
+    height: 31.5px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-right: 15px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .name_lmiria {
+    background: url("../images/char_name2.png") center no-repeat;
+    width: 389px;
+    height: 105px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -10px;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .name_lmiria {
+    background: url("../images/char_name2.png") center no-repeat;
+    width: 311.2px;
+    height: 84px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -10px;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .name_lmiria {
+    background: url("../images/char_name2.png") center no-repeat;
+    width: 272.3px;
+    height: 73.5px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-right: 30px;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .name_lmiria {
+    background: url("../images/char_name2.png") center no-repeat;
+    width: 155.6px;
+    height: 42px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-right: 15px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .name_lmiria {
+    background: url("../images/char_name2.png") center no-repeat;
+    width: 116.7px;
+    height: 31.5px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-right: 15px;
+  }
+}
+
+.pop_deco1, .pop_deco2 {
+  z-index: 207;
+}
+@media only screen and (min-width: 1400px) {
+  .pop_deco1, .pop_deco2 {
+    background: url("../images/bg_pop_deco.png") center no-repeat;
+    width: 963px;
+    height: 196px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .pop_deco1, .pop_deco2 {
+    background: url("../images/bg_pop_deco.png") center no-repeat;
+    width: 770.4px;
+    height: 156.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .pop_deco1, .pop_deco2 {
+    background: url("../images/bg_pop_deco.png") center no-repeat;
+    width: 674.1px;
+    height: 137.2px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .pop_deco1, .pop_deco2 {
+    background: url("../images/bg_pop_deco.png") center no-repeat;
+    width: 385.2px;
+    height: 78.4px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .pop_deco1, .pop_deco2 {
+    background: url("../images/bg_pop_deco.png") center no-repeat;
+    width: 317.79px;
+    height: 64.68px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+.pop_deco2 {
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.cloth_btn {
+  z-index: 212;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .cloth_btn {
+    width: 50%;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .cloth_btn {
+    width: 50%;
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .cloth_a1 {
+    background: url("../images/cloth_a1_off.png") center no-repeat;
+    width: 217px;
+    height: 216px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .cloth_a1:hover, .cloth_a1:focus, .cloth_a1.active {
+    background: url("../images/cloth_a1_on.png") center no-repeat;
+    width: 217px;
+    height: 216px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .cloth_a1 {
+    background: url("../images/cloth_a1_off.png") center no-repeat;
+    width: 173.6px;
+    height: 172.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .cloth_a1:hover, .cloth_a1:focus, .cloth_a1.active {
+    background: url("../images/cloth_a1_on.png") center no-repeat;
+    width: 173.6px;
+    height: 172.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .cloth_a1 {
+    background: url("../images/cloth_a1_off.png") center no-repeat;
+    width: 151.9px;
+    height: 151.2px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .cloth_a1:hover, .cloth_a1:focus, .cloth_a1.active {
+    background: url("../images/cloth_a1_on.png") center no-repeat;
+    width: 151.9px;
+    height: 151.2px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .cloth_a1 {
+    background: url("../images/cloth_a1_off.png") center no-repeat;
+    width: 86.8px;
+    height: 86.4px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .cloth_a1:hover, .cloth_a1:focus, .cloth_a1.active {
+    background: url("../images/cloth_a1_on.png") center no-repeat;
+    width: 86.8px;
+    height: 86.4px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .cloth_a1 {
+    background: url("../images/cloth_a1_off.png") center no-repeat;
+    width: 71.61px;
+    height: 71.28px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .cloth_a1:hover, .cloth_a1:focus, .cloth_a1.active {
+    background: url("../images/cloth_a1_on.png") center no-repeat;
+    width: 71.61px;
+    height: 71.28px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .cloth_b1 {
+    background: url("../images/cloth_b1_off.png") center no-repeat;
+    width: 217px;
+    height: 216px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .cloth_b1:hover, .cloth_b1:focus, .cloth_b1.active {
+    background: url("../images/cloth_b1_on.png") center no-repeat;
+    width: 217px;
+    height: 216px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .cloth_b1 {
+    background: url("../images/cloth_b1_off.png") center no-repeat;
+    width: 173.6px;
+    height: 172.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .cloth_b1:hover, .cloth_b1:focus, .cloth_b1.active {
+    background: url("../images/cloth_b1_on.png") center no-repeat;
+    width: 173.6px;
+    height: 172.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .cloth_b1 {
+    background: url("../images/cloth_b1_off.png") center no-repeat;
+    width: 151.9px;
+    height: 151.2px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .cloth_b1:hover, .cloth_b1:focus, .cloth_b1.active {
+    background: url("../images/cloth_b1_on.png") center no-repeat;
+    width: 151.9px;
+    height: 151.2px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .cloth_b1 {
+    background: url("../images/cloth_b1_off.png") center no-repeat;
+    width: 86.8px;
+    height: 86.4px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .cloth_b1:hover, .cloth_b1:focus, .cloth_b1.active {
+    background: url("../images/cloth_b1_on.png") center no-repeat;
+    width: 86.8px;
+    height: 86.4px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .cloth_b1 {
+    background: url("../images/cloth_b1_off.png") center no-repeat;
+    width: 71.61px;
+    height: 71.28px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .cloth_b1:hover, .cloth_b1:focus, .cloth_b1.active {
+    background: url("../images/cloth_b1_on.png") center no-repeat;
+    width: 71.61px;
+    height: 71.28px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .cloth_a2 {
+    background: url("../images/cloth_a2_off.png") center no-repeat;
+    width: 217px;
+    height: 216px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .cloth_a2:hover, .cloth_a2:focus, .cloth_a2.active {
+    background: url("../images/cloth_a2_on.png") center no-repeat;
+    width: 217px;
+    height: 216px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .cloth_a2 {
+    background: url("../images/cloth_a2_off.png") center no-repeat;
+    width: 173.6px;
+    height: 172.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .cloth_a2:hover, .cloth_a2:focus, .cloth_a2.active {
+    background: url("../images/cloth_a2_on.png") center no-repeat;
+    width: 173.6px;
+    height: 172.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .cloth_a2 {
+    background: url("../images/cloth_a2_off.png") center no-repeat;
+    width: 151.9px;
+    height: 151.2px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .cloth_a2:hover, .cloth_a2:focus, .cloth_a2.active {
+    background: url("../images/cloth_a2_on.png") center no-repeat;
+    width: 151.9px;
+    height: 151.2px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .cloth_a2 {
+    background: url("../images/cloth_a2_off.png") center no-repeat;
+    width: 86.8px;
+    height: 86.4px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .cloth_a2:hover, .cloth_a2:focus, .cloth_a2.active {
+    background: url("../images/cloth_a2_on.png") center no-repeat;
+    width: 86.8px;
+    height: 86.4px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .cloth_a2 {
+    background: url("../images/cloth_a2_off.png") center no-repeat;
+    width: 71.61px;
+    height: 71.28px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .cloth_a2:hover, .cloth_a2:focus, .cloth_a2.active {
+    background: url("../images/cloth_a2_on.png") center no-repeat;
+    width: 71.61px;
+    height: 71.28px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .cloth_b2 {
+    background: url("../images/cloth_b2_off.png") center no-repeat;
+    width: 217px;
+    height: 216px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .cloth_b2:hover, .cloth_b2:focus, .cloth_b2.active {
+    background: url("../images/cloth_b2_on.png") center no-repeat;
+    width: 217px;
+    height: 216px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .cloth_b2 {
+    background: url("../images/cloth_b2_off.png") center no-repeat;
+    width: 173.6px;
+    height: 172.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .cloth_b2:hover, .cloth_b2:focus, .cloth_b2.active {
+    background: url("../images/cloth_b2_on.png") center no-repeat;
+    width: 173.6px;
+    height: 172.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .cloth_b2 {
+    background: url("../images/cloth_b2_off.png") center no-repeat;
+    width: 151.9px;
+    height: 151.2px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .cloth_b2:hover, .cloth_b2:focus, .cloth_b2.active {
+    background: url("../images/cloth_b2_on.png") center no-repeat;
+    width: 151.9px;
+    height: 151.2px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .cloth_b2 {
+    background: url("../images/cloth_b2_off.png") center no-repeat;
+    width: 86.8px;
+    height: 86.4px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .cloth_b2:hover, .cloth_b2:focus, .cloth_b2.active {
+    background: url("../images/cloth_b2_on.png") center no-repeat;
+    width: 86.8px;
+    height: 86.4px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .cloth_b2 {
+    background: url("../images/cloth_b2_off.png") center no-repeat;
+    width: 71.61px;
+    height: 71.28px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .cloth_b2:hover, .cloth_b2:focus, .cloth_b2.active {
+    background: url("../images/cloth_b2_on.png") center no-repeat;
+    width: 71.61px;
+    height: 71.28px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .cloth_a3 {
+    background: url("../images/cloth_a3_off.png") center no-repeat;
+    width: 217px;
+    height: 216px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .cloth_a3:hover, .cloth_a3:focus, .cloth_a3.active {
+    background: url("../images/cloth_a3_on.png") center no-repeat;
+    width: 217px;
+    height: 216px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .cloth_a3 {
+    background: url("../images/cloth_a3_off.png") center no-repeat;
+    width: 173.6px;
+    height: 172.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .cloth_a3:hover, .cloth_a3:focus, .cloth_a3.active {
+    background: url("../images/cloth_a3_on.png") center no-repeat;
+    width: 173.6px;
+    height: 172.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .cloth_a3 {
+    background: url("../images/cloth_a3_off.png") center no-repeat;
+    width: 151.9px;
+    height: 151.2px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .cloth_a3:hover, .cloth_a3:focus, .cloth_a3.active {
+    background: url("../images/cloth_a3_on.png") center no-repeat;
+    width: 151.9px;
+    height: 151.2px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .cloth_a3 {
+    background: url("../images/cloth_a3_off.png") center no-repeat;
+    width: 86.8px;
+    height: 86.4px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .cloth_a3:hover, .cloth_a3:focus, .cloth_a3.active {
+    background: url("../images/cloth_a3_on.png") center no-repeat;
+    width: 86.8px;
+    height: 86.4px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .cloth_a3 {
+    background: url("../images/cloth_a3_off.png") center no-repeat;
+    width: 71.61px;
+    height: 71.28px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .cloth_a3:hover, .cloth_a3:focus, .cloth_a3.active {
+    background: url("../images/cloth_a3_on.png") center no-repeat;
+    width: 71.61px;
+    height: 71.28px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .cloth_b3 {
+    background: url("../images/cloth_b3_off.png") center no-repeat;
+    width: 217px;
+    height: 216px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .cloth_b3:hover, .cloth_b3:focus, .cloth_b3.active {
+    background: url("../images/cloth_b3_on.png") center no-repeat;
+    width: 217px;
+    height: 216px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .cloth_b3 {
+    background: url("../images/cloth_b3_off.png") center no-repeat;
+    width: 173.6px;
+    height: 172.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .cloth_b3:hover, .cloth_b3:focus, .cloth_b3.active {
+    background: url("../images/cloth_b3_on.png") center no-repeat;
+    width: 173.6px;
+    height: 172.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .cloth_b3 {
+    background: url("../images/cloth_b3_off.png") center no-repeat;
+    width: 151.9px;
+    height: 151.2px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .cloth_b3:hover, .cloth_b3:focus, .cloth_b3.active {
+    background: url("../images/cloth_b3_on.png") center no-repeat;
+    width: 151.9px;
+    height: 151.2px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .cloth_b3 {
+    background: url("../images/cloth_b3_off.png") center no-repeat;
+    width: 86.8px;
+    height: 86.4px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .cloth_b3:hover, .cloth_b3:focus, .cloth_b3.active {
+    background: url("../images/cloth_b3_on.png") center no-repeat;
+    width: 86.8px;
+    height: 86.4px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .cloth_b3 {
+    background: url("../images/cloth_b3_off.png") center no-repeat;
+    width: 71.61px;
+    height: 71.28px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .cloth_b3:hover, .cloth_b3:focus, .cloth_b3.active {
+    background: url("../images/cloth_b3_on.png") center no-repeat;
+    width: 71.61px;
+    height: 71.28px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .cloth_a4 {
+    background: url("../images/cloth_a4_off.png") center no-repeat;
+    width: 217px;
+    height: 216px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .cloth_a4:hover, .cloth_a4:focus, .cloth_a4.active {
+    background: url("../images/cloth_a4_on.png") center no-repeat;
+    width: 217px;
+    height: 216px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .cloth_a4 {
+    background: url("../images/cloth_a4_off.png") center no-repeat;
+    width: 173.6px;
+    height: 172.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .cloth_a4:hover, .cloth_a4:focus, .cloth_a4.active {
+    background: url("../images/cloth_a4_on.png") center no-repeat;
+    width: 173.6px;
+    height: 172.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .cloth_a4 {
+    background: url("../images/cloth_a4_off.png") center no-repeat;
+    width: 151.9px;
+    height: 151.2px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .cloth_a4:hover, .cloth_a4:focus, .cloth_a4.active {
+    background: url("../images/cloth_a4_on.png") center no-repeat;
+    width: 151.9px;
+    height: 151.2px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .cloth_a4 {
+    background: url("../images/cloth_a4_off.png") center no-repeat;
+    width: 86.8px;
+    height: 86.4px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .cloth_a4:hover, .cloth_a4:focus, .cloth_a4.active {
+    background: url("../images/cloth_a4_on.png") center no-repeat;
+    width: 86.8px;
+    height: 86.4px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .cloth_a4 {
+    background: url("../images/cloth_a4_off.png") center no-repeat;
+    width: 71.61px;
+    height: 71.28px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .cloth_a4:hover, .cloth_a4:focus, .cloth_a4.active {
+    background: url("../images/cloth_a4_on.png") center no-repeat;
+    width: 71.61px;
+    height: 71.28px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .cloth_b4 {
+    background: url("../images/cloth_b4_off.png") center no-repeat;
+    width: 217px;
+    height: 216px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .cloth_b4:hover, .cloth_b4:focus, .cloth_b4.active {
+    background: url("../images/cloth_b4_on.png") center no-repeat;
+    width: 217px;
+    height: 216px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .cloth_b4 {
+    background: url("../images/cloth_b4_off.png") center no-repeat;
+    width: 173.6px;
+    height: 172.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .cloth_b4:hover, .cloth_b4:focus, .cloth_b4.active {
+    background: url("../images/cloth_b4_on.png") center no-repeat;
+    width: 173.6px;
+    height: 172.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .cloth_b4 {
+    background: url("../images/cloth_b4_off.png") center no-repeat;
+    width: 151.9px;
+    height: 151.2px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .cloth_b4:hover, .cloth_b4:focus, .cloth_b4.active {
+    background: url("../images/cloth_b4_on.png") center no-repeat;
+    width: 151.9px;
+    height: 151.2px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .cloth_b4 {
+    background: url("../images/cloth_b4_off.png") center no-repeat;
+    width: 86.8px;
+    height: 86.4px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .cloth_b4:hover, .cloth_b4:focus, .cloth_b4.active {
+    background: url("../images/cloth_b4_on.png") center no-repeat;
+    width: 86.8px;
+    height: 86.4px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .cloth_b4 {
+    background: url("../images/cloth_b4_off.png") center no-repeat;
+    width: 71.61px;
+    height: 71.28px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .cloth_b4:hover, .cloth_b4:focus, .cloth_b4.active {
+    background: url("../images/cloth_b4_on.png") center no-repeat;
+    width: 71.61px;
+    height: 71.28px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Noto Sans TC";
+  overflow-x: hidden;
+  color: #fff;
+  margin: 0;
+}
+@media only screen and (min-width: 1400px) {
+  body {
+    font-size: 18px;
+    background: url("../images/bg.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  body {
+    font-size: 18px;
+    background: url("../images/bg.jpg") no-repeat;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  body {
+    font-size: 18px;
+    background: url("../images/bg_640.jpg") center no-repeat fixed;
+    background-size: cover;
+  }
+}
+@media only screen and (max-width: 749px) {
+  body {
+    font-size: 14px;
+    background: url("../images/bg_640.jpg") center no-repeat fixed;
+    background-size: cover;
+  }
+}
+@media only screen and (max-width: 320px) {
+  body {
+    font-size: 13px;
+  }
+}
+
+.navbtn {
+  position: fixed;
+  color: #c7425f;
+  cursor: pointer;
+  z-index: 110;
+  margin: 10px;
+  text-shadow: 0 0 8px #fff, 0 0 10px #fff;
+}
+@media only screen and (min-width: 1400px) {
+  .navbtn {
+    display: none;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .navbtn {
+    display: none;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .navbtn {
+    font-size: 60px;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .navbtn {
+    font-size: 40px;
+  }
+}
+
+nav {
+  position: fixed;
+  z-index: 100;
+}
+@media only screen and (min-width: 1400px) {
+  nav {
+    background: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    height: 80px;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  nav {
+    background: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    height: 80px;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  nav {
+    background: #fff;
+    width: 260px;
+    padding: 40px;
+    height: 100%;
+    z-index: 220;
+    left: -340px;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+  }
+}
+@media only screen and (max-width: 749px) {
+  nav {
+    background: #fff;
+    width: 200px;
+    padding: 20px;
+    height: 100%;
+    z-index: 220;
+    left: -240px;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+  }
+}
+
+.nav {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+}
+.nav li {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .nav li {
+    margin-bottom: 10px;
+  }
+}
+.nav li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (min-width: 1400px) {
+  .nav {
+    width: 60%;
+    margin: 10px auto;
+    justify-content: space-around;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .nav {
+    width: 90%;
+    margin: 10px auto;
+    justify-content: space-around;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .nav {
+    width: 220px;
+    margin: 0 auto;
+    padding: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .nav {
+    width: 200px;
+    margin: 0 auto;
+    padding: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .boki_logo {
+    background: url("../images/boki_logo.png") center no-repeat;
+    width: 245px;
+    height: 58px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .boki_logo {
+    background: url("../images/boki_logo.png") center no-repeat;
+    width: 245px;
+    height: 58px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .boki_logo {
+    background: url("../images/boki_logo.png") center no-repeat;
+    width: 220.5px;
+    height: 52.2px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .boki_logo {
+    background: url("../images/boki_logo.png") center no-repeat;
+    width: 171.5px;
+    height: 40.6px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.wrap {
+  height: auto;
+  margin: 0 auto;
+  padding: 0 0 100px;
+  overflow: hidden;
+  position: relative;
+}
+
+section {
+  width: 100%;
+}
+
+@media only screen and (min-width: 1400px) {
+  .top {
+    height: 960px;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .top {
+    height: 980px;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .top {
+    height: 920px;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .top {
+    height: 700px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .top {
+    height: 600px;
+  }
+}
+
+.slogan1, .slogan2, .main, .logo, .btn-d1, .btn-slogan {
+  position: absolute;
+  left: 50%;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+
+.slogan1 {
+  z-index: 3;
+}
+@media only screen and (min-width: 1400px) {
+  .slogan1 {
+    background: url("../images/slogan1.png") center no-repeat;
+    width: 227px;
+    height: 508px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 160px;
+    margin-left: -590px;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .slogan1 {
+    background: url("../images/slogan1.png") center no-repeat;
+    width: 227px;
+    height: 508px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 160px;
+    margin-left: -590px;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .slogan1 {
+    background: url("../images/slogan1.png") center no-repeat;
+    width: 158.9px;
+    height: 355.6px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 130px;
+    margin-left: -390px;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .slogan1 {
+    background: url("../images/slogan1.png") center no-repeat;
+    width: 90.8px;
+    height: 203.2px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 150px;
+    margin-left: -190px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .slogan1 {
+    background: url("../images/slogan1.png") center no-repeat;
+    width: 68.1px;
+    height: 152.4px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 120px;
+    margin-left: -160px;
+  }
+}
+
+.slogan2 {
+  z-index: 3;
+}
+@media only screen and (min-width: 1400px) {
+  .slogan2 {
+    background: url("../images/slogan2.png") center no-repeat;
+    width: 168px;
+    height: 577px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 220px;
+    margin-left: 400px;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .slogan2 {
+    background: url("../images/slogan2.png") center no-repeat;
+    width: 168px;
+    height: 577px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 220px;
+    margin-left: 400px;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .slogan2 {
+    background: url("../images/slogan2.png") center no-repeat;
+    width: 117.6px;
+    height: 403.9px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 90px;
+    margin-left: 260px;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .slogan2 {
+    background: url("../images/slogan2.png") center no-repeat;
+    width: 67.2px;
+    height: 230.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 120px;
+    margin-left: 120px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .slogan2 {
+    background: url("../images/slogan2.png") center no-repeat;
+    width: 50.4px;
+    height: 173.1px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 110px;
+    margin-left: 110px;
+  }
+}
+
+.main {
+  z-index: 2;
+}
+@media only screen and (min-width: 1400px) {
+  .main {
+    background: url("../images/main.png") center no-repeat;
+    width: 1200px;
+    height: 940px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: -30px;
+    margin-left: -600px;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .main {
+    background: url("../images/main.png") center no-repeat;
+    width: 1200px;
+    height: 940px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: -30px;
+    margin-left: -600px;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .main {
+    background: url("../images/main.png") center no-repeat;
+    width: 1080px;
+    height: 846px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: -90px;
+    margin-left: -540px;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .main {
+    background: url("../images/main.png") center no-repeat;
+    width: 600px;
+    height: 470px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: -30px;
+    margin-left: -300px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .main {
+    background: url("../images/main.png") center no-repeat;
+    width: 480px;
+    height: 376px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -240px;
+  }
+}
+
+.logo {
+  z-index: 4;
+}
+@media only screen and (min-width: 1400px) {
+  .logo {
+    background: url("../images/logo.png") center no-repeat;
+    width: 647px;
+    height: 232px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 610px;
+    margin-left: -323.5px;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .logo {
+    background: url("../images/logo.png") center no-repeat;
+    width: 647px;
+    height: 232px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 610px;
+    margin-left: -323.5px;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .logo {
+    background: url("../images/logo.png") center no-repeat;
+    width: 582.3px;
+    height: 208.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 500px;
+    margin-left: -291.15px;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .logo {
+    background: url("../images/logo.png") center no-repeat;
+    width: 323.5px;
+    height: 116px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 340px;
+    margin-left: -161.75px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .logo {
+    background: url("../images/logo.png") center no-repeat;
+    width: 291.15px;
+    height: 104.4px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 270px;
+    margin-left: -145.575px;
+  }
+}
+
+.btn-d1 {
+  z-index: 5;
+  animation: shine 1s linear infinite;
+}
+@media only screen and (min-width: 1400px) {
+  .btn-d1 {
+    background: url("../images/d1_pc.png") center no-repeat;
+    width: 184px;
+    height: 184px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 660px;
+    margin-left: -560px;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .btn-d1 {
+    background: url("../images/d1_pc.png") center no-repeat;
+    width: 184px;
+    height: 184px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 660px;
+    margin-left: -560px;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .btn-d1 {
+    background: url("../images/d1_mobile.png") center no-repeat;
+    width: 344px;
+    height: 104px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 740px;
+    margin-left: -172px;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .btn-d1 {
+    background: url("../images/d1_mobile.png") center no-repeat;
+    width: 240.8px;
+    height: 72.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 470px;
+    margin-left: -120.4px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .btn-d1 {
+    margin-top: 380px;
+  }
+}
+.btn-d1:hover, .btn-d1:focus, .btn-d1.active {
+  animation-play-state: paused;
+}
+.btn-d1 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-slogan {
+  z-index: 5;
+}
+@media only screen and (min-width: 1400px) {
+  .btn-slogan {
+    background: url("../images/btn_slogan.png") center no-repeat;
+    width: 139px;
+    height: 34px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 845px;
+    margin-left: -540px;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .btn-slogan {
+    background: url("../images/btn_slogan.png") center no-repeat;
+    width: 139px;
+    height: 34px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 845px;
+    margin-left: -540px;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .btn-slogan {
+    background: url("../images/btn_slogan.png") center no-repeat;
+    width: 139px;
+    height: 34px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 850px;
+    margin-left: -69.5px;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .btn-slogan {
+    background: url("../images/btn_slogan.png") center no-repeat;
+    width: 111.2px;
+    height: 27.2px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 550px;
+    margin-left: -55.6px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .btn-slogan {
+    background: url("../images/btn_slogan.png") center no-repeat;
+    width: 97.3px;
+    height: 23.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 460px;
+    margin-left: -48.65px;
+  }
+}
+
+.down-arrow {
+  position: absolute;
+  z-index: 50;
+  left: 50%;
+  font-size: 70px;
+  margin-left: -22px;
+  color: #c7425f;
+  animation: downarrow 1s linear infinite;
+}
+@media only screen and (min-width: 1400px) {
+  .down-arrow {
+    margin-top: 860px;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .down-arrow {
+    margin-top: 860px;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .down-arrow {
+    margin-top: 900px;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .down-arrow {
+    margin-top: 590px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .down-arrow {
+    margin-top: 490px;
+  }
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  left: 50%;
+  margin-left: -50%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  background: rgba(255, 255, 255, 0.7);
+  color: #c7425f;
+  font-weight: bold;
+}
+@media only screen and (min-width: 1400px) {
+  footer {
+    height: 100px;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  footer {
+    height: 100px;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  footer {
+    font-size: 14px;
+    flex-wrap: wrap;
+    padding: 20px 0;
+  }
+}
+@media only screen and (max-width: 749px) {
+  footer {
+    font-size: 12px;
+    flex-wrap: wrap;
+    padding: 10px 0;
+  }
+}
+@media only screen and (max-width: 320px) {
+  footer {
+    padding: 10px;
+  }
+}
+footer .boki_logo2 {
+  display: inline-block;
+}
+@media only screen and (min-width: 1400px) {
+  footer .boki_logo2 {
+    background: url("../images/boki_logo2.png") center no-repeat;
+    width: 245px;
+    height: 58px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-bottom: 0;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  footer .boki_logo2 {
+    background: url("../images/boki_logo2.png") center no-repeat;
+    width: 245px;
+    height: 58px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-bottom: 0;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  footer .boki_logo2 {
+    background: url("../images/boki_logo2.png") center no-repeat;
+    width: 220.5px;
+    height: 52.2px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 749px) {
+  footer .boki_logo2 {
+    background: url("../images/boki_logo2.png") center no-repeat;
+    width: 171.5px;
+    height: 40.6px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-bottom: 10px;
+  }
+}
+
+.r18 {
+  background: url("../images/18+.png") center no-repeat;
+  width: 35px;
+  height: 35px;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
+  margin: 0 20px;
+}
+
+@media only screen and (min-width: 1400px) {
+  .page1 {
+    height: 900px;
+    margin-top: -40px;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .page1 {
+    height: 900px;
+    margin-top: -50px;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .page1 {
+    height: 730px;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .page1 {
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .page1 {
+    height: 370px;
+  }
+}
+
+.page2 {
+  background: url("../images/bg_page2.png") center no-repeat;
+}
+@media only screen and (min-width: 1400px) {
+  .page2 {
+    height: 1080px;
+    margin-top: -60px;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .page2 {
+    height: 1000px;
+    margin-top: -50px;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .page2 {
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    height: 720px;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .page2 {
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .page2 {
+    height: 320px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .page3 {
+    height: 910px;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .page3 {
+    height: 830px;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .page3 {
+    height: 930px;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .page3 {
+    height: 520px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .page3 {
+    height: 480px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .page4 {
+    height: 900px;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .page4 {
+    height: 850px;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .page4 {
+    height: 1050px;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .page4 {
+    height: 620px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .page4 {
+    height: 540px;
+  }
+}
+
+.p1_logo, .p1_slogan, .p1_bg, .p1_left, .p1_right {
+  position: absolute;
+  left: 50%;
+}
+
+.p1_bg {
+  z-index: 2;
+}
+@media only screen and (min-width: 1400px) {
+  .p1_bg {
+    background: url("../images/bg_page1.png") center no-repeat;
+    width: 1449px;
+    height: 916px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -660px;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .p1_bg {
+    background: url("../images/bg_page1.png") center no-repeat;
+    width: 1449px;
+    height: 916px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -660px;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .p1_bg {
+    background: url("../images/bg_page1.png") center no-repeat;
+    width: 1014.3px;
+    height: 641.2px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 100px;
+    margin-left: -450px;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .p1_bg {
+    background: url("../images/bg_page1.png") center no-repeat;
+    width: 796.95px;
+    height: 503.8px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: -30px;
+    margin-left: -365px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .p1_bg {
+    background: url("../images/bg_page1.png") center no-repeat;
+    width: 724.5px;
+    height: 458px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: -30px;
+    margin-left: -345px;
+  }
+}
+
+.p1_left {
+  z-index: 4;
+}
+@media only screen and (min-width: 1400px) {
+  .p1_left {
+    background: url("../images/page1_l.png") center no-repeat;
+    width: 109px;
+    height: 551px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 210px;
+    margin-left: -670px;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .p1_left {
+    display: none;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .p1_left {
+    display: none;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .p1_left {
+    display: none;
+  }
+}
+
+.p1_right {
+  z-index: 4;
+}
+@media only screen and (min-width: 1400px) {
+  .p1_right {
+    background: url("../images/page1_r.png") center no-repeat;
+    width: 111px;
+    height: 496px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 70px;
+    margin-left: 540px;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .p1_right {
+    display: none;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .p1_right {
+    display: none;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .p1_right {
+    display: none;
+  }
+}
+
+.p1_logo {
+  z-index: 4;
+}
+@media only screen and (min-width: 1400px) {
+  .p1_logo {
+    background: url("../images/p1_logo.png") center no-repeat;
+    width: 432px;
+    height: 251px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 100px;
+    margin-left: -216px;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .p1_logo {
+    background: url("../images/p1_logo.png") center no-repeat;
+    width: 432px;
+    height: 251px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 100px;
+    margin-left: -216px;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .p1_logo {
+    background: url("../images/p1_logo.png") center no-repeat;
+    width: 432px;
+    height: 251px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 50px;
+    margin-left: -216px;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .p1_logo {
+    background: url("../images/p1_logo.png") center no-repeat;
+    width: 302.4px;
+    height: 175.7px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: -20px;
+    margin-left: -151.2px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .p1_logo {
+    background: url("../images/p1_logo.png") center no-repeat;
+    width: 280.8px;
+    height: 163.15px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: -30px;
+    margin-left: -140.4px;
+  }
+}
+
+.p1_slogan {
+  z-index: 4;
+}
+@media only screen and (min-width: 1400px) {
+  .p1_slogan {
+    background: url("../images/p1_slogan.png") center no-repeat;
+    width: 734px;
+    height: 115px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 630px;
+    margin-left: -367px;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .p1_slogan {
+    background: url("../images/p1_slogan.png") center no-repeat;
+    width: 734px;
+    height: 115px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 630px;
+    margin-left: -367px;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .p1_slogan {
+    background: url("../images/p1_slogan.png") center no-repeat;
+    width: 660.6px;
+    height: 103.5px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 570px;
+    margin-left: -330.3px;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .p1_slogan {
+    background: url("../images/p1_slogan.png") center no-repeat;
+    width: 367px;
+    height: 57.5px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 330px;
+    margin-left: -183.5px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .p1_slogan {
+    background: url("../images/p1_slogan.png") center no-repeat;
+    width: 330.3px;
+    height: 51.75px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 320px;
+    margin-left: -165.15px;
+  }
+}
+
+.p1_txt {
+  z-index: 4;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  color: #c7425f;
+  font-weight: bold;
+  text-shadow: 0 0 8px #fff, 0 0 10px #fff;
+  line-height: 1.7em;
+}
+@media only screen and (min-width: 1400px) {
+  .p1_txt {
+    margin-top: 400px;
+    letter-spacing: 1px;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .p1_txt {
+    margin-top: 400px;
+    letter-spacing: 1px;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .p1_txt {
+    margin-top: 340px;
+    letter-spacing: 1px;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .p1_txt {
+    margin-top: 180px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .p1_txt {
+    margin-top: 160px;
+  }
+}
+
+.tit2 {
+  position: absolute;
+  left: 50%;
+  margin-top: 30px;
+}
+@media only screen and (min-width: 1400px) {
+  .tit2 {
+    background: url("../images/tit2.png") center no-repeat;
+    width: 558px;
+    height: 154px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -279px;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .tit2 {
+    background: url("../images/tit2.png") center no-repeat;
+    width: 558px;
+    height: 154px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -279px;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .tit2 {
+    background: url("../images/tit2.png") center no-repeat;
+    width: 502.2px;
+    height: 138.6px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -251.1px;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .tit2 {
+    background: url("../images/tit2.png") center no-repeat;
+    width: 334.8px;
+    height: 92.4px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -167.4px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .tit2 {
+    background: url("../images/tit2.png") center no-repeat;
+    width: 279px;
+    height: 77px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -139.5px;
+  }
+}
+
+.tit3 {
+  position: absolute;
+  left: 50%;
+  margin-top: 30px;
+}
+@media only screen and (min-width: 1400px) {
+  .tit3 {
+    background: url("../images/tit3.png") center no-repeat;
+    width: 558px;
+    height: 154px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -279px;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .tit3 {
+    background: url("../images/tit3.png") center no-repeat;
+    width: 558px;
+    height: 154px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -279px;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .tit3 {
+    background: url("../images/tit3.png") center no-repeat;
+    width: 502.2px;
+    height: 138.6px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -251.1px;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .tit3 {
+    background: url("../images/tit3.png") center no-repeat;
+    width: 334.8px;
+    height: 92.4px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -167.4px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .tit3 {
+    background: url("../images/tit3.png") center no-repeat;
+    width: 279px;
+    height: 77px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -139.5px;
+  }
+}
+
+.tit4 {
+  position: absolute;
+  left: 50%;
+  margin-top: 30px;
+}
+@media only screen and (min-width: 1400px) {
+  .tit4 {
+    background: url("../images/tit4.png") center no-repeat;
+    width: 558px;
+    height: 154px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -279px;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .tit4 {
+    background: url("../images/tit4.png") center no-repeat;
+    width: 558px;
+    height: 154px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -279px;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .tit4 {
+    background: url("../images/tit4.png") center no-repeat;
+    width: 502.2px;
+    height: 138.6px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -251.1px;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .tit4 {
+    background: url("../images/tit4.png") center no-repeat;
+    width: 334.8px;
+    height: 92.4px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -167.4px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .tit4 {
+    background: url("../images/tit4.png") center no-repeat;
+    width: 279px;
+    height: 77px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -139.5px;
+  }
+}
+
+.p2_miria, .p2_lmiria {
+  position: absolute;
+  left: 50%;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 1400px) {
+  .p2_miria {
+    background: url("../images/p2_miria_off.png") center no-repeat;
+    width: 784px;
+    height: 939px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 160px;
+    margin-left: -750px;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .p2_miria {
+    background: url("../images/p2_miria_off.png") center no-repeat;
+    width: 705.6px;
+    height: 845.1px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 160px;
+    margin-left: -660px;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .p2_miria {
+    background: url("../images/p2_miria_off.png") center no-repeat;
+    width: 470.4px;
+    height: 563.4px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 140px;
+    margin-left: -430px;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .p2_miria {
+    background: url("../images/p2_miria_off.png") center no-repeat;
+    width: 235.2px;
+    height: 281.7px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 120px;
+    margin-left: -210px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .p2_miria {
+    background: url("../images/p2_miria_off.png") center no-repeat;
+    width: 196px;
+    height: 234.75px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 100px;
+    margin-left: -180px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .p2_miria:hover, .p2_miria:focus {
+    background: url("../images/p2_miria_on.png") center no-repeat;
+    width: 784px;
+    height: 939px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .p2_miria:hover, .p2_miria:focus {
+    background: url("../images/p2_miria_on.png") center no-repeat;
+    width: 705.6px;
+    height: 845.1px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .p2_miria:hover, .p2_miria:focus {
+    background: url("../images/p2_miria_on.png") center no-repeat;
+    width: 470.4px;
+    height: 563.4px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .p2_miria:hover, .p2_miria:focus {
+    background: url("../images/p2_miria_on.png") center no-repeat;
+    width: 235.2px;
+    height: 281.7px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .p2_miria:hover, .p2_miria:focus {
+    background: url("../images/p2_miria_on.png") center no-repeat;
+    width: 196px;
+    height: 234.75px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .p2_lmiria {
+    background: url("../images/p2_lmiria_off.png") center no-repeat;
+    width: 628px;
+    height: 881px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 220px;
+    margin-left: 20px;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .p2_lmiria {
+    background: url("../images/p2_lmiria_off.png") center no-repeat;
+    width: 565.2px;
+    height: 792.9px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 220px;
+    margin-left: 40px;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .p2_lmiria {
+    background: url("../images/p2_lmiria_off.png") center no-repeat;
+    width: 376.8px;
+    height: 528.6px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 200px;
+    margin-left: 10px;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .p2_lmiria {
+    background: url("../images/p2_lmiria_off.png") center no-repeat;
+    width: 188.4px;
+    height: 264.3px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 135px;
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .p2_lmiria {
+    background: url("../images/p2_lmiria_off.png") center no-repeat;
+    width: 157px;
+    height: 220.25px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 115px;
+    margin-left: 5px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .p2_lmiria:hover, .p2_lmiria:focus {
+    background: url("../images/p2_lmiria_on.png") center no-repeat;
+    width: 628px;
+    height: 881px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .p2_lmiria:hover, .p2_lmiria:focus {
+    background: url("../images/p2_lmiria_on.png") center no-repeat;
+    width: 565.2px;
+    height: 792.9px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .p2_lmiria:hover, .p2_lmiria:focus {
+    background: url("../images/p2_lmiria_on.png") center no-repeat;
+    width: 376.8px;
+    height: 528.6px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .p2_lmiria:hover, .p2_lmiria:focus {
+    background: url("../images/p2_lmiria_on.png") center no-repeat;
+    width: 188.4px;
+    height: 264.3px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .p2_lmiria:hover, .p2_lmiria:focus {
+    background: url("../images/p2_lmiria_on.png") center no-repeat;
+    width: 157px;
+    height: 220.25px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+}
+
+.slickimgbox {
+  position: absolute;
+  left: 50%;
+}
+@media only screen and (min-width: 1400px) {
+  .slickimgbox {
+    width: 90%;
+    margin-top: 120px;
+    margin-left: -45%;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .slickimgbox {
+    width: 90%;
+    margin-top: 120px;
+    margin-left: -45%;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .slickimgbox {
+    width: 100%;
+    margin-top: 60px;
+    margin-left: -50%;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .slickimgbox {
+    width: 100%;
+    margin-top: 30px;
+    margin-left: -50%;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .slickimgbox .slick-list {
+    padding: 200px 0 0 0 !important;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .slickimgbox .slick-list {
+    padding: 200px 0 0 0 !important;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .slickimgbox .slick-list {
+    padding: 130px 0 0 0 !important;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .slickimgbox .slick-list {
+    padding: 100px 0 0 0 !important;
+  }
+}
+.slickimgbox .slick-slide {
+  opacity: 0.5;
+}
+@media only screen and (min-width: 1400px) {
+  .slickimgbox .slick-slide {
+    margin: 0 60px;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .slickimgbox .slick-slide {
+    margin: 0 30px;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .slickimgbox .slick-slide {
+    margin: 0 40px;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .slickimgbox .slick-slide {
+    margin: 0 30px;
+  }
+}
+.slickimgbox .slick-slide img {
+  width: 100%;
+  display: inline-block;
+}
+.slickimgbox .slick-center {
+  z-index: 10;
+  opacity: 1;
+}
+@media only screen and (min-width: 1400px) {
+  .slickimgbox .slick-center {
+    transform: scale(1.3);
+    margin-top: -60px;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .slickimgbox .slick-center {
+    transform: scale(1.3);
+    margin-top: -60px;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .slickimgbox .slick-center {
+    transform: scale(1);
+  }
+}
+@media only screen and (max-width: 749px) {
+  .slickimgbox .slick-center {
+    transform: scale(1);
+  }
+}
+
+.t1 {
+  position: relative;
+  left: 50%;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+@media only screen and (min-width: 1400px) {
+  .t1 {
+    background: url("../images/t1.png") center no-repeat;
+    width: 444px;
+    height: 67px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -222px;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .t1 {
+    background: url("../images/t1.png") center no-repeat;
+    width: 444px;
+    height: 67px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -222px;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .t1 {
+    background: url("../images/t1.png") center no-repeat;
+    width: 444px;
+    height: 67px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -222px;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .t1 {
+    background: url("../images/t1.png") center no-repeat;
+    width: 266.4px;
+    height: 40.2px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -133.2px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .t1 {
+    background: url("../images/t1.png") center no-repeat;
+    width: 222px;
+    height: 33.5px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -111px;
+  }
+}
+
+.t2 {
+  position: relative;
+  left: 50%;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+@media only screen and (min-width: 1400px) {
+  .t2 {
+    background: url("../images/t2.png") center no-repeat;
+    width: 405px;
+    height: 67px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -202.5px;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .t2 {
+    background: url("../images/t2.png") center no-repeat;
+    width: 405px;
+    height: 67px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -202.5px;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .t2 {
+    background: url("../images/t2.png") center no-repeat;
+    width: 405px;
+    height: 67px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -202.5px;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .t2 {
+    background: url("../images/t2.png") center no-repeat;
+    width: 243px;
+    height: 40.2px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -121.5px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .t2 {
+    background: url("../images/t2.png") center no-repeat;
+    width: 202.5px;
+    height: 33.5px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -101.25px;
+  }
+}
+
+.t3 {
+  position: relative;
+  left: 50%;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+@media only screen and (min-width: 1400px) {
+  .t3 {
+    background: url("../images/t3.png") center no-repeat;
+    width: 331px;
+    height: 67px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -165.5px;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .t3 {
+    background: url("../images/t3.png") center no-repeat;
+    width: 331px;
+    height: 67px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -165.5px;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .t3 {
+    background: url("../images/t3.png") center no-repeat;
+    width: 331px;
+    height: 67px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -165.5px;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .t3 {
+    background: url("../images/t3.png") center no-repeat;
+    width: 198.6px;
+    height: 40.2px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -99.3px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .t3 {
+    background: url("../images/t3.png") center no-repeat;
+    width: 165.5px;
+    height: 33.5px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -82.75px;
+  }
+}
+
+.t4 {
+  position: relative;
+  left: 50%;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+@media only screen and (min-width: 1400px) {
+  .t4 {
+    background: url("../images/t4.png") center no-repeat;
+    width: 180px;
+    height: 67px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -90px;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .t4 {
+    background: url("../images/t4.png") center no-repeat;
+    width: 180px;
+    height: 67px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -90px;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .t4 {
+    background: url("../images/t4.png") center no-repeat;
+    width: 180px;
+    height: 67px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -90px;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .t4 {
+    background: url("../images/t4.png") center no-repeat;
+    width: 108px;
+    height: 40.2px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -54px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .t4 {
+    background: url("../images/t4.png") center no-repeat;
+    width: 90px;
+    height: 33.5px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -45px;
+  }
+}
+
+.t5 {
+  position: relative;
+  left: 50%;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+@media only screen and (min-width: 1400px) {
+  .t5 {
+    background: url("../images/t5.png") center no-repeat;
+    width: 595px;
+    height: 67px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -297.5px;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .t5 {
+    background: url("../images/t5.png") center no-repeat;
+    width: 595px;
+    height: 67px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -297.5px;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .t5 {
+    background: url("../images/t5.png") center no-repeat;
+    width: 595px;
+    height: 67px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -297.5px;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .t5 {
+    background: url("../images/t5.png") center no-repeat;
+    width: 357px;
+    height: 40.2px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -178.5px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .t5 {
+    background: url("../images/t5.png") center no-repeat;
+    width: 297.5px;
+    height: 33.5px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -148.75px;
+  }
+}
+
+.t6 {
+  position: relative;
+  left: 50%;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+@media only screen and (min-width: 1400px) {
+  .t6 {
+    background: url("../images/t6.png") center no-repeat;
+    width: 486px;
+    height: 67px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -243px;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .t6 {
+    background: url("../images/t6.png") center no-repeat;
+    width: 486px;
+    height: 67px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -243px;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .t6 {
+    background: url("../images/t6.png") center no-repeat;
+    width: 486px;
+    height: 67px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -243px;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .t6 {
+    background: url("../images/t6.png") center no-repeat;
+    width: 291.6px;
+    height: 40.2px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -145.8px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .t6 {
+    background: url("../images/t6.png") center no-repeat;
+    width: 243px;
+    height: 33.5px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-left: -121.5px;
+  }
+}
+
+.slicktxtbox {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+@media only screen and (min-width: 1400px) {
+  .slicktxtbox {
+    margin-top: 700px;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .slicktxtbox {
+    margin-top: 600px;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .slicktxtbox {
+    margin-top: 730px;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .slicktxtbox {
+    margin-top: 380px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .slicktxtbox {
+    margin-top: 350px;
+  }
+}
+.slicktxtbox .txt {
+  color: #c7425f;
+  font-weight: bold;
+  text-shadow: 0 0 8px #fff, 0 0 10px #fff;
+  line-height: 1.7em;
+  letter-spacing: 1px;
+}
+@media only screen and (min-width: 1400px) {
+  .slicktxtbox .slick-dots {
+    bottom: -60px;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .slicktxtbox .slick-dots {
+    bottom: -60px;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .slicktxtbox .slick-dots {
+    bottom: -60px;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .slicktxtbox .slick-dots {
+    bottom: -40px;
+  }
+}
+.slicktxtbox .slick-dots li button:before {
+  color: #c7425f;
+  opacity: 0.5;
+  font-size: 20px;
+}
+.slicktxtbox .slick-dots li.slick-active button:before {
+  opacity: 1;
+}
+
+.p4_pic {
+  position: absolute;
+  left: 50%;
+}
+@media only screen and (min-width: 1400px) {
+  .p4_pic {
+    background: url("../images/p4_pic.png") center no-repeat;
+    width: 918px;
+    height: 878px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 150px;
+    margin-left: -210px;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .p4_pic {
+    background: url("../images/p4_pic.png") center no-repeat;
+    width: 872.1px;
+    height: 834.1px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 150px;
+    margin-left: -220px;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .p4_pic {
+    background: url("../images/p4_pic.png") center no-repeat;
+    width: 734.4px;
+    height: 702.4px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 150px;
+    margin-left: -400px;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .p4_pic {
+    background: url("../images/p4_pic.png") center no-repeat;
+    width: 459px;
+    height: 439px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 105px;
+    margin-left: -260px;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .p4_pic {
+    background: url("../images/p4_pic.png") center no-repeat;
+    width: 413.1px;
+    height: 395.1px;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    margin-top: 90px;
+    margin-left: -240px;
+  }
+}
+
+.p4_txt {
+  position: absolute;
+  left: 50%;
+  color: #c7425f;
+  font-weight: bold;
+  text-shadow: 0 0 8px #fff, 0 0 10px #fff;
+  letter-spacing: 1px;
+}
+@media only screen and (min-width: 1400px) {
+  .p4_txt {
+    font-size: 22px;
+    line-height: 2em;
+    margin-top: 370px;
+    margin-left: -570px;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1399px) {
+  .p4_txt {
+    font-size: 22px;
+    line-height: 1.7em;
+    margin-top: 320px;
+    margin-left: -570px;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .p4_txt {
+    font-size: 22px;
+    line-height: 1.7em;
+    margin-top: 830px;
+    margin-left: -230px;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .p4_txt {
+    line-height: 1.5em;
+    margin-top: 530px;
+    margin-left: -145px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .p4_txt {
+    margin-top: 470px;
+  }
+}

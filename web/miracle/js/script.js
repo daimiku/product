@@ -97,7 +97,7 @@ $(function(){
        $(".pop_close").removeClass("close_p, close_m");
        $(".pop, .pop_main").fadeOut(); 
        $(".pop_movie, .pop_chara, .pop_pic, .pop_pic img").hide();
-       $('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+       /*$('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');*/
        if(md.mobile()){
            $("nav.left").css("left","-300px");
        }

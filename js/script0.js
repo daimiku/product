@@ -28,6 +28,14 @@ $(function(){
        }
     });
     
+    $(".mov").on("shown.bs.modal",function(e){
+        $(this).find("video").get(0).play();
+    });
+    $(".mov").on("hidden.bs.modal",function(e){
+        $(this).find("video").get(0).load();
+        $(this).find("video").get(0).pause();
+    });
+    
     $(".pcontent li").click(function(){
         var pthis = $(this).index();
         $(this).siblings("li").removeClass("active");

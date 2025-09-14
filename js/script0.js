@@ -63,16 +63,20 @@ $(function(){
     });
     
     var nav = [
+        "賣場用圖",
         "視覺BANNER",
         "長條BANNER",
         "網頁設計",
         "影片製作",
+        "遊戲UI類",
     ];
     var link = [
+        "0-2",
         "1-10",
         "2-8",
         "3-8",
         "4-1",
+        "5-1",
     ];
     
     $("nav ul.text-center > li").each(function(){

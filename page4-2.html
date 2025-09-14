@@ -17,7 +17,7 @@
 <![endif]-->
 <script src="js/script0.js"></script>
 </head>
-<body>
+<body class="theme-dark">
 
 <div class="modal fade Pop1 mov" tabindex="-1" role="dialog">
   <div class="modal-dialog modal-lg" role="document">
@@ -117,16 +117,20 @@
             <li></li>
             <li></li>
             <li></li>
+            <li></li>
             <li class="active"></li>
+            <li></li>
         </ul>
     </nav>
     <nav class="hidden-xs" data-spy="affix" data-offset-top="60">
     <div class="container">
     <ul class="text-center">
-        <li class="col-lg-3 col-md-3 col-sm-3"></li>
-        <li class="col-lg-3 col-md-3 col-sm-3"></li>
-        <li class="col-lg-3 col-md-3 col-sm-3"></li>
-        <li class="col-lg-3 col-md-3 col-sm-3 active"></li>
+        <li class="col-lg-2 col-md-2 col-sm-2"></li>
+        <li class="col-lg-2 col-md-2 col-sm-2"></li>
+        <li class="col-lg-2 col-md-2 col-sm-2"></li>
+        <li class="col-lg-2 col-md-2 col-sm-2"></li>
+        <li class="col-lg-2 col-md-2 col-sm-2 active"></li>
+        <li class="col-lg-2 col-md-2 col-sm-2"></li>
     </ul>
    </nav>
     
@@ -135,7 +139,7 @@
     
     <div class="main col-lg-10 col-lg-push-1  col-md-10 col-md-push-1">
     <ol class="breadcrumb">
-      <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> home</a></li>
+      <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> 首頁</a></li>
       <li class="active"><span class="glyphicon glyphicon-tags"></span> 影片製作</li>
       <span class="hidden-xs pull-right">遊戲的宣傳影片</span>
     </ol>
@@ -171,8 +175,10 @@
     <div class="text-center pageselect">
         <ul class="pagination">
         <li><span aria-hidden="true"><a href="page4-1.html" aria-label="Previous">&laquo;</a></span></li>
-        <li><a href="page4-1.html">1</a></li>
-        <li class="active"><a href="#">2</a></li>
+        <select class="pagecontrol">
+            <option value="4-1">第1頁</option>
+            <option value="4-2" selected>第2頁</option>
+        </select>
         <li class="disabled">
           <span aria-hidden="true">
     		<a href="#" aria-label="Next">&raquo;</a>

@@ -7615,6 +7615,9 @@ article.row {
 .pageselect ul .active a:hover, .pageselect ul .active a:focus {
   border: 0;
 }
+.pageselect ul .disabled a {
+  cursor: no-drop;
+}
 .pageselect ul a {
   padding: 5px 10px;
 }
@@ -8275,10 +8278,13 @@ body.theme-dark .pageselect {
   color: #697565;
 }
 body.theme-dark .pageselect ul .active a {
-  background: #ECDFCC;
+  color: #ECDFCC;
+  background: #697565;
+  border: 1px solid #3C3D37;
 }
 body.theme-dark .pageselect ul .active a:hover, body.theme-dark .pageselect ul .active a:focus {
-  background: #ECDFCC;
+  color: #ECDFCC;
+  background: #697565;
 }
 body.theme-dark .pageselect ul .disabled span {
   background: none;
@@ -8295,7 +8301,7 @@ body.theme-dark .pageselect ul a {
 }
 body.theme-dark .pageselect ul a:hover, body.theme-dark .pageselect ul a:focus {
   color: #1E201E;
-  background: #697565;
+  background: rgba(236, 223, 204, 0.6);
 }
 body.theme-dark .pageselect ul li span {
   background: none;
@@ -8310,10 +8316,10 @@ body.theme-dark .rightmenu li:hover, body.theme-dark .rightmenu li:focus {
   background: rgba(105, 117, 101, 0.2);
 }
 body.theme-dark .rightmenu a {
-  color: #1E201E;
+  color: #ECDFCC;
 }
 body.theme-dark .rightmenu a:hover {
-  color: #697565;
+  color: #1E201E;
 }
 body.theme-dark .rightmenu .active {
   color: #697565;

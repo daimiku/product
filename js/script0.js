@@ -76,7 +76,7 @@ $(function(){
         "2-8",
         "3-8",
         "4-1",
-        "5-1",
+        "5-2",
     ];
     
     $("nav ul.text-center > li").each(function(){

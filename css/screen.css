@@ -7437,9 +7437,9 @@ header .menubtn {
 }
 header .themebtn {
   position: absolute;
-  margin: 20px;
+  height: 30px;
   padding: 5px;
-  right: 16%;
+  text-align: center;
   cursor: pointer;
 }
 header .theme-off {
@@ -7548,7 +7548,7 @@ article.row {
   padding-left: 15px;
 }
 
-.pic, .pic1 {
+.pic, .pic1, .pic2 {
   padding: 0 15px;
   margin-bottom: 15px;
   overflow: hidden;
@@ -7558,38 +7558,38 @@ article.row {
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-.pic:hover, .pic1:hover {
+.pic:hover, .pic1:hover, .pic2:hover {
   opacity: 1;
   filter: alpha(opacity=100);
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-.pic div, .pic1 div {
+.pic div, .pic1 div, .pic2 div {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
   overflow: hidden;
 }
-.pic div img, .pic1 div img {
+.pic div img, .pic1 div img, .pic2 div img {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
 }
-.pic img, .pic1 img {
+.pic img, .pic1 img, .pic2 img {
   width: auto;
   height: auto;
   max-width: 100%;
   max-height: 250px;
 }
-.pic img:not(:first-of-type), .pic1 img:not(:first-of-type) {
+.pic img:not(:first-of-type), .pic1 img:not(:first-of-type), .pic2 img:not(:first-of-type) {
   display: none;
 }
-.pic a, .pic1 a {
+.pic a, .pic1 a, .pic2 a {
   width: 100%;
   height: 100%;
   display: block;
 }
-.pic a:focus, .pic1 a:focus {
+.pic a:focus, .pic1 a:focus, .pic2 a:focus {
   outline: none;
 }
 
@@ -7840,6 +7840,41 @@ body.toggled-right {
   }
 }
 
+@media only screen and (min-width: 1170px) {
+  header .themebtn {
+    width: 105px;
+    margin: 20px;
+    right: 16%;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1169px) {
+  header .themebtn {
+    width: 105px;
+    margin: 20px;
+    right: 16%;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  header .themebtn {
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    width: 30px;
+    margin: 15px;
+    right: 5%;
+  }
+}
+@media only screen and (max-width: 749px) {
+  header .themebtn {
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    width: 30px;
+    margin: 15px;
+    right: 5%;
+  }
+}
+
 /*.main
  * +breakpoint(pc-lg)
  *   border-right: 1px solid rgba($color-dark, .2)
@@ -7893,6 +7928,22 @@ body.toggled-right {
 @media only screen and (min-width: 750px) and (max-width: 969px) {
   .pic1 {
     height: 290px;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .pic2 {
+    height: 150px;
+  }
+}
+@media only screen and (min-width: 970px) and (max-width: 1169px) {
+  .pic2 {
+    height: 150px;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 969px) {
+  .pic2 {
+    height: 150px;
   }
 }
 
@@ -8331,6 +8382,9 @@ body.theme-dark .modal-dialog button.close {
   opacity: 0.8;
   filter: alpha(opacity=80);
 }
+body.theme-dark .modal-dialog .pcontent .nav-tabs {
+  border-bottom: 1px solid #697565;
+}
 body.theme-dark .modal-dialog .pcontent li.active a {
   color: #ECDFCC;
   background: #697565;
@@ -8342,6 +8396,7 @@ body.theme-dark .modal-dialog .pcontent li:not(.active) a {
 body.theme-dark .modal-dialog .pcontent li:not(.active) a:hover, body.theme-dark .modal-dialog .pcontent li:not(.active) a:focus {
   background: transparent;
   border: 1px solid #ECDFCC;
+  border-bottom: 1px solid #697565;
 }
 body.theme-dark .modal-dialog .pfooter {
   color: #697565;

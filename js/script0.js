@@ -83,4 +83,8 @@ $(function(){
        var a = $(this).index();
        $(this).html("<a href='page" + link[a] + ".html'>" + nav[a] + "</a>");
     });
+    
+    $(".pic2 a").click(function(){
+       return false;
+    });
 });

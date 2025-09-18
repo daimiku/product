@@ -7438,9 +7438,8 @@ header .menubtn {
 header .themebtn {
   position: absolute;
   height: 30px;
-  padding: 5px;
+  padding: 5px 0;
   text-align: center;
-  cursor: pointer;
 }
 header .theme-off {
   display: none;
@@ -7845,16 +7844,14 @@ body.toggled-right {
 
 @media only screen and (min-width: 1170px) {
   header .themebtn {
-    width: 105px;
     margin: 20px;
-    right: 16%;
+    right: 11%;
   }
 }
 @media only screen and (min-width: 970px) and (max-width: 1169px) {
   header .themebtn {
-    width: 105px;
     margin: 20px;
-    right: 16%;
+    right: 11%;
   }
 }
 @media only screen and (min-width: 750px) and (max-width: 969px) {
@@ -7862,7 +7859,6 @@ body.toggled-right {
     -moz-border-radius: 100%;
     -webkit-border-radius: 100%;
     border-radius: 100%;
-    width: 30px;
     margin: 15px;
     right: 5%;
   }
@@ -7872,7 +7868,6 @@ body.toggled-right {
     -moz-border-radius: 100%;
     -webkit-border-radius: 100%;
     border-radius: 100%;
-    width: 30px;
     margin: 15px;
     right: 5%;
   }
@@ -8076,9 +8071,6 @@ body.theme-dark header .logo {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-}
-body.theme-dark header .themebtn {
-  border: 1px solid #ECDFCC;
 }
 body.theme-dark .logo2 {
   background: url("images/logo2_d.png") no-repeat;
